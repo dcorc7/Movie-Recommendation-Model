@@ -1,0 +1,39 @@
+project:
+  type: website
+  resources:
+    - audio
+  render:
+    - "*.qmd"
+    - "*.ipynb"
+    - "!xtra"
+  output-dir: Movie-Recommendation-Model
+
+website:
+  title: David Corcoran
+  favicon: "assets/gu-logo.png"
+  back-to-top-navigation: true
+  navbar:
+    title: David Corcoran
+    search: true
+    left:
+      - text: Homepage
+        href: https://corcoran.georgetown.domains/Homepage/
+      - text: Introduction
+        href: ./index.qmd
+      - text: Recommendation Model
+        href: ./report/recommender.qmd
+    right:
+      - icon: github
+        href: https://github.com/dcorcoran7
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/david-corcoran-70677917a/
+        aria-label: LinkedIn
+
+format:
+  html:
+    theme: flatly
+    toc: true
+    toc-location: left
+    toc-title: Table of Contents
+
