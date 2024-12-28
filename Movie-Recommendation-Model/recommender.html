@@ -20,10 +20,44 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -67,6 +101,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -97,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Introduction</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="././recommender.qmd"> 
+    <a class="nav-link active" href="./recommender.html" aria-current="page"> 
 <span class="menu-text">Recommendation Model</span></a>
   </li>  
 </ul>
@@ -127,7 +164,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#code" id="toc-code" class="nav-link active" data-scroll-target="#code">Code</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link active" data-scroll-target="#code">Code</a>
+  <ul class="collapse">
+  <li><a href="#load-the-dataset" id="toc-load-the-dataset" class="nav-link" data-scroll-target="#load-the-dataset">Load the Dataset</a></li>
+  <li><a href="#clean-the-dataset" id="toc-clean-the-dataset" class="nav-link" data-scroll-target="#clean-the-dataset">Clean the Dataset</a></li>
+  </ul></li>
+  <li><a href="#compute-td-idf-and-cosine-similarity-scores-for-text-data" id="toc-compute-td-idf-and-cosine-similarity-scores-for-text-data" class="nav-link" data-scroll-target="#compute-td-idf-and-cosine-similarity-scores-for-text-data">Compute TD-IDF and Cosine Similarity Scores for Text Data</a>
+  <ul class="collapse">
+  <li><a href="#compute-cosine-similarity-scores-for-numerical-data" id="toc-compute-cosine-similarity-scores-for-numerical-data" class="nav-link" data-scroll-target="#compute-cosine-similarity-scores-for-numerical-data">Compute Cosine Similarity Scores for Numerical Data</a></li>
+  <li><a href="#determine-cosine-similarity-score-weights-for-each-datatype" id="toc-determine-cosine-similarity-score-weights-for-each-datatype" class="nav-link" data-scroll-target="#determine-cosine-similarity-score-weights-for-each-datatype">Determine Cosine Similarity Score Weights for Each Datatype</a></li>
+  </ul></li>
+  <li><a href="#recommend-10-movies-based-on-a-selected-movie" id="toc-recommend-10-movies-based-on-a-selected-movie" class="nav-link" data-scroll-target="#recommend-10-movies-based-on-a-selected-movie">Recommend 10 Movies Based On A Selected Movie</a></li>
   </ul>
 </nav>
 </nav>
@@ -160,6 +207,649 @@ ul.task-list li input[type="checkbox"] {
 <section id="code" class="level1">
 <h1>Code</h1>
 <p>Code for this webpage can be found <a href="https://github.com/dcorc7/Movie-Recommendation-Model/recommender.ipynb">here.</a></p>
+<div id="cell-2" class="cell" data-execution_count="77">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction.text <span class="im">import</span> TfidfVectorizer</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics.pairwise <span class="im">import</span> cosine_similarity</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> MinMaxScaler</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<section id="load-the-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="load-the-dataset">Load the Dataset</h2>
+<div id="cell-4" class="cell" data-execution_count="79">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the cleaned movies dataframe</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>movies_df <span class="op">=</span> pd.read_csv(<span class="st">"./data/processed-data/movies_cleaned.csv"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">"display.max_columns"</span>, <span class="va">None</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>movies_df.head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="79">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">IMDB_ID</th>
+<th data-quarto-table-cell-role="th">Title</th>
+<th data-quarto-table-cell-role="th">Year</th>
+<th data-quarto-table-cell-role="th">Release_Date</th>
+<th data-quarto-table-cell-role="th">Release_Month</th>
+<th data-quarto-table-cell-role="th">Age_Rating</th>
+<th data-quarto-table-cell-role="th">Overview</th>
+<th data-quarto-table-cell-role="th">Keywords</th>
+<th data-quarto-table-cell-role="th">Genre</th>
+<th data-quarto-table-cell-role="th">Director</th>
+<th data-quarto-table-cell-role="th">Actors</th>
+<th data-quarto-table-cell-role="th">Runtime</th>
+<th data-quarto-table-cell-role="th">Metascore_Rating</th>
+<th data-quarto-table-cell-role="th">IMDB_Rating</th>
+<th data-quarto-table-cell-role="th">Rotten_Tomatoes_Rating</th>
+<th data-quarto-table-cell-role="th">TMDB_Rating</th>
+<th data-quarto-table-cell-role="th">Average_Rating</th>
+<th data-quarto-table-cell-role="th">Won_Award</th>
+<th data-quarto-table-cell-role="th">Oscar_Wins</th>
+<th data-quarto-table-cell-role="th">Oscar_Nominations</th>
+<th data-quarto-table-cell-role="th">Budget</th>
+<th data-quarto-table-cell-role="th">Budget_Normalized</th>
+<th data-quarto-table-cell-role="th">Revenue</th>
+<th data-quarto-table-cell-role="th">Revenue_Normalized</th>
+<th data-quarto-table-cell-role="th">Return_On_Investment</th>
+<th data-quarto-table-cell-role="th">Popularity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>tt0097499</td>
+<td>henry v</td>
+<td>1989</td>
+<td>1989-10-05</td>
+<td>October</td>
+<td>pg-13</td>
+<td>gritty adaption william shakespeares play engl...</td>
+<td>['france kingdom theater play based on true st...</td>
+<td>war</td>
+<td>kenneth branagh</td>
+<td>['kenneth branagh derek jacobi simon shepherd']</td>
+<td>137</td>
+<td>8.3</td>
+<td>7.5</td>
+<td>9.8</td>
+<td>7.2</td>
+<td>8.200</td>
+<td>True</td>
+<td>1</td>
+<td>0</td>
+<td>9000000</td>
+<td>-0.873465</td>
+<td>10200000</td>
+<td>-0.801446</td>
+<td>1.133333</td>
+<td>18.771</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>tt1320253</td>
+<td>the expendables</td>
+<td>2010</td>
+<td>2010-08-03</td>
+<td>August</td>
+<td>r</td>
+<td>barney ross leads band highly skilled mercenar...</td>
+<td>['rescue sniper island martial arts tattoo esc...</td>
+<td>thriller</td>
+<td>sylvester stallone</td>
+<td>['sylvester stallone jason statham jet li']</td>
+<td>103</td>
+<td>4.5</td>
+<td>6.4</td>
+<td>4.2</td>
+<td>6.2</td>
+<td>5.325</td>
+<td>False</td>
+<td>0</td>
+<td>0</td>
+<td>80000000</td>
+<td>0.317499</td>
+<td>274470394</td>
+<td>0.188250</td>
+<td>3.430880</td>
+<td>74.573</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>tt1025100</td>
+<td>gemini man</td>
+<td>2019</td>
+<td>2019-10-02</td>
+<td>October</td>
+<td>pg-13</td>
+<td>henry brogan elite 51 year assassin whos ready...</td>
+<td>['hitman clone']</td>
+<td>thriller</td>
+<td>ang lee</td>
+<td>['will smith mary elizabeth winstead clive owen']</td>
+<td>117</td>
+<td>3.8</td>
+<td>5.7</td>
+<td>2.7</td>
+<td>6.3</td>
+<td>4.625</td>
+<td>False</td>
+<td>0</td>
+<td>0</td>
+<td>140000000</td>
+<td>1.323948</td>
+<td>173469516</td>
+<td>-0.189999</td>
+<td>1.239068</td>
+<td>27.266</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>tt0473075</td>
+<td>prince of persia the sands of time</td>
+<td>2010</td>
+<td>2010-05-19</td>
+<td>May</td>
+<td>pg-13</td>
+<td>rogue prince reluctantly joins forces mysterio...</td>
+<td>['persia sandstorm brother against brother arm...</td>
+<td>action</td>
+<td>mike newell</td>
+<td>['jake gyllenhaal gemma arterton ben kingsley']</td>
+<td>116</td>
+<td>5.0</td>
+<td>6.5</td>
+<td>3.7</td>
+<td>6.3</td>
+<td>5.375</td>
+<td>False</td>
+<td>0</td>
+<td>0</td>
+<td>200000000</td>
+<td>2.330396</td>
+<td>336365676</td>
+<td>0.420048</td>
+<td>1.681828</td>
+<td>33.199</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>tt1981115</td>
+<td>thor the dark world</td>
+<td>2013</td>
+<td>2013-10-30</td>
+<td>October</td>
+<td>pg-13</td>
+<td>thor fights restore order cosmos… ancient race...</td>
+<td>['superhero based on comic hostile takeover no...</td>
+<td>action</td>
+<td>alan taylor</td>
+<td>['chris hemsworth natalie portman tom hiddlest...</td>
+<td>112</td>
+<td>5.4</td>
+<td>6.7</td>
+<td>6.7</td>
+<td>6.5</td>
+<td>6.325</td>
+<td>False</td>
+<td>0</td>
+<td>0</td>
+<td>170000000</td>
+<td>1.827172</td>
+<td>644783140</td>
+<td>1.575075</td>
+<td>3.792842</td>
+<td>50.246</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="clean-the-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="clean-the-dataset">Clean the Dataset</h2>
+<div id="cell-6" class="cell" data-execution_count="80">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove brakcets and apostrophes from the Actors column</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>movies_df[<span class="st">"Actors"</span>] <span class="op">=</span> movies_df[<span class="st">"Actors"</span>].<span class="bu">str</span>.replace(<span class="st">"["</span>, <span class="st">""</span>, regex <span class="op">=</span> <span class="va">False</span>).<span class="bu">str</span>.replace(<span class="st">"]"</span>, <span class="st">""</span>, regex <span class="op">=</span> <span class="va">False</span>).<span class="bu">str</span>.replace(<span class="st">"'"</span>, <span class="st">""</span>, regex <span class="op">=</span> <span class="va">False</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop columns that won't be included in the cosine similarity calculation</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>columns_to_drop <span class="op">=</span> [<span class="st">"IMDB_ID"</span>, <span class="st">"Keywords"</span>, <span class="st">"Won_Award"</span>, <span class="st">"Release_Date"</span>, <span class="st">"Release_Month"</span>, <span class="st">"Age_Rating"</span>, <span class="st">"Budget"</span>, <span class="st">"Revenue"</span>]</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>filtered_movies_df <span class="op">=</span> movies_df.drop(columns <span class="op">=</span> columns_to_drop)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># PReview the new dataframe</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>filtered_movies_df.head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="80">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Title</th>
+<th data-quarto-table-cell-role="th">Year</th>
+<th data-quarto-table-cell-role="th">Overview</th>
+<th data-quarto-table-cell-role="th">Genre</th>
+<th data-quarto-table-cell-role="th">Director</th>
+<th data-quarto-table-cell-role="th">Actors</th>
+<th data-quarto-table-cell-role="th">Runtime</th>
+<th data-quarto-table-cell-role="th">Metascore_Rating</th>
+<th data-quarto-table-cell-role="th">IMDB_Rating</th>
+<th data-quarto-table-cell-role="th">Rotten_Tomatoes_Rating</th>
+<th data-quarto-table-cell-role="th">TMDB_Rating</th>
+<th data-quarto-table-cell-role="th">Average_Rating</th>
+<th data-quarto-table-cell-role="th">Oscar_Wins</th>
+<th data-quarto-table-cell-role="th">Oscar_Nominations</th>
+<th data-quarto-table-cell-role="th">Budget_Normalized</th>
+<th data-quarto-table-cell-role="th">Revenue_Normalized</th>
+<th data-quarto-table-cell-role="th">Return_On_Investment</th>
+<th data-quarto-table-cell-role="th">Popularity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>henry v</td>
+<td>1989</td>
+<td>gritty adaption william shakespeares play engl...</td>
+<td>war</td>
+<td>kenneth branagh</td>
+<td>kenneth branagh derek jacobi simon shepherd</td>
+<td>137</td>
+<td>8.3</td>
+<td>7.5</td>
+<td>9.8</td>
+<td>7.2</td>
+<td>8.200</td>
+<td>1</td>
+<td>0</td>
+<td>-0.873465</td>
+<td>-0.801446</td>
+<td>1.133333</td>
+<td>18.771</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>the expendables</td>
+<td>2010</td>
+<td>barney ross leads band highly skilled mercenar...</td>
+<td>thriller</td>
+<td>sylvester stallone</td>
+<td>sylvester stallone jason statham jet li</td>
+<td>103</td>
+<td>4.5</td>
+<td>6.4</td>
+<td>4.2</td>
+<td>6.2</td>
+<td>5.325</td>
+<td>0</td>
+<td>0</td>
+<td>0.317499</td>
+<td>0.188250</td>
+<td>3.430880</td>
+<td>74.573</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>gemini man</td>
+<td>2019</td>
+<td>henry brogan elite 51 year assassin whos ready...</td>
+<td>thriller</td>
+<td>ang lee</td>
+<td>will smith mary elizabeth winstead clive owen</td>
+<td>117</td>
+<td>3.8</td>
+<td>5.7</td>
+<td>2.7</td>
+<td>6.3</td>
+<td>4.625</td>
+<td>0</td>
+<td>0</td>
+<td>1.323948</td>
+<td>-0.189999</td>
+<td>1.239068</td>
+<td>27.266</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>prince of persia the sands of time</td>
+<td>2010</td>
+<td>rogue prince reluctantly joins forces mysterio...</td>
+<td>action</td>
+<td>mike newell</td>
+<td>jake gyllenhaal gemma arterton ben kingsley</td>
+<td>116</td>
+<td>5.0</td>
+<td>6.5</td>
+<td>3.7</td>
+<td>6.3</td>
+<td>5.375</td>
+<td>0</td>
+<td>0</td>
+<td>2.330396</td>
+<td>0.420048</td>
+<td>1.681828</td>
+<td>33.199</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>thor the dark world</td>
+<td>2013</td>
+<td>thor fights restore order cosmos… ancient race...</td>
+<td>action</td>
+<td>alan taylor</td>
+<td>chris hemsworth natalie portman tom hiddleston</td>
+<td>112</td>
+<td>5.4</td>
+<td>6.7</td>
+<td>6.7</td>
+<td>6.5</td>
+<td>6.325</td>
+<td>0</td>
+<td>0</td>
+<td>1.827172</td>
+<td>1.575075</td>
+<td>3.792842</td>
+<td>50.246</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="compute-td-idf-and-cosine-similarity-scores-for-text-data" class="level1">
+<h1>Compute TD-IDF and Cosine Similarity Scores for Text Data</h1>
+<div id="cell-8" class="cell" data-execution_count="81">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine all text features of each movie into one value of a new column</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>filtered_movies_df[<span class="st">"combined_text_features"</span>] <span class="op">=</span> filtered_movies_df[<span class="st">"Overview"</span>] <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> filtered_movies_df[<span class="st">"Genre"</span>] <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> filtered_movies_df[<span class="st">"Director"</span>] <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> filtered_movies_df[<span class="st">"Actors"</span>]</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a TF-IDF matrix to vectorize words for each movie's text features</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>vectorizer <span class="op">=</span> TfidfVectorizer(max_features <span class="op">=</span> <span class="dv">5000</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>tfidf_matrix <span class="op">=</span> vectorizer.fit_transform(filtered_movies_df[<span class="st">"combined_text_features"</span>])</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate textual cosine similarity scores for each movie</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>text_cos_similarity <span class="op">=</span> cosine_similarity(tfidf_matrix)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<section id="compute-cosine-similarity-scores-for-numerical-data" class="level2">
+<h2 class="anchored" data-anchor-id="compute-cosine-similarity-scores-for-numerical-data">Compute Cosine Similarity Scores for Numerical Data</h2>
+<div id="cell-10" class="cell" data-execution_count="82">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the df to only include numerical columns</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>numerical_features <span class="op">=</span> [<span class="st">"Runtime"</span>, <span class="st">"Metascore_Rating"</span>, <span class="st">"IMDB_Rating"</span>, <span class="st">"Rotten_Tomatoes_Rating"</span>, <span class="st">"TMDB_Rating"</span>, <span class="st">"Average_Rating"</span>, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"Oscar_Wins"</span>, <span class="st">"Return_On_Investment"</span>, <span class="st">"Budget_Normalized"</span>, <span class="st">"Revenue_Normalized"</span>, <span class="st">"Popularity"</span>]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Scale the values so that one column does not have an extreme bias towards the cosine similarity scores</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> MinMaxScaler()</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>scaled_features <span class="op">=</span> scaler.fit_transform(filtered_movies_df[numerical_features])</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate numerical cosine similarity scores for each movie</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>numerical_cos_similarity <span class="op">=</span> cosine_similarity(scaled_features)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="determine-cosine-similarity-score-weights-for-each-datatype" class="level2">
+<h2 class="anchored" data-anchor-id="determine-cosine-similarity-score-weights-for-each-datatype">Determine Cosine Similarity Score Weights for Each Datatype</h2>
+<div id="cell-12" class="cell" data-execution_count="118">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set weights for each cosine similarity scores to determine whether text or numerical data has more say in the recommendations</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>text_weight <span class="op">=</span> <span class="fl">0.25</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>numerical_weight <span class="op">=</span> <span class="fl">0.75</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a combined cosine similarity score that uses both text and numerical features</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>combined_similarity <span class="op">=</span> text_weight <span class="op">*</span> text_cos_similarity <span class="op">+</span> numerical_weight <span class="op">*</span> numerical_cos_similarity</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="recommend-10-movies-based-on-a-selected-movie" class="level1">
+<h1>Recommend 10 Movies Based On A Selected Movie</h1>
+<div id="cell-14" class="cell" data-execution_count="119">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to take in a movie and genreate 10 movies that are most similar to it</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> recommend_movies(movie_title, top_n <span class="op">=</span> <span class="dv">10</span>):</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Print the selected movie</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Selected Movie: </span><span class="sc">{</span>movie_title<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Obtain the index of the given movie</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    selected_movie_index <span class="op">=</span> filtered_movies_df[filtered_movies_df[<span class="st">"Title"</span>] <span class="op">==</span> movie_title].index[<span class="dv">0</span>]</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Obtain the similarity scores for the selected movie and place them in a list, along with each movie's index</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    sim_scores <span class="op">=</span> <span class="bu">list</span>(<span class="bu">enumerate</span>(combined_similarity[selected_movie_index]))</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Sort movies based on similarity scores</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    sim_scores <span class="op">=</span> <span class="bu">sorted</span>(sim_scores, key <span class="op">=</span> <span class="kw">lambda</span> x: x[<span class="dv">1</span>], reverse <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Filter the list down to n movies with the highest similiarty scores (excluding the first index/selected movie)</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    sim_scores <span class="op">=</span> sim_scores[<span class="dv">1</span>:<span class="dv">11</span>]</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get indices of the top-n similar movies</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    movie_indices <span class="op">=</span> [i[<span class="dv">0</span>] <span class="cf">for</span> i <span class="kw">in</span> sim_scores]</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    movie_scores <span class="op">=</span> [i[<span class="dv">1</span>].<span class="bu">round</span>(<span class="dv">2</span>) <span class="cf">for</span> i <span class="kw">in</span> sim_scores]</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(sim_scores)</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(movie_scores)</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create a new recommended movie df with selected features of the top movies by mathcing the indeces of the recommended movies</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    columns_to_keep <span class="op">=</span> [<span class="st">"IMDB_ID"</span>, <span class="st">"Title"</span>, <span class="st">"Year"</span>, <span class="st">"Age_Rating"</span>, <span class="st">"Overview"</span>, <span class="st">"Director"</span>, <span class="st">"Actors"</span>, <span class="st">"Average_Rating"</span>, <span class="st">"Revenue"</span>, <span class="st">"Budget"</span>, <span class="st">"Oscar_Wins"</span>]</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    recommendations_df <span class="op">=</span> movies_df[columns_to_keep]</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    recommendations_df <span class="op">=</span> recommendations_df.iloc[movie_indices]</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    recommendations_df[<span class="st">"Similarity_Score"</span>] <span class="op">=</span> movie_scores</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Return the top-n similar movies</span></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> recommendations_df</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>selected_movie <span class="op">=</span> <span class="st">"django unchained"</span></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>recommend_movies(selected_movie)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Selected Movie: django unchained
+
+[(410, 0.7930193332872374), (953, 0.7919311906208583), (134, 0.7843811710081798), (335, 0.7743940987385093), (696, 0.7736203445303876), (585, 0.7709760674164238), (767, 0.7692791205562898), (167, 0.7680261201420122), (581, 0.7662147129120072), (1541, 0.7651519459762084)]
+[0.79, 0.79, 0.78, 0.77, 0.77, 0.77, 0.77, 0.77, 0.77, 0.77]</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="119">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">IMDB_ID</th>
+<th data-quarto-table-cell-role="th">Title</th>
+<th data-quarto-table-cell-role="th">Year</th>
+<th data-quarto-table-cell-role="th">Age_Rating</th>
+<th data-quarto-table-cell-role="th">Overview</th>
+<th data-quarto-table-cell-role="th">Director</th>
+<th data-quarto-table-cell-role="th">Actors</th>
+<th data-quarto-table-cell-role="th">Average_Rating</th>
+<th data-quarto-table-cell-role="th">Revenue</th>
+<th data-quarto-table-cell-role="th">Budget</th>
+<th data-quarto-table-cell-role="th">Oscar_Wins</th>
+<th data-quarto-table-cell-role="th">Similarity_Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">410</td>
+<td>tt1663202</td>
+<td>the revenant</td>
+<td>2015</td>
+<td>r</td>
+<td>1820s frontiersman hugh glass sets path vengea...</td>
+<td>alejandro g. iñárritu</td>
+<td>leonardo dicaprio tom hardy will poulter</td>
+<td>7.725</td>
+<td>532950503</td>
+<td>135000000</td>
+<td>3</td>
+<td>0.79</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">953</td>
+<td>tt3460252</td>
+<td>the hateful eight</td>
+<td>2015</td>
+<td>r</td>
+<td>bounty hunters seek shelter raging blizzard ca...</td>
+<td>quentin tarantino</td>
+<td>samuel l jackson kurt russell jennifer jason l...</td>
+<td>7.450</td>
+<td>155760117</td>
+<td>44000000</td>
+<td>1</td>
+<td>0.79</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">134</td>
+<td>tt7131622</td>
+<td>once upon a time in hollywood</td>
+<td>2019</td>
+<td>r</td>
+<td>los angeles 1969 tv star rick dalton strugglin...</td>
+<td>quentin tarantino</td>
+<td>leonardo dicaprio brad pitt margot robbie</td>
+<td>7.975</td>
+<td>374300000</td>
+<td>95000000</td>
+<td>2</td>
+<td>0.78</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">335</td>
+<td>tt0993846</td>
+<td>the wolf of wall street</td>
+<td>2013</td>
+<td>r</td>
+<td>york stockbroker refuses cooperate large secur...</td>
+<td>martin scorsese</td>
+<td>leonardo dicaprio jonah hill margot robbie</td>
+<td>7.900</td>
+<td>392000000</td>
+<td>100000000</td>
+<td>0</td>
+<td>0.77</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">696</td>
+<td>tt3622592</td>
+<td>paper towns</td>
+<td>2015</td>
+<td>pg-13</td>
+<td>quentin jacobsen spent lifetime loving magnifi...</td>
+<td>jake schreier</td>
+<td>nat wolff cara delevingne austin abrams</td>
+<td>5.950</td>
+<td>85500000</td>
+<td>12000000</td>
+<td>0</td>
+<td>0.77</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">585</td>
+<td>tt0110912</td>
+<td>pulp fiction</td>
+<td>1994</td>
+<td>r</td>
+<td>burger loving hit man philosophical partner dr...</td>
+<td>quentin tarantino</td>
+<td>john travolta uma thurman samuel l jackson</td>
+<td>9.025</td>
+<td>213928762</td>
+<td>8500000</td>
+<td>1</td>
+<td>0.77</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">767</td>
+<td>tt1067583</td>
+<td>water for elephants</td>
+<td>2011</td>
+<td>pg-13</td>
+<td>captivating depression era melodrama impetuous...</td>
+<td>francis lawrence</td>
+<td>robert pattinson reese witherspoon christoph w...</td>
+<td>6.250</td>
+<td>117094902</td>
+<td>38000000</td>
+<td>0</td>
+<td>0.77</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">167</td>
+<td>tt0407887</td>
+<td>the departed</td>
+<td>2006</td>
+<td>r</td>
+<td>south bostons irish mafia police send infiltra...</td>
+<td>martin scorsese</td>
+<td>leonardo dicaprio matt damon jack nicholson</td>
+<td>8.575</td>
+<td>291465000</td>
+<td>90000000</td>
+<td>4</td>
+<td>0.77</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">581</td>
+<td>tt0378194</td>
+<td>kill bill vol 2</td>
+<td>2004</td>
+<td>r</td>
+<td>bride unwaveringly continues roaring rampage r...</td>
+<td>quentin tarantino</td>
+<td>uma thurman david carradine michael madsen</td>
+<td>8.150</td>
+<td>152159461</td>
+<td>30000000</td>
+<td>0</td>
+<td>0.77</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1541</td>
+<td>tt1375666</td>
+<td>inception</td>
+<td>2010</td>
+<td>pg-13</td>
+<td>cobb skilled thief commits corporate espionage...</td>
+<td>christopher nolan</td>
+<td>leonardo dicaprio joseph gordon levitt elliot ...</td>
+<td>8.325</td>
+<td>825532764</td>
+<td>160000000</td>
+<td>4</td>
+<td>0.77</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
 
 
 </section>
