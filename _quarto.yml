@@ -21,7 +21,7 @@ website:
       - text: Introduction
         href: ./index.qmd
       - text: Recommendation Model
-        href: ./report/recommender.qmd
+        href: ./recommender.qmd
     right:
       - icon: github
         href: https://github.com/dcorcoran7
