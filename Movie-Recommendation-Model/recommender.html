@@ -218,17 +218,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="load-the-dataset" class="level2">
 <h2 class="anchored" data-anchor-id="load-the-dataset">Load the Dataset</h2>
-<div id="cell-4" class="cell" data-execution_count="79">
+<div id="cell-4" class="cell" data-execution_count="147">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the cleaned movies dataframe</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>movies_df <span class="op">=</span> pd.read_csv(<span class="st">"./data/processed-data/movies_cleaned.csv"</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">"display.max_columns"</span>, <span class="va">None</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">'display.max_colwidth'</span>, <span class="va">None</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">'display.max_colwidth'</span>, <span class="dv">100</span>)</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>movies_df.head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="79">
+<div class="cell-output cell-output-display" data-execution_count="147">
 <div>
 
 
@@ -273,8 +273,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>1989-10-05</td>
 <td>October</td>
 <td>pg-13</td>
-<td>gritty adaption william shakespeares play engl...</td>
-<td>['france kingdom theater play based on true st...</td>
+<td>gritty adaption william shakespeares play english kings bloody conquest france</td>
+<td>['france kingdom theater play based on true story based on play or musical sword fight honor bat...</td>
 <td>war</td>
 <td>kenneth branagh</td>
 <td>['kenneth branagh derek jacobi simon shepherd']</td>
@@ -302,8 +302,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>2010-08-03</td>
 <td>August</td>
 <td>r</td>
-<td>barney ross leads band highly skilled mercenar...</td>
-<td>['rescue sniper island martial arts tattoo esc...</td>
+<td>barney ross leads band highly skilled mercenaries including knife enthusiast lee christmas marti...</td>
+<td>['rescue sniper island martial arts tattoo escape mercenary bridge church drugs blade duringcred...</td>
 <td>thriller</td>
 <td>sylvester stallone</td>
 <td>['sylvester stallone jason statham jet li']</td>
@@ -331,7 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>2019-10-02</td>
 <td>October</td>
 <td>pg-13</td>
-<td>henry brogan elite 51 year assassin whos ready...</td>
+<td>henry brogan elite 51 year assassin whos ready quits completing 72nd job plans turned upside tar...</td>
 <td>['hitman clone']</td>
 <td>thriller</td>
 <td>ang lee</td>
@@ -360,8 +360,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>2010-05-19</td>
 <td>May</td>
 <td>pg-13</td>
-<td>rogue prince reluctantly joins forces mysterio...</td>
-<td>['persia sandstorm brother against brother arm...</td>
+<td>rogue prince reluctantly joins forces mysterious princess race dark forces safeguard ancient dag...</td>
+<td>['persia sandstorm brother against brother armageddon based on video game']</td>
 <td>action</td>
 <td>mike newell</td>
 <td>['jake gyllenhaal gemma arterton ben kingsley']</td>
@@ -389,11 +389,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>2013-10-30</td>
 <td>October</td>
 <td>pg-13</td>
-<td>thor fights restore order cosmos… ancient race...</td>
-<td>['superhero based on comic hostile takeover no...</td>
+<td>thor fights restore order cosmos… ancient race led vengeful malekith returns plunge universe dar...</td>
+<td>['superhero based on comic hostile takeover norse mythology aftercreditsstinger duringcreditssti...</td>
 <td>action</td>
 <td>alan taylor</td>
-<td>['chris hemsworth natalie portman tom hiddlest...</td>
+<td>['chris hemsworth natalie portman tom hiddleston']</td>
 <td>112</td>
 <td>5.4</td>
 <td>6.7</td>
@@ -419,7 +419,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="clean-the-dataset" class="level2">
 <h2 class="anchored" data-anchor-id="clean-the-dataset">Clean the Dataset</h2>
-<div id="cell-6" class="cell" data-execution_count="140">
+<div id="cell-6" class="cell" data-execution_count="152">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove brakcets and apostrophes from the Actors column</span></span>
@@ -434,7 +434,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># PReview the new dataframe</span></span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>filtered_movies_df.head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="140">
+<div class="cell-output cell-output-display" data-execution_count="152">
 <div>
 
 
@@ -467,7 +467,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td data-quarto-table-cell-role="th">0</td>
 <td>henry v</td>
 <td>1989</td>
-<td>gritty adaption william shakespeares play engl...</td>
+<td>gritty adaption william shakespeares play english kings bloody conquest france</td>
 <td>war</td>
 <td>kenneth branagh</td>
 <td>kenneth branagh derek jacobi simon shepherd</td>
@@ -488,7 +488,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td data-quarto-table-cell-role="th">1</td>
 <td>the expendables</td>
 <td>2010</td>
-<td>barney ross leads band highly skilled mercenar...</td>
+<td>barney ross leads band highly skilled mercenaries including knife enthusiast lee christmas marti...</td>
 <td>thriller</td>
 <td>sylvester stallone</td>
 <td>sylvester stallone jason statham jet li</td>
@@ -509,7 +509,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td data-quarto-table-cell-role="th">2</td>
 <td>gemini man</td>
 <td>2019</td>
-<td>henry brogan elite 51 year assassin whos ready...</td>
+<td>henry brogan elite 51 year assassin whos ready quits completing 72nd job plans turned upside tar...</td>
 <td>thriller</td>
 <td>ang lee</td>
 <td>will smith mary elizabeth winstead clive owen</td>
@@ -530,7 +530,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td data-quarto-table-cell-role="th">3</td>
 <td>prince of persia the sands of time</td>
 <td>2010</td>
-<td>rogue prince reluctantly joins forces mysterio...</td>
+<td>rogue prince reluctantly joins forces mysterious princess race dark forces safeguard ancient dag...</td>
 <td>action</td>
 <td>mike newell</td>
 <td>jake gyllenhaal gemma arterton ben kingsley</td>
@@ -551,7 +551,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td data-quarto-table-cell-role="th">4</td>
 <td>thor the dark world</td>
 <td>2013</td>
-<td>thor fights restore order cosmos… ancient race...</td>
+<td>thor fights restore order cosmos… ancient race led vengeful malekith returns plunge universe dar...</td>
 <td>action</td>
 <td>alan taylor</td>
 <td>chris hemsworth natalie portman tom hiddleston</td>
@@ -626,7 +626,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="recommend-10-movies-based-on-a-selected-movie" class="level2">
 <h2 class="anchored" data-anchor-id="recommend-10-movies-based-on-a-selected-movie">Recommend 10 Movies Based On A Selected Movie</h2>
-<div id="cell-14" class="cell" data-execution_count="142">
+<div id="cell-14" class="cell" data-execution_count="153">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to take in a movie and genreate 10 movies that are most similar to it</span></span>
@@ -662,17 +662,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>recommendations <span class="op">=</span> recommend_movies(selected_movie)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-15" class="cell" data-execution_count="143">
+<div id="cell-15" class="cell" data-execution_count="155">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display, HTML</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>selected_movie <span class="op">=</span> <span class="st">"django unchained"</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>display(HTML(<span class="ss">f"&lt;h1 style='color: white;'&gt;Movie Recommendations For </span><span class="sc">{</span>selected_movie<span class="sc">}</span><span class="ss">&lt;/h1&gt;"</span>))</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>display(HTML(<span class="ss">f"&lt;h1 style='color: black;'&gt;Movie Recommendations For: </span><span class="sc">{</span>selected_movie<span class="sc">}</span><span class="ss">&lt;/h1&gt;"</span>))</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>display(recommendations)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<h1 style="color: white;">Movie Recommendations For django unchained</h1>
+<h1 style="color: white;">Movie Recommendations For: django unchained</h1>
 </div>
 <div class="cell-output cell-output-display">
 <div>
@@ -703,7 +703,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>the revenant</td>
 <td>2015</td>
 <td>r</td>
-<td>rape based on novel or book parent child relat...</td>
+<td>rape based on novel or book parent child relationship winter child murder mountain grizzly bear ...</td>
 <td>alejandro g. iñárritu</td>
 <td>leonardo dicaprio tom hardy will poulter</td>
 <td>7.725</td>
@@ -718,9 +718,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>the hateful eight</td>
 <td>2015</td>
 <td>r</td>
-<td>bounty hunter wyoming usa narration mountain h...</td>
+<td>bounty hunter wyoming usa narration mountain hangman whodunit stagecoach blizzard post civil war...</td>
 <td>quentin tarantino</td>
-<td>samuel l jackson kurt russell jennifer jason l...</td>
+<td>samuel l jackson kurt russell jennifer jason leigh</td>
 <td>7.450</td>
 <td>155760117</td>
 <td>44000000</td>
@@ -733,7 +733,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>once upon a time in hollywood</td>
 <td>2019</td>
 <td>r</td>
-<td>movie business male friendship cult based on t...</td>
+<td>movie business male friendship cult based on true story celebrity fame hollywood los angeles cal...</td>
 <td>quentin tarantino</td>
 <td>leonardo dicaprio brad pitt margot robbie</td>
 <td>7.975</td>
@@ -748,7 +748,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>the wolf of wall street</td>
 <td>2013</td>
 <td>r</td>
-<td>corruption based on novel or book drug addicti...</td>
+<td>corruption based on novel or book drug addiction anti hero con man fraud wall street based on tr...</td>
 <td>martin scorsese</td>
 <td>leonardo dicaprio jonah hill margot robbie</td>
 <td>7.900</td>
@@ -763,7 +763,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>paper towns</td>
 <td>2015</td>
 <td>pg-13</td>
-<td>high school friendship based on novel or book ...</td>
+<td>high school friendship based on novel or book classmate based on young adult novel</td>
 <td>jake schreier</td>
 <td>nat wolff cara delevingne austin abrams</td>
 <td>5.950</td>
@@ -778,7 +778,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>pulp fiction</td>
 <td>1994</td>
 <td>r</td>
-<td>drug dealer boxer massage stolen money briefca...</td>
+<td>drug dealer boxer massage stolen money briefcase crime boss redemption heirloom dance competitio...</td>
 <td>quentin tarantino</td>
 <td>john travolta uma thurman samuel l jackson</td>
 <td>9.025</td>
@@ -793,9 +793,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>water for elephants</td>
 <td>2011</td>
 <td>pg-13</td>
-<td>based on novel or book elephant clown great de...</td>
+<td>based on novel or book elephant clown great depression elephant trainer veterinary</td>
 <td>francis lawrence</td>
-<td>robert pattinson reese witherspoon christoph w...</td>
+<td>robert pattinson reese witherspoon christoph waltz</td>
 <td>6.250</td>
 <td>117094902</td>
 <td>38000000</td>
@@ -808,7 +808,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>the departed</td>
 <td>2006</td>
 <td>r</td>
-<td>police undercover boston massachusetts gangste...</td>
+<td>police undercover boston massachusetts gangster irish american crime boss friends remake mobster...</td>
 <td>martin scorsese</td>
 <td>leonardo dicaprio matt damon jack nicholson</td>
 <td>8.575</td>
@@ -823,7 +823,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>kill bill vol 2</td>
 <td>2004</td>
 <td>r</td>
-<td>daughter martial arts kung fu showdown right a...</td>
+<td>daughter martial arts kung fu showdown right and justice rage and hate sibling relationship swor...</td>
 <td>quentin tarantino</td>
 <td>uma thurman david carradine michael madsen</td>
 <td>8.150</td>
@@ -838,9 +838,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>inception</td>
 <td>2010</td>
 <td>pg-13</td>
-<td>rescue mission dream airplane paris france vir...</td>
+<td>rescue mission dream airplane paris france virtual reality kidnapping philosophy spy allegory ma...</td>
 <td>christopher nolan</td>
-<td>leonardo dicaprio joseph gordon levitt elliot ...</td>
+<td>leonardo dicaprio joseph gordon levitt elliot page</td>
 <td>8.325</td>
 <td>825532764</td>
 <td>160000000</td>
