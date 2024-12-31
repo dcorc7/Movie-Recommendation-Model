@@ -38,3 +38,4 @@ format:
     toc-title: Table of Contents
     css: ./stylesheets/styles.css
 
+jupyter: true
