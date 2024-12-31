@@ -37,5 +37,6 @@ format:
     toc-location: left
     toc-title: Table of Contents
     css: ./stylesheets/styles.css
+    code-tools: true
 
-jupyter: true
+jupyter: python3
