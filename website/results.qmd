@@ -6,6 +6,18 @@ This section presents example outputs from the hybrid movie recommender system. 
 
 To demonstrate the model’s recommendations, we selected several well-known films across different genres and display their top 10 most similar movies based on the combined similarity score. For each case, we provide the movie’s metadata alongside the recommended titles and their similarity rankings.
 
+
+:::{.columns}
+
+::: {.column width="30%"}
+![](./img/interstellar.webp){width=100%}
+:::
+
+::: {.column width="3%"}
+&nbsp;
+:::
+
+::: {.column width="60%"}
 # Interstellar
 
 ```{python}
@@ -17,16 +29,34 @@ interstellar_metadata = interstellar_metadata.reset_index(drop = True)
 
 interstellar_metadata.head()
 ```
+:::
+
+:::
+
+
+<br>
 
 **Top 10 Recommendations**
+
 ```{python}
 #| echo: false
 interstellar_recs = pd.read_csv("./recommendation_tables/interstellar_recommendations.csv", index_col = 0)
 interstellar_recs.head(10)
 ```
 
----
 
+
+:::{.columns}
+
+::: {.column width="20%"}
+![](./img/troy.webp){width=100%}
+:::
+
+::: {.column width="3%"}
+&nbsp;
+:::
+
+::: {.column width="60%"}
 # Troy
 
 ```{python}
@@ -35,16 +65,32 @@ interstellar_recs.head(10)
 troy_metadata = pd.read_csv("./recommendation_tables/troy_metadata.csv", index_col = 0)
 troy_metadata.head()
 ```
+:::
+
+:::
+
+<br>
 
 **Top 10 Recommendations**
+
 ```{python}
 #| echo: false
 troy_recs = pd.read_csv("./recommendation_tables/troy_recommendations.csv", index_col = 0)
 troy_recs.head(10)
 ```
 
----
 
+:::{.columns}
+
+::: {.column width="20%"}
+![](./img/troy.webp){width=100%}
+:::
+
+::: {.column width="3%"}
+&nbsp;
+:::
+
+::: {.column width="60%"}
 # Treasure Planet
 
 ```{python}
@@ -53,8 +99,14 @@ troy_recs.head(10)
 treasure_planet_metadata = pd.read_csv("./recommendation_tables/treasure_planet_metadata.csv", index_col = 0)
 treasure_planet_metadata.head()
 ```
+:::
+
+:::
+
+<br>
 
 **Top 10 Recommendations**
+
 ```{python}
 #| echo: false
 treasure_planet_recs = pd.read_csv("./recommendation_tables/treasure_planet_recommendations.csv", index_col = 0)
