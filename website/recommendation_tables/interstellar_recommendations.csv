@@ -1,11 +1,11 @@
-,Title,Year,Age_Rating,Director,Average_Rating,Similarity_Score
-1,contact,1997,pg,robert zemeckis,6.975,0.7687
-2,the dark knight rises,2012,pg-13,christopher nolan,8.175,0.7652
-3,tenet,2020,pg-13,christopher nolan,7.1,0.7639
-4,the dark knight,2008,pg-13,christopher nolan,8.825,0.7571
-5,inception,2010,pg-13,christopher nolan,8.325,0.757
-6,the huntsman winters war,2016,pg-13,cedric nicolas-troyan,4.475,0.757
-7,the martian,2015,pg-13,ridley scott,8.2,0.7567
-8,prometheus,2012,r,ridley scott,6.825,0.7565
-9,mechanic resurrection,2016,r,dennis gansel,4.65,0.7554
-10,the matrix,1999,r,"lana wachowski, lilly wachowski",8.125,0.7548
+,Title,Year,Age_Rating,Genre,Director,Average_Rating,Similarity_Score
+1,contact,1997,pg,drama,robert zemeckis,6.975,0.7687
+2,the dark knight rises,2012,pg-13,action,christopher nolan,8.175,0.7652
+3,tenet,2020,pg-13,science fiction,christopher nolan,7.1,0.7639
+4,the dark knight,2008,pg-13,crime,christopher nolan,8.825,0.7571
+5,inception,2010,pg-13,science fiction,christopher nolan,8.325,0.757
+6,the huntsman winters war,2016,pg-13,drama,cedric nicolas-troyan,4.475,0.757
+7,the martian,2015,pg-13,science fiction,ridley scott,8.2,0.7567
+8,prometheus,2012,r,science fiction,ridley scott,6.825,0.7565
+9,mechanic resurrection,2016,r,thriller,dennis gansel,4.65,0.7554
+10,the matrix,1999,r,science fiction,"lana wachowski, lilly wachowski",8.125,0.7548

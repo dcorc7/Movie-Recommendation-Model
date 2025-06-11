@@ -9,7 +9,7 @@ To demonstrate the model’s recommendations, we selected several well-known fil
 
 :::{.columns}
 
-::: {.column width="30%"}
+::: {.column width="20%"}
 ![](./img/interstellar.webp){width=100%}
 :::
 
@@ -17,7 +17,7 @@ To demonstrate the model’s recommendations, we selected several well-known fil
 &nbsp;
 :::
 
-::: {.column width="60%"}
+::: {.column width="77%"}
 # Interstellar
 
 ```{python}
@@ -33,7 +33,6 @@ interstellar_metadata.head()
 
 :::
 
-
 <br>
 
 **Top 10 Recommendations**
@@ -44,7 +43,11 @@ interstellar_recs = pd.read_csv("./recommendation_tables/interstellar_recommenda
 interstellar_recs.head(10)
 ```
 
+<br><br>
 
+---
+
+<br>
 
 :::{.columns}
 
@@ -56,7 +59,7 @@ interstellar_recs.head(10)
 &nbsp;
 :::
 
-::: {.column width="60%"}
+::: {.column width="77%"}
 # Troy
 
 ```{python}
@@ -79,18 +82,23 @@ troy_recs = pd.read_csv("./recommendation_tables/troy_recommendations.csv", inde
 troy_recs.head(10)
 ```
 
+<br><br>
+
+---
+
+<br>
 
 :::{.columns}
 
 ::: {.column width="20%"}
-![](./img/troy.webp){width=100%}
+![](./img/treasure_planet.webp){width=100%}
 :::
 
 ::: {.column width="3%"}
 &nbsp;
 :::
 
-::: {.column width="60%"}
+::: {.column width="77%"}
 # Treasure Planet
 
 ```{python}
@@ -112,5 +120,7 @@ treasure_planet_metadata.head()
 treasure_planet_recs = pd.read_csv("./recommendation_tables/treasure_planet_recommendations.csv", index_col = 0)
 treasure_planet_recs.head(10)
 ```
+
+<br><br>
 
 ---
