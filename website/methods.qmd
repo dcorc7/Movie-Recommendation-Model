@@ -28,7 +28,7 @@ Before computing similarity, all numerical attributes were scaled using Min-Max 
 
 To create a unified recommendation model, the text-based and number-based similarity scores were combined through a weighted sum:
 
-***combined_similarity = text_weight * text_cos_similarity + numerical_weight * numerical_cos_similarity***
+*combined_similarity = text_weight x text_cos_similarity + numerical_weight x numerical_cos_similarity*
 
 The default configuration assigns a greater emphasis to numerical similarity (75% numerical, 25% text), reflecting the assumption that films with similar popularity, critical acclaim, and financial success tend to be more comparable in audience appeal. However, the weights can be adjusted to prioritize textual content, such as plot themes or cast overlap, depending on use-case preferences.
 

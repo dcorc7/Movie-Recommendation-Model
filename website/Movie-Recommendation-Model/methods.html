@@ -227,7 +227,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="hybrid-similarity-scoring" class="level1">
 <h1>Hybrid Similarity Scoring</h1>
 <p>To create a unified recommendation model, the text-based and number-based similarity scores were combined through a weighted sum:</p>
-<p><strong><em>combined_similarity = text_weight </em> text_cos_similarity + numerical_weight * numerical_cos_similarity</strong>*</p>
+<p><em>combined_similarity = text_weight x text_cos_similarity + numerical_weight x numerical_cos_similarity</em></p>
 <p>The default configuration assigns a greater emphasis to numerical similarity (75% numerical, 25% text), reflecting the assumption that films with similar popularity, critical acclaim, and financial success tend to be more comparable in audience appeal. However, the weights can be adjusted to prioritize textual content, such as plot themes or cast overlap, depending on use-case preferences.</p>
 </section>
 <section id="recommendation-function" class="level1">
@@ -744,7 +744,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>To create a unified recommendation model, the text-based and number-based similarity scores were combined through a weighted sum:</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>***combined_similarity = text_weight * text_cos_similarity + numerical_weight * numerical_cos_similarity***</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>*combined_similarity = text_weight x text_cos_similarity + numerical_weight x numerical_cos_similarity*</span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>The default configuration assigns a greater emphasis to numerical similarity (75% numerical, 25% text), reflecting the assumption that films with similar popularity, critical acclaim, and financial success tend to be more comparable in audience appeal. However, the weights can be adjusted to prioritize textual content, such as plot themes or cast overlap, depending on use-case preferences.</span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
