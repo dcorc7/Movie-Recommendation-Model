@@ -102,6 +102,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="./stylesheets/styles.css">
 </head>
@@ -172,6 +201,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#text-feature-engineering" id="toc-text-feature-engineering" class="nav-link active" data-scroll-target="#text-feature-engineering">Text Feature Engineering</a></li>
   <li><a href="#numerical-feature-processing" id="toc-numerical-feature-processing" class="nav-link" data-scroll-target="#numerical-feature-processing">Numerical Feature Processing</a></li>
+  <li><a href="#cosine-similarity" id="toc-cosine-similarity" class="nav-link" data-scroll-target="#cosine-similarity">Cosine Similarity</a></li>
   <li><a href="#hybrid-similarity-scoring" id="toc-hybrid-similarity-scoring" class="nav-link" data-scroll-target="#hybrid-similarity-scoring">Hybrid Similarity Scoring</a></li>
   <li><a href="#recommendation-function" id="toc-recommendation-function" class="nav-link" data-scroll-target="#recommendation-function">Recommendation Function</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
@@ -209,7 +239,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="text-feature-engineering" class="level1">
 <h1>Text Feature Engineering</h1>
 <p>To extract meaningful patterns from the descriptive attributes of movies, a combined textual feature was created by concatenating each film’s overview, genre, director, and lead actors. This enriched string was used as input for a TF-IDF (Term Frequency–Inverse Document Frequency) vectorizer, which transforms raw text into a high-dimensional vector space.</p>
-<p>TF-IDF is effective at emphasizing terms that are unique or relevant to specific documents (in this case, movies) while down-weighting frequently occurring but less informative words. The output is a sparse matrix where each movie is represented as a TF-IDF vector. Cosine similarity is then applied to this matrix to compute pairwise textual similarity scores between all movies in the dataset.</p>
+<p>TF-IDF is effective at emphasizing terms that are unique or relevant to specific documents while down-weighting frequently occurring but less informative words. The output is a sparse matrix where each movie is represented as a TF-IDF vector. Cosine similarity is then applied to this matrix to compute pairwise textual similarity scores between all movies in the dataset.</p>
 </section>
 <section id="numerical-feature-processing" class="level1">
 <h1>Numerical Feature Processing</h1>
@@ -223,6 +253,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Popularity</li>
 </ul>
 <p>Before computing similarity, all numerical attributes were scaled using Min-Max normalization, ensuring that each feature contributes equally to the similarity calculation. A second cosine similarity matrix was generated based on these scaled numerical vectors, capturing relationships between films based on their quantitative profiles.</p>
+</section>
+<section id="cosine-similarity" class="level1">
+<h1>Cosine Similarity</h1>
+<p>Cosine similarity is the core distance metric used to quantify how similar two movies are based on either their text-based or numerical feature vectors. It measures the cosine of the angle between two non-zero vectors in a multi-dimensional space and is defined as:</p>
+<p><span class="math inline">\(\text{cosine\_similarity}(A, B) = \frac{A \cdot B}{\|A\| \cdot \|B\|}\)</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(A \cdot B\)</span> = dot product of vectors <em>A</em> and <em>B</em></p></li>
+<li><p><span class="math inline">\(\|A\|\)</span> = Euclidean norm (magnitude) of vector <em>A</em></p></li>
+<li><p><span class="math inline">\(\|B\|\)</span> = Euclidean norm (magnitude) of vector <em>B</em></p></li>
+</ul>
+<p>The resulting value ranges from 0 (no similarity) to 1 (identical direction), making it well-suited for comparing movies based on the direction of feature importance rather than absolute magnitudes. This is particularly effective in high-dimensional spaces such as those created by TF-IDF or scaled numeric vectors.</p>
+<p>Separate cosine similarity matrices were computed for:</p>
+<ul>
+<li><p>Textual features (via TF-IDF)</p></li>
+<li><p>Scaled numerical features</p></li>
+</ul>
 </section>
 <section id="hybrid-similarity-scoring" class="level1">
 <h1>Hybrid Similarity Scoring</h1>
@@ -238,7 +285,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="summary" class="level1">
 <h1>Summary</h1>
 <p>By integrating both textual analysis and quantitative metrics, this hybrid recommender captures a richer, more nuanced notion of movie similarity. Unlike genre-only systems or purely collaborative filters, this method is content-aware and operates independently of user behavior data, making it ideal for cold-start scenarios, portfolio analysis, or standalone media exploration tools.</p>
-<p>Let me know if you’d like a visual schematic of the architecture or if you want to describe the TF-IDF vectorizer and cosine similarity more mathematically for a technical audience.</p>
 
 
 <!-- -->
@@ -726,7 +772,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>To extract meaningful patterns from the descriptive attributes of movies, a combined textual feature was created by concatenating each film’s overview, genre, director, and lead actors. This enriched string was used as input for a TF-IDF (Term Frequency–Inverse Document Frequency) vectorizer, which transforms raw text into a high-dimensional vector space.</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>TF-IDF is effective at emphasizing terms that are unique or relevant to specific documents (in this case, movies) while down-weighting frequently occurring but less informative words. The output is a sparse matrix where each movie is represented as a TF-IDF vector. Cosine similarity is then applied to this matrix to compute pairwise textual similarity scores between all movies in the dataset.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>TF-IDF is effective at emphasizing terms that are unique or relevant to specific documents while down-weighting frequently occurring but less informative words. The output is a sparse matrix where each movie is represented as a TF-IDF vector. Cosine similarity is then applied to this matrix to compute pairwise textual similarity scores between all movies in the dataset.</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu"># Numerical Feature Processing</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>To complement the textual descriptors, a set of structured numerical features was selected. These include both performance and financial metrics such as:</span>
@@ -740,25 +786,45 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Before computing similarity, all numerical attributes were scaled using Min-Max normalization, ensuring that each feature contributes equally to the similarity calculation. A second cosine similarity matrix was generated based on these scaled numerical vectors, capturing relationships between films based on their quantitative profiles.</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu"># Hybrid Similarity Scoring</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu"># Cosine Similarity</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>To create a unified recommendation model, the text-based and number-based similarity scores were combined through a weighted sum:</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Cosine similarity is the core distance metric used to quantify how similar two movies are based on either their text-based or numerical feature vectors. It measures the cosine of the angle between two non-zero vectors in a multi-dimensional space and is defined as:</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>*combined_similarity = text_weight x text_cos_similarity + numerical_weight x numerical_cos_similarity*</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>$\text{cosine<span class="sc">\_</span>similarity}(A, B) = \frac{A \cdot B}{\|A\| \cdot \|B\|}$</span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>The default configuration assigns a greater emphasis to numerical similarity (75% numerical, 25% text), reflecting the assumption that films with similar popularity, critical acclaim, and financial success tend to be more comparable in audience appeal. However, the weights can be adjusted to prioritize textual content, such as plot themes or cast overlap, depending on use-case preferences.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Where:</span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu"># Recommendation Function</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>The final recommendation function takes a movie title as input, locates its index in the dataset, retrieves the corresponding row from the combined similarity matrix, and ranks all other movies based on their similarity scores. The top N most similar movies (excluding the input film) are returned as recommendations, along with key metadata fields and their corresponding similarity scores.</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>The result is a user-interpretable recommendation table that reflects both the thematic and statistical alignment between the queried movie and its most similar counterparts.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$A \cdot B$ = dot product of vectors *A* and *B*  </span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\|A\|$ = Euclidean norm (magnitude) of vector *A*  </span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\|B\|$ = Euclidean norm (magnitude) of vector *B*</span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu"># Summary</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>The resulting value ranges from 0 (no similarity) to 1 (identical direction), making it well-suited for comparing movies based on the direction of feature importance rather than absolute magnitudes. This is particularly effective in high-dimensional spaces such as those created by TF-IDF or scaled numeric vectors.</span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>By integrating both textual analysis and quantitative metrics, this hybrid recommender captures a richer, more nuanced notion of movie similarity. Unlike genre-only systems or purely collaborative filters, this method is content-aware and operates independently of user behavior data, making it ideal for cold-start scenarios, portfolio analysis, or standalone media exploration tools.</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Separate cosine similarity matrices were computed for:</span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Let me know if you'd like a visual schematic of the architecture or if you want to describe the TF-IDF vectorizer and cosine similarity more mathematically for a technical audience.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Textual features (via TF-IDF)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Scaled numerical features</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu"># Hybrid Similarity Scoring</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>To create a unified recommendation model, the text-based and number-based similarity scores were combined through a weighted sum:</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>*combined_similarity = text_weight x text_cos_similarity + numerical_weight x numerical_cos_similarity*</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>The default configuration assigns a greater emphasis to numerical similarity (75% numerical, 25% text), reflecting the assumption that films with similar popularity, critical acclaim, and financial success tend to be more comparable in audience appeal. However, the weights can be adjusted to prioritize textual content, such as plot themes or cast overlap, depending on use-case preferences.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu"># Recommendation Function</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>The final recommendation function takes a movie title as input, locates its index in the dataset, retrieves the corresponding row from the combined similarity matrix, and ranks all other movies based on their similarity scores. The top N most similar movies (excluding the input film) are returned as recommendations, along with key metadata fields and their corresponding similarity scores.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>The result is a user-interpretable recommendation table that reflects both the thematic and statistical alignment between the queried movie and its most similar counterparts.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="fu"># Summary</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>By integrating both textual analysis and quantitative metrics, this hybrid recommender captures a richer, more nuanced notion of movie similarity. Unlike genre-only systems or purely collaborative filters, this method is content-aware and operates independently of user behavior data, making it ideal for cold-start scenarios, portfolio analysis, or standalone media exploration tools.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
