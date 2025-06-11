@@ -15,11 +15,11 @@ To illustrate how both textual and numerical components inform movie similarity,
 
 ::: {.columns}
 
-::: {.column width="24%"}
+::: {.column width="20%"}
 ![](./img/pirates.webp)
 :::
 
-::: {.column width="1%"}
+::: {.column width="3%"}
 &nbsp;
 :::
 
@@ -29,17 +29,16 @@ This action-adventure film stars Johnny Depp as Captain Jack Sparrow and is char
 
 :::
 
----
 
 ## National Treasure
 
 ::: {.columns}
 
-::: {.column width="24%"}
+::: {.column width="20%"}
 ![](./img/national_treasure.webp)
 :::
 
-::: {.column width="1%"}
+::: {.column width="3%"}
 &nbsp;
 :::
 
@@ -49,17 +48,16 @@ Starring Nicolas Cage, National Treasure combines historical intrigue with actio
 
 :::
 
----
 
 ## The Mummy (1999)
 
 ::: {.columns}
 
-::: {.column width="24%"}
+::: {.column width="20%"}
 ![](./img/mummy.webp)
 :::
 
-::: {.column width="1%"}
+::: {.column width="3%"}
 &nbsp;
 :::
 

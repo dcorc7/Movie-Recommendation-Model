@@ -2,3 +2,25 @@
 title: Data Collection and Cleaning
 ---
 
+# Feature Table
+
+| Column Name                | Data Type  | Description |
+|----------------------------|-----------|-------------|
+| **Title**                  | string    | Name of the movie |
+| **Year**                   | int       | Release year of the movie |
+| **Overview**               | string    | Brief summary of the movie plot |
+| **Genre**                  | string    | Movie genre(s) (e.g., Action, Drama) |
+| **Director**               | string    | Name(s) of the movie director(s) |
+| **Actors**                 | string    | Lead actors featured in the movie |
+| **Runtime**                | int       | Total runtime of the movie in minutes |
+| **Metascore_Rating**       | float     | Metacritic score of the movie |
+| **IMDB_Rating**            | float     | IMDb rating for the movie |
+| **Rotten_Tomatoes_Rating** | float     | Rotten Tomatoes score (percentage) |
+| **TMDB_Rating**            | float     | The Movie Database (TMDB) rating |
+| **Average_Rating**         | float     | Combined average rating across platforms |
+| **Oscar_Wins**             | int       | Number of Academy Awards won |
+| **Oscar_Nominations**      | int       | Total Oscar nominations received |
+| **Budget_Normalized**      | float     | Adjusted budget value for analysis |
+| **Revenue_Normalized**     | float     | Adjusted revenue value for analysis |
+| **Return_On_Investment**   | float     | Profitability measure based on budget & revenue |
+| **Popularity**             | float     | Metric representing audience interest |
