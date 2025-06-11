@@ -10,7 +10,7 @@ project:
 
 website:
   title: David Corcoran
-  favicon: "assets/gu-logo.png"
+  favicon: "./img/gu-logo.png"
   back-to-top-navigation: true
   navbar:
     title: David Corcoran
@@ -20,8 +20,12 @@ website:
         href: https://corcoran.georgetown.domains/Homepage/
       - text: Introduction
         href: ./index.qmd
-      - text: Recommendation Model
-        href: ./recommender.ipynb
+      - text: Data Cleaning and Collection
+        href: ./data_collection.qmd
+      - text: Methods
+        href: ./methods.qmd
+      - text: Movie Recommendation Results
+        href: ./results.qmd
     right:
       - icon: github
         href: https://github.com/dcorcoran7

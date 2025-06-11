@@ -1,0 +1,60 @@
+---
+title: Move Recommendation Results
+---
+
+This section presents example outputs from the hybrid movie recommender system. The model uses a weighted combination of textual similarity (derived from movie overviews, genres, directors, and actors using TF-IDF) and numerical similarity (based on ratings, financial metrics, and popularity). The weighting used for these examples assigns 75% importance to numerical features and 25% to textual features.
+
+To demonstrate the model’s recommendations, we selected several well-known films across different genres and display their top 10 most similar movies based on the combined similarity score. For each case, we provide the movie’s metadata alongside the recommended titles and their similarity rankings.
+
+# Interstellar
+
+```{python}
+import pandas as pd 
+
+interstellar_metadata = pd.read_csv("./recommendation_tables/interstellar_metadata.csv", index_col=0)
+interstellar_metadata = interstellar_metadata.reset_index(drop = True)
+
+interstellar_metadata.head()
+```
+
+**Top 10 Recommendations**
+```{python}
+interstellar_recs = pd.read_csv("./recommendation_tables/interstellar_recommendations.csv", index_col = 0)
+interstellar_recs.head()
+```
+
+---
+
+# Troy
+
+```{python}
+import pandas as pd 
+
+troy_metadata = pd.read_csv("./recommendation_tables/troy_metadata.csv", index_col = 0)
+troy_metadata.head()
+```
+
+**Top 10 Recommendations**
+```{python}
+troy_recs = pd.read_csv("./recommendation_tables/troy_recommendations.csv", index_col = 0)
+troy_recs.head()
+```
+
+---
+
+# Treasure Planet
+
+```{python}
+import pandas as pd 
+
+treasure_planet_metadata = pd.read_csv("./recommendation_tables/treasure_planet_metadata.csv", index_col = 0)
+treasure_planet_metadata.head()
+```
+
+**Top 10 Recommendations**
+```{python}
+treasure_planet_recs = pd.read_csv("./recommendation_tables/treasure_planet_recommendations.csv", index_col = 0)
+treasure_planet_recs.head()
+```
+
+---

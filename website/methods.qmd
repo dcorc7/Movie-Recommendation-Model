@@ -1,0 +1,45 @@
+---
+title: Methods
+---
+
+This section outlines the methodological framework used to develop a hybrid content-based Movie Recommender System. The system combines natural language processing and numerical data analysis to compute similarity scores between films and generate personalized recommendations. The approach integrates text vectorization with TF-IDF, feature scaling of numerical metadata, and cosine similarity to measure relational distance between movies. The final model fuses both similarity scores using a weighted linear combination, allowing for flexibility in tuning the relative importance of textual versus numerical features.
+
+The methodology emphasizes the preprocessing of feature sets, construction of similarity matrices, and the design of the scoring function that powers the recommendation engine.
+
+# Text Feature Engineering
+
+To extract meaningful patterns from the descriptive attributes of movies, a combined textual feature was created by concatenating each film’s overview, genre, director, and lead actors. This enriched string was used as input for a TF-IDF (Term Frequency–Inverse Document Frequency) vectorizer, which transforms raw text into a high-dimensional vector space.
+
+TF-IDF is effective at emphasizing terms that are unique or relevant to specific documents (in this case, movies) while down-weighting frequently occurring but less informative words. The output is a sparse matrix where each movie is represented as a TF-IDF vector. Cosine similarity is then applied to this matrix to compute pairwise textual similarity scores between all movies in the dataset.
+
+# Numerical Feature Processing
+To complement the textual descriptors, a set of structured numerical features was selected. These include both performance and financial metrics such as:
+
+- Runtime
+- Average Ratings (IMDB, TMDB, Metascore, Rotten Tomatoes)
+- Oscar Wins
+- Budget & Revenue (normalized)
+- Return on Investment
+- Popularity
+
+Before computing similarity, all numerical attributes were scaled using Min-Max normalization, ensuring that each feature contributes equally to the similarity calculation. A second cosine similarity matrix was generated based on these scaled numerical vectors, capturing relationships between films based on their quantitative profiles.
+
+# Hybrid Similarity Scoring
+
+To create a unified recommendation model, the text-based and number-based similarity scores were combined through a weighted sum:
+
+*combined_similarity = text_weight * text_cos_similarity + numerical_weight * numerical_cos_similarity*
+
+The default configuration assigns a greater emphasis to numerical similarity (75% numerical, 25% text), reflecting the assumption that films with similar popularity, critical acclaim, and financial success tend to be more comparable in audience appeal. However, the weights can be adjusted to prioritize textual content, such as plot themes or cast overlap, depending on use-case preferences.
+
+# Recommendation Function
+
+The final recommendation function takes a movie title as input, locates its index in the dataset, retrieves the corresponding row from the combined similarity matrix, and ranks all other movies based on their similarity scores. The top N most similar movies (excluding the input film) are returned as recommendations, along with key metadata fields and their corresponding similarity scores.
+
+The result is a user-interpretable recommendation table that reflects both the thematic and statistical alignment between the queried movie and its most similar counterparts.
+
+# Summary
+
+By integrating both textual analysis and quantitative metrics, this hybrid recommender captures a richer, more nuanced notion of movie similarity. Unlike genre-only systems or purely collaborative filters, this method is content-aware and operates independently of user behavior data, making it ideal for cold-start scenarios, portfolio analysis, or standalone media exploration tools.
+
+Let me know if you'd like a visual schematic of the architecture or if you want to describe the TF-IDF vectorizer and cosine similarity more mathematically for a technical audience.

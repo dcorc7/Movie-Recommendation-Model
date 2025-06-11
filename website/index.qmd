@@ -1,0 +1,77 @@
+---
+title: Movie Recommendation Model
+---
+
+# Introduction
+
+Understanding movie similarity is a central challenge in modern recommendation systems, especially for streaming services, entertainment platforms, and media analytics. While traditional genre labels like “Action” or “Comedy” offer a general categorization, more nuanced comparisons, such as theme, tone, critical success, and cast composition, are essential for meaningful recommendations. This project aims to recommend similar movies using a hybrid content-based approach that combines both textual descriptors and numerical performance indicators. Two sets of features are used: one derived from natural language (plot overviews, genres, directors, actors) and another from structured movie metadata (ratings, budget, box office returns). These features are processed using cosine similarity metrics and combined with weighted fusion.
+
+# Movie Similarity Example
+
+To illustrate how both textual and numerical components inform movie similarity, three well-known films are showcased below:
+“Pirates of the Caribbean: The Curse of the Black Pearl”, “National Treasure”, and “The Mummy (1999)”. Each film is represented using metadata and descriptive features similar to those processed in the model, including overview text, genre, cast, critical reception, and financial performance.
+
+## Pirates of the Caribbean: The Curse of the Black Pearl
+
+::: {.columns}
+
+::: {.column width="24%"}
+![](./img/pirates.webp)
+:::
+
+::: {.column width="1%"}
+&nbsp;
+:::
+
+::: {.column width="75%"}
+This action-adventure film stars Johnny Depp as Captain Jack Sparrow and is characterized by its fantasy elements, seafaring setting, and comedic undertones. It features high production value, strong box office performance, and a genre blend of action, fantasy, and comedy. Textually, it includes terms like “cursed treasure”, “pirates”, and “swashbuckling,” while numerically, it scores well on IMDB and TMDB, with a high return on investment.
+:::
+
+:::
+
+---
+
+## National Treasure
+
+::: {.columns}
+
+::: {.column width="24%"}
+![](./img/national_treasure.webp)
+:::
+
+::: {.column width="1%"}
+&nbsp;
+:::
+
+::: {.column width="75%"}
+Starring Nicolas Cage, National Treasure combines historical intrigue with action and treasure-hunting themes. It shares textual similarities with Pirates in terms of pacing, adventure, and plot structure involving hidden clues and ancient secrets. Numerically, it also performs well with solid ratings and strong revenue, aligning closely with Pirates of the Carribean in both style and reception.
+:::
+
+:::
+
+---
+
+## The Mummy (1999)
+
+::: {.columns}
+
+::: {.column width="24%"}
+![](./img/mummy.webp)
+:::
+
+::: {.column width="1%"}
+&nbsp;
+:::
+
+::: {.column width="75%"}
+A supernatural adventure with elements of romance, horror, and mythology, The Mummy features Brendan Fraser as the protagonist in a tale that also blends action with fantasy and historical references. Similar to Pirates, it contains themes of curses, ancient lore, and large-scale set pieces. Its descriptive features (“archaeologist”, “ancient Egypt”, “undead”) align textually with those of Pirates, while its strong box office and moderate critic ratings reflect similar audience appeal.
+:::
+
+:::
+
+By comparing the narrative structure, genre alignment, and performance metrics of these three films, we see how hybrid feature modeling captures the essence of movie similarity more effectively than genre tags alone. For example, while Pirates of the Caribbean and The Lord of the Rings might both be labeled as “fantasy,” their tone, pacing, and character dynamics differ significantly. In contrast, movies like National Treasure and The Mummy, though labeled differently, often appeal to similar audiences due to shared thematic elements and viewing experiences.
+
+These role-specific feature patterns, whether textual (plot summaries) or numerical (critic scores, budget performance), make movie datasets ideal for content-based recommendation systems. The consistent structure of movie attributes allows models to learn association patterns with high precision. In this project, these characteristics are leveraged to train a hybrid model that fuses TF-IDF vectorized text features with scaled numerical metadata, resulting in highly interpretable and customizable recommendations that go beyond basic genre matching.
+
+
+The Github repository hosting all code for this project can be found [here](Movie-Recommendation-Model)

@@ -1,0 +1,11 @@
+,Title,Year,Age_Rating,Director,Average_Rating,Similarity_Score
+1,the princess and the frog,2009,g,"ron clements, john musker",7.55,0.786
+2,moana,2016,pg,"ron clements, john musker, don hall",8.2,0.7779
+3,lightyear,2022,pg,angus maclane,6.625,0.7764
+4,muppet treasure island,1996,g,brian henson,6.75,0.7658
+5,home,2015,pg,tim johnson,6.025,0.7652
+6,atlantis the lost empire,2001,pg,"gary trousdale, kirk wise",5.975,0.7614
+7,inception,2010,pg-13,christopher nolan,8.325,0.7605
+8,spirit stallion of the cimarron,2002,g,"kelly asbury, lorna cook",6.75,0.7603
+9,timecop,1994,r,peter hyams,5.225,0.7601
+10,wall·e,2008,g,andrew stanton,8.875,0.76
