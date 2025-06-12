@@ -173,8 +173,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#movie-similarity-example" id="toc-movie-similarity-example" class="nav-link" data-scroll-target="#movie-similarity-example">Movie Similarity Example</a>
   <ul class="collapse">
-  <li><a href="#pirates-of-the-caribbean-the-curse-of-the-black-pearl" id="toc-pirates-of-the-caribbean-the-curse-of-the-black-pearl" class="nav-link" data-scroll-target="#pirates-of-the-caribbean-the-curse-of-the-black-pearl">Pirates of the Caribbean: The Curse of the Black Pearl</a></li>
-  <li><a href="#national-treasure" id="toc-national-treasure" class="nav-link" data-scroll-target="#national-treasure">National Treasure</a></li>
+  <li><a href="#pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003" id="toc-pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003" class="nav-link" data-scroll-target="#pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003">Pirates of the Caribbean: The Curse of the Black Pearl (2003)</a></li>
+  <li><a href="#national-treasure-2004" id="toc-national-treasure-2004" class="nav-link" data-scroll-target="#national-treasure-2004">National Treasure (2004)</a></li>
   <li><a href="#the-mummy-1999" id="toc-the-mummy-1999" class="nav-link" data-scroll-target="#the-mummy-1999">The Mummy (1999)</a></li>
   </ul></li>
   </ul>
@@ -213,8 +213,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="movie-similarity-example" class="level1">
 <h1>Movie Similarity Example</h1>
 <p>To illustrate how both textual and numerical components inform movie similarity, three well-known films are showcased below: “Pirates of the Caribbean: The Curse of the Black Pearl”, “National Treasure”, and “The Mummy (1999)”. Each film is represented using metadata and descriptive features similar to those processed in the model, including overview text, genre, cast, critical reception, and financial performance.</p>
-<section id="pirates-of-the-caribbean-the-curse-of-the-black-pearl" class="level2">
-<h2 class="anchored" data-anchor-id="pirates-of-the-caribbean-the-curse-of-the-black-pearl">Pirates of the Caribbean: The Curse of the Black Pearl</h2>
+<section id="pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003" class="level2">
+<h2 class="anchored" data-anchor-id="pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003">Pirates of the Caribbean: The Curse of the Black Pearl (2003)</h2>
 <div class="columns">
 <div class="column" style="width:20%;">
 <p><img src="./img/pirates.webp" class="img-fluid"></p>
@@ -225,15 +225,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="national-treasure" class="level2">
-<h2 class="anchored" data-anchor-id="national-treasure">National Treasure</h2>
+<section id="national-treasure-2004" class="level2">
+<h2 class="anchored" data-anchor-id="national-treasure-2004">National Treasure (2004)</h2>
 <div class="columns">
 <div class="column" style="width:20%;">
 <p><img src="./img/national_treasure.webp" class="img-fluid"></p>
 </div><div class="column" style="width:3%;">
 <p>&nbsp;</p>
 </div><div class="column" style="width:75%;">
-<p>Starring Nicolas Cage, National Treasure combines historical intrigue with action and treasure-hunting themes. It shares textual similarities with Pirates in terms of pacing, adventure, and plot structure involving hidden clues and ancient secrets. Numerically, it also performs well with solid ratings and strong revenue, aligning closely with Pirates of the Carribean in both style and reception.</p>
+<p>Starring Nicolas Cage, National Treasure combines historical intrigue with action and treasure-hunting themes. It shares textual similarities with Pirates of the Caribbean in terms of pacing, adventure, and plot structure involving hidden clues and ancient secrets. Numerically, it also performs well with solid ratings and strong revenue, aligning closely with Pirates of the Carribean in both style and reception.</p>
 </div>
 </div>
 </section>
@@ -245,12 +245,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div><div class="column" style="width:3%;">
 <p>&nbsp;</p>
 </div><div class="column" style="width:75%;">
-<p>A supernatural adventure with elements of romance, horror, and mythology, The Mummy features Brendan Fraser as the protagonist in a tale that also blends action with fantasy and historical references. Similar to Pirates, it contains themes of curses, ancient lore, and large-scale set pieces. Its descriptive features (“archaeologist”, “ancient Egypt”, “undead”) align textually with those of Pirates, while its strong box office and moderate critic ratings reflect similar audience appeal.</p>
+<p>A supernatural adventure with elements of romance, horror, and mythology, The Mummy features Brendan Fraser as the protagonist in a tale that also blends action with fantasy and historical references. Similar to Pirates of the Caribbean, it contains themes of curses, ancient lore, and large-scale set pieces. Its descriptive features (“archaeologist”, “ancient Egypt”, “undead”) align textually with those of Pirates of the Caribbean, while its strong box office and moderate critic ratings reflect similar audience appeal.</p>
 </div>
 </div>
-<p>By comparing the narrative structure, genre alignment, and performance metrics of these three films, we see how hybrid feature modeling captures the essence of movie similarity more effectively than genre tags alone. For example, while Pirates of the Caribbean and The Lord of the Rings might both be labeled as “fantasy,” their tone, pacing, and character dynamics differ significantly. In contrast, movies like National Treasure and The Mummy, though labeled differently, often appeal to similar audiences due to shared thematic elements and viewing experiences.</p>
+<p>By comparing the narrative structure, genre alignment, and performance metrics of these three films, we see how hybrid feature modeling captures the essence of movie similarity more effectively than genre tags alone. For example, while Pirates of the Caribbean of the Caribbean and The Lord of the Rings might both be labeled as “fantasy,” their tone, pacing, and character dynamics differ significantly. In contrast, movies like National Treasure and The Mummy, though labeled differently, often appeal to similar audiences due to shared thematic elements and viewing experiences.</p>
 <p>These role-specific feature patterns, whether textual (plot summaries) or numerical (critic scores, budget performance), make movie datasets ideal for content-based recommendation systems. The consistent structure of movie attributes allows models to learn association patterns with high precision. In this project, these characteristics are leveraged to train a hybrid model that fuses TF-IDF vectorized text features with scaled numerical metadata, resulting in highly interpretable and customizable recommendations that go beyond basic genre matching.</p>
-<p>The Github repository hosting all code for this project can be found <a href="Movie-Recommendation-Model">here</a></p>
+<p>The Github repository hosting all code for this project can be found <a href="[Movie-Recommendation-Model](https://github.com/dcorc7/Movie-Recommendation-Model)">here</a></p>
 
 
 <!-- -->
@@ -740,7 +740,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>To illustrate how both textual and numerical components inform movie similarity, three well-known films are showcased below:</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>“Pirates of the Caribbean: The Curse of the Black Pearl”, “National Treasure”, and “The Mummy (1999)”. Each film is represented using metadata and descriptive features similar to those processed in the model, including overview text, genre, cast, critical reception, and financial performance.</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pirates of the Caribbean: The Curse of the Black Pearl</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pirates of the Caribbean: The Curse of the Black Pearl (2003)</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>::: {.columns}</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
@@ -759,7 +759,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## National Treasure</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## National Treasure (2004)</span></span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>::: {.columns}</span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
@@ -772,7 +772,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>::: {.column width="75%"}</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>Starring Nicolas Cage, National Treasure combines historical intrigue with action and treasure-hunting themes. It shares textual similarities with Pirates in terms of pacing, adventure, and plot structure involving hidden clues and ancient secrets. Numerically, it also performs well with solid ratings and strong revenue, aligning closely with Pirates of the Carribean in both style and reception.</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>Starring Nicolas Cage, National Treasure combines historical intrigue with action and treasure-hunting themes. It shares textual similarities with Pirates of the Caribbean in terms of pacing, adventure, and plot structure involving hidden clues and ancient secrets. Numerically, it also performs well with solid ratings and strong revenue, aligning closely with Pirates of the Carribean in both style and reception.</span>
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>:::</span>
@@ -791,17 +791,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>::: {.column width="75%"}</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>A supernatural adventure with elements of romance, horror, and mythology, The Mummy features Brendan Fraser as the protagonist in a tale that also blends action with fantasy and historical references. Similar to Pirates, it contains themes of curses, ancient lore, and large-scale set pieces. Its descriptive features (“archaeologist”, “ancient Egypt”, “undead”) align textually with those of Pirates, while its strong box office and moderate critic ratings reflect similar audience appeal.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>A supernatural adventure with elements of romance, horror, and mythology, The Mummy features Brendan Fraser as the protagonist in a tale that also blends action with fantasy and historical references. Similar to Pirates of the Caribbean, it contains themes of curses, ancient lore, and large-scale set pieces. Its descriptive features (“archaeologist”, “ancient Egypt”, “undead”) align textually with those of Pirates of the Caribbean, while its strong box office and moderate critic ratings reflect similar audience appeal.</span>
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>By comparing the narrative structure, genre alignment, and performance metrics of these three films, we see how hybrid feature modeling captures the essence of movie similarity more effectively than genre tags alone. For example, while Pirates of the Caribbean and The Lord of the Rings might both be labeled as “fantasy,” their tone, pacing, and character dynamics differ significantly. In contrast, movies like National Treasure and The Mummy, though labeled differently, often appeal to similar audiences due to shared thematic elements and viewing experiences.</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>By comparing the narrative structure, genre alignment, and performance metrics of these three films, we see how hybrid feature modeling captures the essence of movie similarity more effectively than genre tags alone. For example, while Pirates of the Caribbean of the Caribbean and The Lord of the Rings might both be labeled as “fantasy,” their tone, pacing, and character dynamics differ significantly. In contrast, movies like National Treasure and The Mummy, though labeled differently, often appeal to similar audiences due to shared thematic elements and viewing experiences.</span>
 <span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>These role-specific feature patterns, whether textual (plot summaries) or numerical (critic scores, budget performance), make movie datasets ideal for content-based recommendation systems. The consistent structure of movie attributes allows models to learn association patterns with high precision. In this project, these characteristics are leveraged to train a hybrid model that fuses TF-IDF vectorized text features with scaled numerical metadata, resulting in highly interpretable and customizable recommendations that go beyond basic genre matching.</span>
 <span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>The Github repository hosting all code for this project can be found <span class="co">[</span><span class="ot">here</span><span class="co">](Movie-Recommendation-Model)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>The Github repository hosting all code for this project can be found <span class="co">[</span><span class="ot">here</span><span class="co">]</span>(<span class="co">[</span><span class="ot">Movie-Recommendation-Model</span><span class="co">](https://github.com/dcorc7/Movie-Recommendation-Model)</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

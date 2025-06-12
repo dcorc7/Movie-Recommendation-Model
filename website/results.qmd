@@ -6,6 +6,7 @@ This section presents example outputs from the hybrid movie recommender system. 
 
 To demonstrate the model’s recommendations, we selected several well-known films across different genres and display their top 10 most similar movies based on the combined similarity score. For each case, we provide the movie’s metadata alongside the recommended titles and their similarity rankings.
 
+---
 
 :::{.columns}
 
@@ -18,7 +19,7 @@ To demonstrate the model’s recommendations, we selected several well-known fil
 :::
 
 ::: {.column width="77%"}
-# Interstellar
+# Interstellar (2024)
 
 ```{python}
 #| echo: false
@@ -60,7 +61,7 @@ interstellar_recs.head(10)
 :::
 
 ::: {.column width="77%"}
-# Troy
+# Troy (2004)
 
 ```{python}
 #| echo: false
@@ -99,7 +100,7 @@ troy_recs.head(10)
 :::
 
 ::: {.column width="77%"}
-# Treasure Planet
+# Treasure Planet (2002)
 
 ```{python}
 #| echo: false
