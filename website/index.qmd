@@ -71,5 +71,6 @@ By comparing the narrative structure, genre alignment, and performance metrics o
 
 These role-specific feature patterns, whether textual (plot summaries) or numerical (critic scores, budget performance), make movie datasets ideal for content-based recommendation systems. The consistent structure of movie attributes allows models to learn association patterns with high precision. In this project, these characteristics are leveraged to train a hybrid model that fuses TF-IDF vectorized text features with scaled numerical metadata, resulting in highly interpretable and customizable recommendations that go beyond basic genre matching.
 
+# Github Repository
 
 The Github repository hosting all code for this project can be found [here]([Movie-Recommendation-Model](https://github.com/dcorc7/Movie-Recommendation-Model))
