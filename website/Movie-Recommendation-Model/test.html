@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Movie Recommendation Model – David Corcoran</title>
+<title>test – David Corcoran</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -128,7 +128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Homepage</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Introduction</span></a>
   </li>  
   <li class="nav-item">
@@ -170,101 +170,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of Contents</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#movie-similarity-example" id="toc-movie-similarity-example" class="nav-link" data-scroll-target="#movie-similarity-example">Movie Similarity Example</a>
-  <ul class="collapse">
-  <li><a href="#pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003" id="toc-pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003" class="nav-link" data-scroll-target="#pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003">Pirates of the Caribbean: The Curse of the Black Pearl (2003)</a></li>
-  <li><a href="#national-treasure-2004" id="toc-national-treasure-2004" class="nav-link" data-scroll-target="#national-treasure-2004">National Treasure (2004)</a></li>
-  <li><a href="#the-mummy-1999" id="toc-the-mummy-1999" class="nav-link" data-scroll-target="#the-mummy-1999">The Mummy (1999)</a></li>
-  </ul></li>
-  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">Github Repository</a></li>
-  </ul>
-</nav>
+    
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Movie Recommendation Model</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"></h1></header><div class="quarto-title-block"><div class="quarto-title-tools-only"><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>Understanding movie similarity is a central challenge in modern recommendation systems, especially for streaming services, entertainment platforms, and media analytics. While traditional genre labels like “Action” or “Comedy” offer a general categorization, more nuanced comparisons, such as theme, tone, critical success, and cast composition, are essential for meaningful recommendations. This project aims to recommend similar movies using a hybrid content-based approach that combines both textual descriptors and numerical performance indicators. Two sets of features are used: one derived from natural language (plot overviews, genres, directors, actors) and another from structured movie metadata (ratings, budget, box office returns). These features are processed using cosine similarity metrics and combined with weighted fusion.</p>
-</section>
-<section id="movie-similarity-example" class="level1">
-<h1>Movie Similarity Example</h1>
-<p>To illustrate how both textual and numerical components inform movie similarity, three well-known films are showcased below: “Pirates of the Caribbean: The Curse of the Black Pearl”, “National Treasure”, and “The Mummy (1999)”. Each film is represented using metadata and descriptive features similar to those processed in the model, including overview text, genre, cast, critical reception, and financial performance.</p>
-<section id="pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003" class="level2">
-<h2 class="anchored" data-anchor-id="pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003">Pirates of the Caribbean: The Curse of the Black Pearl (2003)</h2>
-<div class="columns">
-<div class="column" style="width:20%;">
-<p><img src="./img/pirates.webp" class="img-fluid"></p>
-</div><div class="column" style="width:3%;">
-<p>&nbsp;</p>
-</div><div class="column" style="width:75%;">
-<p>This action-adventure film stars Johnny Depp as Captain Jack Sparrow and is characterized by its fantasy elements, seafaring setting, and comedic undertones. It features high production value, strong box office performance, and a genre blend of action, fantasy, and comedy. Textually, it includes terms like “cursed treasure”, “pirates”, and “swashbuckling,” while numerically, it scores well on IMDB and TMDB, with a high return on investment.</p>
-</div>
-</div>
-</section>
-<section id="national-treasure-2004" class="level2">
-<h2 class="anchored" data-anchor-id="national-treasure-2004">National Treasure (2004)</h2>
-<div class="columns">
-<div class="column" style="width:20%;">
-<p><img src="./img/national_treasure.webp" class="img-fluid"></p>
-</div><div class="column" style="width:3%;">
-<p>&nbsp;</p>
-</div><div class="column" style="width:75%;">
-<p>Starring Nicolas Cage, National Treasure combines historical intrigue with action and treasure-hunting themes. It shares textual similarities with Pirates of the Caribbean in terms of pacing, adventure, and plot structure involving hidden clues and ancient secrets. Numerically, it also performs well with solid ratings and strong revenue, aligning closely with Pirates of the Carribean in both style and reception.</p>
-</div>
-</div>
-</section>
-<section id="the-mummy-1999" class="level2">
-<h2 class="anchored" data-anchor-id="the-mummy-1999">The Mummy (1999)</h2>
-<div class="columns">
-<div class="column" style="width:20%;">
-<p><img src="./img/mummy.webp" class="img-fluid"></p>
-</div><div class="column" style="width:3%;">
-<p>&nbsp;</p>
-</div><div class="column" style="width:75%;">
-<p>A supernatural adventure with elements of romance, horror, and mythology, The Mummy features Brendan Fraser as the protagonist in a tale that also blends action with fantasy and historical references. Similar to Pirates of the Caribbean, it contains themes of curses, ancient lore, and large-scale set pieces. Its descriptive features (“archaeologist”, “ancient Egypt”, “undead”) align textually with those of Pirates of the Caribbean, while its strong box office and moderate critic ratings reflect similar audience appeal.</p>
-</div>
-</div>
-<p>By comparing the narrative structure, genre alignment, and performance metrics of these three films, we see how hybrid feature modeling captures the essence of movie similarity more effectively than genre tags alone. For example, while Pirates of the Caribbean of the Caribbean and The Lord of the Rings might both be labeled as “fantasy,” their tone, pacing, and character dynamics differ significantly. In contrast, movies like National Treasure and The Mummy, though labeled differently, often appeal to similar audiences due to shared thematic elements and viewing experiences.</p>
-<p>These role-specific feature patterns, whether textual (plot summaries) or numerical (critic scores, budget performance), make movie datasets ideal for content-based recommendation systems. The consistent structure of movie attributes allows models to learn association patterns with high precision. In this project, these characteristics are leveraged to train a hybrid model that fuses TF-IDF vectorized text features with scaled numerical metadata, resulting in highly interpretable and customizable recommendations that go beyond basic genre matching.</p>
-</section>
-</section>
-<section id="github-repository" class="level1">
-<h1>Github Repository</h1>
-<p>The Github repository hosting all code for this project can be found <a href="[Movie-Recommendation-Model](https://github.com/dcorc7/Movie-Recommendation-Model)">here</a></p>
+<h1>
+Movie List
+</h1>
+<pre id="output">Loading...</pre>
+<script>
+fetch("./movie_guesser_dfs/da_vinci_code.json")
+  .then(response => {
+    if (!response.ok) throw new Error("Failed to load JSON");
+    return response.json();
+  })
+  .then(data => {
+    document.getElementById("output").textContent = JSON.stringify(data, null, 2);
+  })
+  .catch(error => {
+    document.getElementById("output").textContent = "Error: " + error.message;
+  });
+</script>
 
 
 <!-- -->
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -735,82 +673,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Movie Recommendation Model</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Understanding movie similarity is a central challenge in modern recommendation systems, especially for streaming services, entertainment platforms, and media analytics. While traditional genre labels like “Action” or “Comedy” offer a general categorization, more nuanced comparisons, such as theme, tone, critical success, and cast composition, are essential for meaningful recommendations. This project aims to recommend similar movies using a hybrid content-based approach that combines both textual descriptors and numerical performance indicators. Two sets of features are used: one derived from natural language (plot overviews, genres, directors, actors) and another from structured movie metadata (ratings, budget, box office returns). These features are processed using cosine similarity metrics and combined with weighted fusion.</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu"># Movie Similarity Example</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>To illustrate how both textual and numerical components inform movie similarity, three well-known films are showcased below:</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>“Pirates of the Caribbean: The Curse of the Black Pearl”, “National Treasure”, and “The Mummy (1999)”. Each film is represented using metadata and descriptive features similar to those processed in the model, including overview text, genre, cast, critical reception, and financial performance.</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pirates of the Caribbean: The Curse of the Black Pearl (2003)</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>::: {.columns}</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>::: {.column width="20%"}</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="al">![](./img/pirates.webp)</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>::: {.column width="3%"}</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="dv">&amp;nbsp;</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>::: {.column width="75%"}</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>This action-adventure film stars Johnny Depp as Captain Jack Sparrow and is characterized by its fantasy elements, seafaring setting, and comedic undertones. It features high production value, strong box office performance, and a genre blend of action, fantasy, and comedy. Textually, it includes terms like “cursed treasure”, “pirates”, and “swashbuckling,” while numerically, it scores well on IMDB and TMDB, with a high return on investment.</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## National Treasure (2004)</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>::: {.columns}</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>::: {.column width="20%"}</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="al">![](./img/national_treasure.webp)</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>::: {.column width="3%"}</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="dv">&amp;nbsp;</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>::: {.column width="75%"}</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>Starring Nicolas Cage, National Treasure combines historical intrigue with action and treasure-hunting themes. It shares textual similarities with Pirates of the Caribbean in terms of pacing, adventure, and plot structure involving hidden clues and ancient secrets. Numerically, it also performs well with solid ratings and strong revenue, aligning closely with Pirates of the Carribean in both style and reception.</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Mummy (1999)</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>::: {.columns}</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>::: {.column width="20%"}</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="al">![](./img/mummy.webp)</span></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>::: {.column width="3%"}</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="dv">&amp;nbsp;</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>::: {.column width="75%"}</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>A supernatural adventure with elements of romance, horror, and mythology, The Mummy features Brendan Fraser as the protagonist in a tale that also blends action with fantasy and historical references. Similar to Pirates of the Caribbean, it contains themes of curses, ancient lore, and large-scale set pieces. Its descriptive features (“archaeologist”, “ancient Egypt”, “undead”) align textually with those of Pirates of the Caribbean, while its strong box office and moderate critic ratings reflect similar audience appeal.</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>By comparing the narrative structure, genre alignment, and performance metrics of these three films, we see how hybrid feature modeling captures the essence of movie similarity more effectively than genre tags alone. For example, while Pirates of the Caribbean of the Caribbean and The Lord of the Rings might both be labeled as “fantasy,” their tone, pacing, and character dynamics differ significantly. In contrast, movies like National Treasure and The Mummy, though labeled differently, often appeal to similar audiences due to shared thematic elements and viewing experiences.</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>These role-specific feature patterns, whether textual (plot summaries) or numerical (critic scores, budget performance), make movie datasets ideal for content-based recommendation systems. The consistent structure of movie attributes allows models to learn association patterns with high precision. In this project, these characteristics are leveraged to train a hybrid model that fuses TF-IDF vectorized text features with scaled numerical metadata, resulting in highly interpretable and customizable recommendations that go beyond basic genre matching.</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu"># Github Repository</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>The Github repository hosting all code for this project can be found <span class="co">[</span><span class="ot">here</span><span class="co">]</span>(<span class="co">[</span><span class="ot">Movie-Recommendation-Model</span><span class="co">](https://github.com/dcorc7/Movie-Recommendation-Model)</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;h1&gt;Movie List&lt;/h1&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>&lt;pre id="output"&gt;Loading...&lt;/pre&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;script&gt;</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">fetch</span>(<span class="st">"./movie_guesser_dfs/da_vinci_code.json"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">then</span>(response <span class="kw">=&gt;</span> {</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span>response<span class="op">.</span><span class="at">ok</span>) <span class="cf">throw</span> <span class="kw">new</span> <span class="bu">Error</span>(<span class="st">"Failed to load JSON"</span>)<span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">then</span>(data <span class="kw">=&gt;</span> {</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"output"</span>)<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>(data<span class="op">,</span> <span class="kw">null</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">catch</span>(error <span class="kw">=&gt;</span> {</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"output"</span>)<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">"Error: "</span> <span class="op">+</span> error<span class="op">.</span><span class="at">message</span><span class="op">;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>&lt;/script&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

@@ -26,6 +26,8 @@ website:
         href: ./methods.qmd
       - text: Movie Recommendation Results
         href: ./results.qmd
+      - text: Movie Guesser Game
+        href: ./movie_game.qmd
     right:
       - icon: github
         href: https://github.com/dcorcoran7
@@ -42,5 +44,6 @@ format:
     toc-title: Table of Contents
     css: ./stylesheets/styles.css
     code-tools: true
+    echo: false
 
 jupyter: python3
