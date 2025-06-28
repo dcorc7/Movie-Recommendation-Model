@@ -109,7 +109,12 @@
   #guessTable thead th {
   border-bottom: 1px solid #ddd;
   padding-bottom: 8px;
-}
+  }
+
+  .highlight {
+    background-color: #dff0d8;
+    font-weight: bold;
+  }
 </style>
 
 <div class="guess-container">
@@ -241,23 +246,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function renderGuesses() {
-    guessTableBody.innerHTML = "";
-    guesses
-        .sort((a, b) => a.Rank - b.Rank)
-        .forEach(guess => {
-            const tr = document.createElement("tr");
-            tr.innerHTML = `
-                <td>${guess.Rank}</td>
-                <td>${guess.Title}</td>
-                <td>${guess.Year}</td>
-                <td>${guess.Age_Rating}</td>
-                <td>${guess.Genre}</td>
-                <td>${guess.Director}</td>
-                <td>${guess.Average_Rating.toFixed(1)}</td>
-                <td>${guess.Similarity_Score.toFixed(2)}</td>
-            `;
-            guessTableBody.appendChild(tr);
-        });
+        guessTableBody.innerHTML = "";
+        guesses
+            .sort((a, b) => a.Rank - b.Rank)
+            .forEach(guess => {
+                const tr = document.createElement("tr");
+
+                if (guess.Title === targetMovie) {
+                    tr.classList.add("highlight");
+                }
+
+                tr.innerHTML = `
+                    <td>${guess.Rank}</td>
+                    <td>${guess.Title}</td>
+                    <td>${guess.Year}</td>
+                    <td>${guess.Age_Rating}</td>
+                    <td>${guess.Genre}</td>
+                    <td>${guess.Director}</td>
+                    <td>${guess.Average_Rating.toFixed(1)}</td>
+                    <td>${guess.Similarity_Score.toFixed(2)}</td>
+                `;
+                guessTableBody.appendChild(tr);
+            });
     }
 
     submitBtn.addEventListener("click", () => {
