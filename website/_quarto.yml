@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - audio
+    - movie_guesser_dfs
   render:
     - "*.qmd"
     - "*.ipynb"

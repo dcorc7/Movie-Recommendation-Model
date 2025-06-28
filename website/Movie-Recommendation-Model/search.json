@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "movie_guesser.html",
-    "href": "movie_guesser.html",
-    "title": "David Corcoran",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
     "objectID": "results.html",
     "href": "results.html",
     "title": "Move Recommendation Results",
@@ -60,13 +53,6 @@
     "href": "movie_game.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\n\n    Guess a Movie:\n    \n    Submit Guess\n\n    \n\n    \n\n\n\n\n\n\nRank\nTitle\nSimilarity Score\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "test.html",
-    "href": "test.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\nMovie List\n\nLoading...\n\n\n\n\n\n\n Back to top"
+    "text": "Code\n\n\n\n\n\n\n\n  Guess a Movie:\n  \n    \n    Submit Guess\n  \n\n  \n\n  \n\n\n\n\n\n\nRank\nTitle\nYear\nAge Rating\nGenre\nDirector\nAvg Rating\nSimilarity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   }
 ]
