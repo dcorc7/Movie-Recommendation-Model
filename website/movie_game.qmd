@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let targetMovie = null;
 
     // Load movies from the JSON file
-    fetch("./movie_guesser_dfs/oceans_eleven.json")
+    fetch("./movie_guesser_dfs/kung_fu_panda.json")
         .then(response => {
             if (response.ok) {
                 return response.json();
