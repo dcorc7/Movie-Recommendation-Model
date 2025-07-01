@@ -117,6 +117,10 @@
   }
 </style>
 
+<p style="max-width: 1000px; margin: 0 auto 16px auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1rem; color: #333;">
+  <strong>Instructions:</strong> The objective is to guess the secret movie title. Each guess you make will appear in the table below, along with a similarity score. Higher scores mean your guess is closer in attributes like plot, genre, director, actors, and rating. Use the suggestions to help you find valid movie titles and work your way toward the answer.
+</p>
+
 <div class="guess-container">
   <label for="movieSearch">Guess a Movie:</label>
   <div class="input-row">
@@ -155,14 +159,22 @@
 </table>
 
 <script>
+
 document.addEventListener("DOMContentLoaded", () => {
     console.log("🎬 Script running...");
     let guesses = [];
     let movies = [];
     let targetMovie = null;
 
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
     // Load movies from the JSON file
-    fetch("./movie_guesser_dfs/kung_fu_panda.json")
+    fetch("./movie_guesser_dfs/1917.json")
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -171,6 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         })
         .then(data => {
+            shuffleArray(data);
             movies = data;
             window.debugMovies = movies;
 

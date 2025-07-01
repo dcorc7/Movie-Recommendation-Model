@@ -53,6 +53,6 @@
     "href": "movie_game.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\n\n\n\n  Guess a Movie:\n  \n    \n    Submit Guess\n  \n\n  \n\n  \n\n\n\n\n\n\nRank\nTitle\nYear\nAge Rating\nGenre\nDirector\nAvg Rating\nSimilarity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "Code\n\n\n\n\n\n\n\n  Instructions: The objective is to guess the secret movie title. Each guess you make will appear in the table below, along with a similarity score. Higher scores mean your guess is closer in attributes like plot, genre, director, actors, and rating. Use the suggestions to help you find valid movie titles and work your way toward the answer.\n\n\n\n  Guess a Movie:\n  \n    \n    Submit Guess\n  \n\n  \n\n  \n\n\n\n\n\n\nRank\nTitle\nYear\nAge Rating\nGenre\nDirector\nAvg Rating\nSimilarity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   }
 ]

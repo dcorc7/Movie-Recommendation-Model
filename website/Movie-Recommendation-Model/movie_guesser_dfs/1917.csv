@@ -1,0 +1,1502 @@
+Rank,Title,Year,Age_Rating,Genre,Director,Average_Rating,Similarity_Score
+1,1917,2019,r,war,sam mendes,8.2,100.0
+2,dunkirk,2017,pg-13,action,christopher nolan,8.475,78.41
+3,apocalypse now,1979,r,war,francis ford coppola,8.775,76.38000000000001
+4,u 571,2000,pg-13,war,jonathan mostow,6.525,75.82
+5,american beauty,1999,r,drama,sam mendes,8.35,75.79
+6,darkest hour,2017,pg-13,drama,joe wright,7.675000000000001,75.7
+7,road to perdition,2002,r,crime,sam mendes,7.625,75.68
+8,the dirty dozen,1967,nr,war,robert aldrich,7.699999999999999,75.67
+9,miracle at st anna,2008,r,war,spike lee,4.8,75.58
+10,tora tora tora,1970,g,war,"richard fleischer, kinji fukasaku, toshio masuda",6.25,75.51
+11,dreamgirls,2006,pg-13,music,bill condon,7.2,75.51
+12,the last of the mohicans,1992,r,war,michael mann,7.85,75.17
+13,the prince of egypt,1998,pg,drama,"brenda chapman, steve hickner, simon wells",7.225,75.09
+14,master and commander the far side of the world,2003,pg-13,drama,peter weir,7.825,75.02
+15,life is beautiful,1997,pg-13,comedy,roberto benigni,7.725,74.98
+16,skyfall,2012,pg-13,thriller,sam mendes,8.075,74.97
+17,once upon a time in hollywood,2019,r,thriller,quentin tarantino,7.975,74.91
+18,moulin rouge,2001,pg-13,romance,baz luhrmann,7.324999999999999,74.88
+19,ford v ferrari,2019,pg-13,action,james mangold,8.35,74.87
+20,the bourne ultimatum,2007,pg-13,action,paul greengrass,8.275,74.79
+21,who framed roger rabbit,1988,pg,fantasy,robert zemeckis,8.275,74.78
+22,ghost,1990,pg-13,thriller,jerry zucker,6.75,74.77000000000001
+23,pocahontas,1995,g,romance,"mike gabriel, eric goldberg",6.175,74.75
+24,the departed,2006,r,drama,martin scorsese,8.575,74.67
+25,the pianist,2002,r,war,roman polanski,8.725,74.66000000000001
+26,terminator 2 judgment day,1991,r,science fiction,james cameron,8.325,74.65
+27,les misérables,2012,pg-13,drama,tom hooper,7.025,74.56
+28,the revenant,2015,r,drama,alejandro g. iñárritu,7.725,74.42999999999999
+29,the ghost and the darkness,1996,r,horror,stephen hopkins,5.8,74.38
+30,as good as it gets,1997,pg-13,drama,james l. brooks,7.6,74.37
+31,cold mountain,2003,r,romance,anthony minghella,7.1,74.35000000000001
+32,we were soldiers,2002,r,war,randall wallace,6.775,74.32
+33,born on the fourth of july,1989,r,drama,oliver stone,7.525,74.25
+34,apollo 13,1995,pg,drama,ron howard,8.1,74.22999999999999
+35,jojo rabbit,2019,pg-13,war,taika waititi,7.425,74.21
+36,platoon,1986,r,war,oliver stone,8.475,74.17
+37,three kings,1999,r,war,david o. russell,7.85,74.17
+38,elizabeth the golden age,2007,pg-13,romance,shekhar kapur,5.35,74.17
+39,evita,1996,pg,drama,alan parker,5.825,74.11999999999999
+40,storks,2016,pg,comedy,"nicholas stoller, doug sweetland",6.4,74.07000000000001
+41,the curious case of benjamin button,2008,pg-13,drama,david fincher,7.4,74.05000000000001
+42,the girl with the dragon tattoo,2011,r,mystery,david fincher,7.725,74.00999999999999
+43,the matrix,1999,r,science fiction,"lana wachowski, lilly wachowski",8.125,74.00999999999999
+44,the social network,2010,pg-13,drama,david fincher,8.575,74.0
+45,jfk,1991,r,drama,oliver stone,7.800000000000001,73.92999999999999
+46,django unchained,2012,r,drama,quentin tarantino,8.375,73.9
+47,the guns of navarone,1961,nr,war,j. lee thompson,7.8,73.89
+48,rain man,1988,r,drama,barry levinson,7.775,73.88
+49,the reader,2008,r,romance,stephen daldry,6.8,73.86
+50,the longest day,1962,pg,war,"ken annakin, andrew marton, gerd oswald",7.800000000000001,73.83
+51,men in black,1997,pg-13,science fiction,barry sonnenfeld,7.675,73.78
+52,soul,2020,pg,fantasy,"pete docter, kemp powers",8.475,73.76
+53,speed,1994,r,action,jan de bont,7.925,73.74000000000001
+54,jurassic park,1993,pg-13,science fiction,steven spielberg,8.025,73.7
+55,the grand budapest hotel,2014,r,drama,wes anderson,8.525,73.67
+56,mad max fury road,2015,r,action,george miller,8.6,73.66
+57,philadelphia,1993,pg-13,drama,jonathan demme,7.524999999999999,73.59
+58,what dreams may come,1998,pg-13,romance,vincent ward,5.95,73.58
+59,the shape of water,2017,r,fantasy,guillermo del toro,8.1,73.58
+60,the imitation game,2014,pg-13,war,morten tyldum,8.025,73.58
+61,pans labyrinth,2006,r,war,guillermo del toro,8.825,73.57000000000001
+62,indiana jones and the last crusade,1989,pg-13,action,steven spielberg,7.75,73.57000000000001
+63,spartacus,1960,pg-13,war,"stanley kubrick, anthony mann",8.375,73.54
+64,flyboys,2006,pg-13,war,tony bill,5.3,73.50999999999999
+65,glory,1989,r,war,edward zwick,8.15,73.5
+66,the great raid,2005,r,war,john dahl,5.475,73.47
+67,beauty and the beast,1991,g,fantasy,"gary trousdale, kirk wise",8.625,73.47
+68,flashdance,1983,r,drama,adrian lyne,5.075,73.46000000000001
+69,the lord of the rings the two towers,2002,pg-13,fantasy,peter jackson,8.85,73.45
+70,red tails,2012,pg-13,war,anthony hemingway,5.275,73.44000000000001
+71,coming home,1978,r,war,hal ashby,7.175,73.42
+72,city slickers,1991,pg-13,comedy,ron underwood,7.275,73.41
+73,the abyss,1989,pg-13,science fiction,james cameron,7.5,73.39
+74,cavalcade,1933,nr,war,frank lloyd,6.25,73.38
+75,stalingrad,2013,r,war,fedor bondarchuk,5.55,73.36
+76,spider man into the spider verse,2018,pg,action,"bob persichetti, peter ramsey, rodney rothman",8.8,73.36
+77,wall·e,2008,g,science fiction,andrew stanton,8.875,73.34
+78,rocky,1976,pg,drama,john g. avildsen,8.05,73.33
+79,valiant,2005,g,war,gary chapman,4.675,73.3
+80,the hunt for red october,1990,pg-13,thriller,john mctiernan,7.375,73.3
+81,bugsy,1991,r,mystery,barry levinson,7.4,73.27
+82,kellys heroes,1970,pg,war,brian g. hutton,6.95,73.27
+83,no country for old men,2007,r,thriller,"ethan coen, joel coen",8.65,73.26
+84,jerry maguire,1996,r,drama,cameron crowe,7.625,73.25
+85,erin brockovich,2000,r,drama,steven soderbergh,7.65,73.25
+86,enemy of the state,1998,r,action,tony scott,7.025,73.22999999999999
+87,aliens,1986,r,science fiction,james cameron,8.525,73.21
+88,the aviator,2004,pg-13,drama,martin scorsese,7.75,73.19
+89,inception,2010,pg-13,science fiction,christopher nolan,8.325,73.19
+90,oceans thirteen,2007,pg-13,thriller,steven soderbergh,6.7,73.18
+91,bridge of spies,2015,pg-13,thriller,steven spielberg,8.0,73.18
+92,little women,2019,pg,drama,greta gerwig,8.575,73.17
+93,the expendables 2,2012,r,thriller,simon west,6.199999999999999,73.17
+94,american sniper,2014,r,action,clint eastwood,7.275,73.17
+95,la confidential,1997,r,mystery,curtis hanson,8.75,73.15
+96,george of the jungle,1997,pg,comedy,sam weisman,5.475,73.14
+97,midway,2019,pg-13,war,roland emmerich,5.675,73.14
+98,captain corellis mandolin,2001,r,war,john madden,4.575,73.14
+99,the monuments men,2014,pg-13,war,george clooney,5.1,73.13
+100,cocoon,1985,pg-13,science fiction,ron howard,7.0,73.11999999999999
+101,moonstruck,1987,pg,romance,norman jewison,7.800000000000001,73.1
+102,west side story,2021,pg-13,romance,steven spielberg,7.925,73.03
+103,good will hunting,1997,r,drama,gus van sant,8.3,73.02
+104,star trek,2009,pg-13,science fiction,j.j. abrams,8.225,73.00999999999999
+105,batman,1989,pg-13,crime,tim burton,7.325,73.0
+106,the hateful eight,2015,r,mystery,quentin tarantino,7.45,72.99
+107,rrr,2022,nr,drama,s.s. rajamouli,8.35,72.99
+108,an officer and a gentleman,1982,r,romance,taylor hackford,7.375,72.99
+109,fiddler on the roof,1971,g,romance,norman jewison,7.625,72.98
+110,the towering inferno,1974,pg,thriller,john guillermin,6.925,72.97
+111,the blind side,2009,pg-13,drama,john lee hancock,6.8,72.96000000000001
+112,the lion king,1994,g,drama,"roger allers, rob minkoff",8.7,72.95
+113,monsters inc,2001,g,comedy,"pete docter, david silverman, lee unkrich",8.35,72.91
+114,schindlers list,1993,r,war,steven spielberg,9.225,72.89999999999999
+115,the muppets,2011,pg,music,james bobin,7.7,72.89999999999999
+116,for your eyes only,1981,pg,thriller,john glen,6.375,72.89
+117,sweeney todd the demon barber of fleet street,2007,r,drama,tim burton,7.85,72.89
+118,training day,2001,r,crime,antoine fuqua,7.4,72.87
+119,hugo,2011,pg,drama,martin scorsese,8.075000000000001,72.84
+120,1941,1979,pg,war,steven spielberg,4.725,72.84
+121,the sound of music,1965,g,music,robert wise,7.6,72.83
+122,the exorcist,1973,r,horror,william friedkin,7.925,72.81
+123,captain america the first avenger,2011,pg-13,science fiction,joe johnston,7.125,72.8
+124,outbreak,1995,r,thriller,wolfgang petersen,6.375,72.8
+125,mash,1970,r,war,robert altman,7.75,72.78999999999999
+126,babe,1995,g,drama,chris noonan,7.775,72.78999999999999
+127,the silence of the lambs,1991,r,drama,jonathan demme,8.75,72.78999999999999
+128,the outpost,2019,r,war,rod lurie,7.475,72.78
+129,operation chromite,2016,r,war,john h. lee,5.275,72.77
+130,ratatouille,2007,g,comedy,"brad bird, jan pinkava",8.775,72.76
+131,fury,2014,r,war,david ayer,7.275,72.75
+132,the constant gardener,2005,r,mystery,fernando meirelles,7.7,72.74000000000001
+133,resident evil apocalypse,2004,r,science fiction,alexander witt,4.45,72.71
+134,for whom the bell tolls,1943,g,war,sam wood,6.625,72.71
+135,valkyrie,2008,pg-13,drama,bryan singer,6.45,72.71
+136,the deer hunter,1978,r,war,michael cimino,8.325,72.68
+137,harts war,2002,r,war,gregory hoblit,5.9,72.68
+138,unstoppable,2010,pg-13,thriller,tony scott,7.25,72.66
+139,city of life and death,2009,r,war,chuan lu,8.2,72.65
+140,top gun,1986,pg,action,tony scott,6.2,72.65
+141,rambo first blood part ii,1985,r,action,george p. cosmatos,5.275,72.64
+142,allied,2016,r,thriller,robert zemeckis,6.475,72.64
+143,doctor dolittle,1967,g,music,richard fleischer,4.65,72.63
+144,a fish called wanda,1988,r,crime,"charles crichton, john cleese",8.075,72.61999999999999
+145,legally blonde 2 red white  blonde,2003,pg-13,romance,charles herman-wurmfeld,4.675,72.61
+146,thank you for your service,2017,r,war,jason hall,6.9,72.61
+147,outlaws   for greater glory,2012,r,war,dean wright,4.725,72.61
+148,the dictator,2012,r,comedy,larry charles,6.05,72.59
+149,arthur,1981,pg,romance,steve gordon,7.225,72.58
+150,lyle lyle crocodile,2022,pg,music,"josh gordon, will speck",6.324999999999999,72.58
+151,michael clayton,2007,r,crime,tony gilroy,7.8,72.56
+152,sophies choice,1982,r,war,alan j. pakula,7.25,72.56
+153,contact,1997,pg,drama,robert zemeckis,6.975,72.55
+154,witness,1985,r,crime,peter weir,7.85,72.53
+155,behind enemy lines,2001,pg-13,war,john moore,5.3500000000000005,72.53
+156,crimson tide,1995,r,thriller,tony scott,7.5,72.52
+157,lemony snickets a series of unfortunate events,2004,pg,comedy,brad silberling,6.75,72.52
+158,the children of huang shi,2008,r,war,roger spottiswoode,5.4,72.52
+159,act of valor,2012,r,war,"mike mccoy, scott waugh",4.925,72.50999999999999
+160,almost famous,2000,r,music,cameron crowe,8.375,72.50999999999999
+161,jack ryan shadow recruit,2014,pg-13,thriller,kenneth branagh,5.875,72.49
+162,thunderball,1965,pg,thriller,terence young,7.1,72.48
+163,working girl,1988,r,romance,mike nichols,7.25,72.48
+164,paul blart mall cop,2009,pg,comedy,steve carr,4.5,72.47
+165,a star is born,1976,r,music,frank pierson,5.425,72.46000000000001
+166,munich,2005,r,thriller,steven spielberg,7.45,72.46000000000001
+167,the bad guys,2022,pg,crime,pierre perifel,7.4,72.45
+168,lilo  stitch,2002,pg,comedy,"dean deblois, chris sanders",7.725,72.45
+169,fargo,1996,r,crime,"joel coen, ethan coen",8.525,72.43
+170,defiance,2008,r,war,edward zwick,6.375,72.41
+171,flags of our fathers,2006,r,war,clint eastwood,7.375,72.41
+172,zero dark thirty,2012,r,thriller,kathryn bigelow,8.25,72.39999999999999
+173,legend of the guardians the owls of gahoole,2010,pg,fantasy,zack snyder,6.05,72.38
+174,catch 22,1970,r,war,mike nichols,7.225,72.36
+175,hitch,2005,pg-13,comedy,andy tennant,6.449999999999999,72.34
+176,king kong,2005,pg-13,drama,peter jackson,7.65,72.33000000000001
+177,tropic thunder,2008,r,comedy,ben stiller,7.274999999999999,72.33000000000001
+178,the rock,1996,r,action,michael bay,6.75,72.32
+179,where eagles dare,1968,pg,war,brian g. hutton,7.45,72.32
+180,the broadway melody,1929,nr,music,harry beaumont,5.4,72.28999999999999
+181,wallace  gromit the curse of the were rabbit,2005,g,comedy,"steve box, nick park",8.2,72.28999999999999
+182,driving miss daisy,1989,pg,drama,bruce beresford,7.774999999999999,72.28
+183,vertical limit,2000,pg-13,thriller,martin campbell,5.4,72.28
+184,the messenger the story of joan of arc,1999,r,war,luc besson,5.325,72.27
+185,the dark knight,2008,pg-13,crime,christopher nolan,8.825,72.27
+186,oppenheimer,2023,r,drama,christopher nolan,8.625,72.26
+187,octopussy,1983,pg,thriller,john glen,5.825,72.25
+188,austin powers in goldmember,2002,pg-13,comedy,jay roach,5.9,72.25
+189,live free or die hard,2007,pg-13,thriller,len wiseman,7.199999999999999,72.23
+190,the patriot,2000,r,drama,roland emmerich,6.725,72.23
+191,scary movie 4,2006,pg-13,comedy,david zucker,4.5,72.22
+192,alien³,1992,r,science fiction,david fincher,5.775,72.22
+193,atonement,2007,r,romance,joe wright,8.05,72.21
+194,pinocchio,1940,g,fantasy,"norman ferguson, t. hee, wilfred jackson",8.625,72.21
+195,devotion,2022,pg-13,war,j.d. dillard,7.1,72.2
+196,how to train your dragon 2,2014,pg,fantasy,dean deblois,8.1,72.2
+197,x men first class,2011,pg-13,science fiction,matthew vaughn,7.525,72.2
+198,snakes on a plane,2006,r,crime,david r. ellis,5.9,72.2
+199,smallfoot,2018,pg,comedy,"karey kirkpatrick, jason reisig",6.75,72.19
+200,goldeneye,1995,pg-13,action,martin campbell,7.15,72.19
+201,red dawn,1984,pg-13,war,john milius,5.725,72.19
+202,get smart,2008,pg-13,thriller,peter segal,5.8,72.19
+203,monster house,2006,pg,fantasy,gil kenan,6.9,72.17
+204,rambo,2008,r,war,sylvester stallone,5.525,72.16
+205,spirit stallion of the cimarron,2002,g,romance,"kelly asbury, lorna cook",6.75,72.15
+206,little boy,2015,pg-13,war,alejandro monteverde,5.025,72.15
+207,robots,2005,pg,comedy,"chris wedge, carlos saldanha",6.425000000000001,72.14
+208,spy,2015,r,action,paul feig,7.7,72.14
+209,along came a spider,2001,r,crime,lee tamahori,5.025,72.11
+210,close encounters of the third kind,1977,pg,science fiction,steven spielberg,8.25,72.1
+211,x2,2003,pg-13,action,bryan singer,7.425,72.1
+212,camelot,1967,g,music,joshua logan,5.975,72.1
+213,friday the 13th,2009,r,horror,marcus nispel,4.325,72.09
+214,the beach,2000,r,romance,danny boyle,4.875,72.07000000000001
+215,the invisible,2007,pg-13,mystery,david s. goyer,4.5,72.07000000000001
+216,independence day,1996,pg-13,action,roland emmerich,6.65,72.06
+217,railroad tigers,2016,nr,war,sheng ding,5.125,72.06
+218,somethings gotta give,2003,pg-13,drama,nancy meyers,6.775,72.05
+219,poltergeist,2015,pg-13,horror,gil kenan,4.425000000000001,72.04
+220,backdraft,1991,r,thriller,ron howard,6.125,72.04
+221,hellboy,2004,pg-13,fantasy,guillermo del toro,7.225,72.03
+222,red 2,2013,pg-13,crime,dean parisot,5.55,72.02
+223,dc league of super pets,2022,pg,comedy,"jared stern, sam j. levine",6.775,72.02
+224,oceans eleven,2001,pg-13,thriller,steven soderbergh,7.700000000000001,72.02
+225,the break up,2006,pg-13,comedy,peyton reed,4.9,72.00999999999999
+226,tootsie,1982,pg,comedy,sydney pollack,8.125,72.0
+227,made of honor,2008,pg-13,romance,paul weiland,4.375,71.99
+228,get out,2017,r,horror,jordan peele,8.425,71.97
+229,wonder woman,2017,pg-13,fantasy,patty jenkins,7.85,71.96000000000001
+230,the adventures of tintin,2011,pg,mystery,steven spielberg,7.125,71.95
+231,dirty dancing,1987,pg-13,music,emile ardolino,7.025,71.94
+232,untraceable,2008,r,horror,gregory hoblit,4.300000000000001,71.94
+233,vicky cristina barcelona,2008,pg-13,romance,woody allen,7.225,71.93
+234,cloudy with a chance of meatballs 2,2013,pg,comedy,"cody cameron, kris pearn",6.45,71.93
+235,public enemies,2009,r,drama,michael mann,6.85,71.93
+236,brave,2012,pg,comedy,"mark andrews, brenda chapman, steve purcell",7.2,71.92
+237,die hard with a vengeance,1995,r,thriller,john mctiernan,6.65,71.92
+238,scary movie 3,2003,r,comedy,david zucker,5.0,71.92
+239,underworld evolution,2006,r,fantasy,len wiseman,4.65,71.92
+240,the village,2004,pg-13,drama,m. night shyamalan,5.45,71.91
+241,the horse whisperer,1998,pg-13,drama,robert redford,6.85,71.91
+242,the untouchables,1987,r,crime,brian de palma,7.95,71.91
+243,guy ritchies the covenant,2023,r,war,guy ritchie,7.475,71.89999999999999
+244,sisu,2022,r,war,jalmari helander,7.675000000000001,71.89
+245,bandits,2001,pg-13,crime,barry levinson,6.3,71.88
+246,gravity,2013,pg-13,drama,alfonso cuarón,8.525,71.87
+247,red cliff,2008,r,drama,john woo,7.65,71.87
+248,abominable,2019,pg,comedy,"jill culton, todd wilderman",7.225,71.87
+249,wall street money never sleeps,2010,pg-13,crime,oliver stone,5.9,71.87
+250,heaven can wait,1978,pg,fantasy,"warren beatty, buck henry",7.324999999999999,71.87
+251,enemy at the gates,2001,r,war,jean-jacques annaud,6.4,71.87
+252,la la land,2016,pg-13,music,damien chazelle,8.6,71.87
+253,panic room,2002,r,thriller,david fincher,6.925,71.87
+254,last action hero,1993,pg-13,fantasy,john mctiernan,5.4,71.86
+255,pitch perfect 3,2017,pg-13,comedy,trish sie,4.8,71.86
+256,the empire strikes back,1980,pg,action,irvin kershner,8.7,71.86
+257,spy kids 3 d game over,2003,pg,science fiction,robert rodriguez,4.925,71.86
+258,bridget jones the edge of reason,2004,r,romance,beeban kidron,4.800000000000001,71.86
+259,reign of fire,2002,pg-13,fantasy,rob bowman,5.1,71.85000000000001
+260,sgt stubby an american hero,2018,pg,war,richard lanni,7.35,71.85000000000001
+261,free guy,2021,pg-13,science fiction,shawn levy,7.2,71.85000000000001
+262,toy story 3,2010,g,comedy,lee unkrich,8.775,71.85000000000001
+263,rules of engagement,2000,r,war,william friedkin,5.2,71.85000000000001
+264,a view to a kill,1985,pg,thriller,john glen,5.025,71.84
+265,us marshals,1998,pg-13,crime,stuart baird,5.2,71.84
+266,rambo iii,1988,r,war,peter macdonald,4.925,71.84
+267,galaxy quest,1999,pg,science fiction,dean parisot,7.625,71.84
+268,the fifth element,1997,pg-13,science fiction,luc besson,6.875,71.83
+269,the karate kid part ii,1986,pg,romance,john g. avildsen,5.65,71.83
+270,spice world,1997,pg,music,bob spiers,3.8,71.83
+271,angel has fallen,2019,r,thriller,ric roman waugh,5.325,71.83
+272,mr poppers penguins,2011,pg,comedy,mark waters,5.525,71.83
+273,the siege,1998,r,thriller,edward zwick,5.6,71.82
+274,logan,2017,r,drama,james mangold,8.225,71.81
+275,ace ventura when nature calls,1995,pg-13,comedy,steve oedekerk,4.825,71.81
+276,casper,1995,pg,comedy,brad silberling,5.65,71.81
+277,red,2010,pg-13,comedy,robert schwentke,6.725,71.81
+278,along came polly,2004,pg-13,romance,john hamburg,4.775,71.8
+279,forrest gump,1994,pg-13,romance,robert zemeckis,8.25,71.8
+280,birds of prey and the fantabulous emancipation of one harley quinn,2020,r,crime,cathy yan,6.725,71.8
+281,nights in rodanthe,2008,pg-13,romance,george c. wolfe,4.8,71.8
+282,queen of the damned,2002,r,horror,michael rymer,4.025,71.8
+283,dragon blade,2015,r,fantasy,daniel lee,5.0,71.8
+284,species,1995,r,horror,roger donaldson,5.25,71.78999999999999
+285,special forces,2011,r,war,stéphane rybojad,4.375,71.78999999999999
+286,days of thunder,1990,pg-13,drama,tony scott,5.575,71.78999999999999
+287,the quiet american,2002,r,war,phillip noyce,7.625,71.78999999999999
+288,far and away,1992,pg-13,romance,ron howard,5.825,71.78999999999999
+289,purple rain,1984,r,music,albert magnoli,6.475,71.78
+290,man on fire,2004,r,thriller,tony scott,5.925,71.78
+291,saw 3d,2010,r,crime,kevin greutert,3.7,71.78
+292,midnight in paris,2011,pg-13,romance,woody allen,8.125,71.78
+293,sherlock holmes,2009,pg-13,action,guy ritchie,6.85,71.78
+294,war for the planet of the apes,2017,pg-13,war,matt reeves,8.05,71.77
+295,big hero 6,2014,pg,comedy,"don hall, chris williams",7.975,71.77
+296,love story,1970,pg,romance,arthur hiller,7.1,71.77
+297,green zone,2010,r,war,paul greengrass,6.225,71.77
+298,the sum of all fears,2002,pg-13,drama,phil alden robinson,5.8,71.77
+299,jumanji,1995,pg,fantasy,joe johnston,5.85,71.77
+300,the unborn,2009,pg-13,mystery,david s. goyer,3.475,71.75
+301,patton,1970,pg,war,franklin j. schaffner,8.3,71.75
+302,life,2017,r,mystery,daniel espinosa,6.3,71.74000000000001
+303,ice age,2002,pg,comedy,"chris wedge, carlos saldanha",7.175,71.74000000000001
+304,the hunchback of notre dame,1996,g,drama,"gary trousdale, kirk wise",7.175,71.73
+305,the hitchhikers guide to the galaxy,2005,pg,science fiction,garth jennings,6.425,71.73
+306,nanny mcphee and the big bang,2010,pg,fantasy,susanna white,6.275,71.73
+307,intolerable cruelty,2003,pg-13,romance,"joel coen, ethan coen",6.725,71.72
+308,the red violin,1998,r,music,françois girard,7.0,71.72
+309,eat pray love,2010,pg-13,romance,ryan murphy,5.125,71.71
+310,confessions of a shopaholic,2009,pg,romance,p.j. hogan,4.675,71.71
+311,hellboy ii the golden army,2008,pg-13,fantasy,guillermo del toro,7.55,71.71
+312,madeas witness protection,2012,pg-13,crime,tyler perry,4.3,71.71
+313,shadow,2018,pg-13,war,yimou zhang,7.8,71.7
+314,book of shadows blair witch 2,2000,r,horror,joe berlinger,2.8,71.69
+315,a perfect murder,1998,r,crime,andrew davis,5.9,71.69
+316,88 minutes,2007,r,mystery,jon avnet,3.475,71.69
+317,the predator,2018,r,science fiction,shane black,4.775,71.67999999999999
+318,paradise road,1997,r,war,bruce beresford,5.575,71.67999999999999
+319,the princess diaries 2 royal engagement,2004,g,romance,garry marshall,4.85,71.67999999999999
+320,red sparrow,2018,r,thriller,francis lawrence,5.725,71.67999999999999
+321,underworld awakening,2012,r,horror,"måns mårlind, björn stein",4.75,71.67999999999999
+322,ticket to paradise,2022,pg-13,drama,ol parker,5.825,71.67
+323,2 fast 2 furious,2003,pg-13,action,john singleton,4.975,71.67
+324,the roommate,2011,pg-13,horror,christian e. christiansen,3.2,71.67
+325,johnny english reborn,2011,pg,crime,oliver parker,5.25,71.67
+326,the scorpion king,2002,pg-13,drama,chuck russell,4.9,71.67
+327,the godfather,1972,r,crime,francis ford coppola,9.4,71.66
+328,rv,2006,pg,romance,barry sonnenfeld,4.275,71.66
+329,the spiderwick chronicles,2008,pg,fantasy,mark waters,6.85,71.65
+330,the lucky one,2012,pg-13,romance,scott hicks,4.875,71.64
+331,joe dirt,2001,pg-13,mystery,dennie gordon,3.625,71.63000000000001
+332,hannibal rising,2007,r,horror,peter webber,4.35,71.63000000000001
+333,beverly hills chihuahua,2008,pg,romance,raja gosnell,4.375,71.63000000000001
+334,austin powers the spy who shagged me,1999,pg-13,crime,jay roach,6.05,71.63000000000001
+335,flightplan,2005,pg-13,drama,robert schwentke,5.45,71.63000000000001
+336,matchstick men,2003,pg-13,crime,ridley scott,7.15,71.61999999999999
+337,over the hedge,2006,pg,comedy,"tim johnson, karey kirkpatrick",6.875,71.61
+338,the tin drum,1979,r,war,volker schlöndorff,7.25,71.61
+339,gothika,2003,r,thriller,mathieu kassovitz,4.3,71.61
+340,cliffhanger,1993,r,action,renny harlin,6.45,71.61
+341,ransom,1996,r,action,ron howard,6.7,71.61
+342,wanted,2008,r,action,timur bekmambetov,6.675,71.61
+343,minority report,2002,pg-13,thriller,steven spielberg,7.95,71.61
+344,always,1989,pg,romance,steven spielberg,6.175,71.6
+345,elvis,2022,pg-13,drama,baz luhrmann,7.225,71.6
+346,the possession,2012,pg-13,horror,ole bornedal,5.075,71.6
+347,air force one,1997,r,action,wolfgang petersen,6.75,71.59
+348,the spongebob movie sponge out of water,2015,pg,fantasy,"paul tibbitt, mike mitchell",6.574999999999999,71.59
+349,youve got mail,1998,pg,romance,nora ephron,6.525,71.59
+350,what to expect when youre expecting,2012,pg-13,romance,kirk jones,4.525,71.59
+351,unbreakable,2000,pg-13,thriller,m. night shyamalan,6.9,71.58
+352,home alone,1990,pg,comedy,chris columbus,7.0,71.58
+353,elysium,2013,r,action,neill blomkamp,6.4,71.58
+354,the manchurian candidate,2004,r,mystery,jonathan demme,7.15,71.58
+355,seven pounds,2008,pg-13,drama,gabriele muccino,5.35,71.58
+356,final destination 3,2006,r,mystery,james wong,5.074999999999999,71.58
+357,american reunion,2012,r,comedy,"jon hurwitz, hayden schlossberg",5.6,71.58
+358,due date,2010,r,comedy,todd phillips,5.475,71.57
+359,cheaper by the dozen,2003,pg,comedy,shawn levy,4.8,71.57
+360,the other woman,2014,pg-13,comedy,nick cassavetes,4.75,71.57
+361,journey to the west the demons strike back,2017,pg-13,fantasy,hark tsui,5.875,71.57
+362,mary shelleys frankenstein,1994,r,romance,kenneth branagh,5.45,71.57
+363,miss congeniality,2000,pg-13,comedy,donald petrie,5.3,71.57
+364,inside out,2015,pg,comedy,"pete docter, ronnie del carmen",8.8,71.57
+365,shazam,2019,pg-13,comedy,david f. sandberg,7.525,71.57
+366,resident evil extinction,2007,r,science fiction,russell mulcahy,4.75,71.57
+367,waynes world 2,1993,pg-13,music,stephen surjik,6.1,71.56
+368,the lego batman movie,2017,pg,action,chris mckay,7.725,71.56
+369,identity thief,2013,r,crime,seth gordon,4.275,71.56
+370,entrapment,1999,pg-13,mystery,jon amiel,5.475,71.56
+371,the men who stare at goats,2009,r,war,grant heslov,5.675,71.55
+372,hide and seek,2005,r,horror,john polson,4.225,71.55
+373,stargate,1994,pg-13,science fiction,roland emmerich,5.875,71.55
+374,knowing,2009,pg-13,mystery,alex proyas,5.0,71.55
+375,beetlejuice,1988,pg,fantasy,tim burton,7.550000000000001,71.55
+376,american gangster,2007,r,drama,ridley scott,7.775,71.55
+377,alien covenant,2017,r,thriller,ridley scott,6.4,71.55
+378,sky captain and the world of tomorrow,2004,pg,mystery,kerry conran,6.375,71.54
+379,smurfs the lost village,2017,pg,comedy,kelly asbury,5.1,71.54
+380,father of the bride,1991,pg,romance,charles shyer,6.3,71.54
+381,i am number four,2011,pg-13,science fiction,d.j. caruso,4.775,71.54
+382,the final destination,2009,r,horror,david r. ellis,4.125,71.54
+383,harlem nights,1989,r,crime,eddie murphy,4.125,71.53
+384,starsky  hutch,2004,pg-13,crime,todd phillips,5.925,71.53
+385,a bugs life,1998,g,comedy,"john lasseter, andrew stanton",7.775,71.53
+386,teenage mutant ninja turtles mutant mayhem,2023,pg,science fiction,"jeff rowe, kyler spears",7.825,71.53
+387,star wars,1977,pg,action,george lucas,8.775,71.53
+388,paddington,2014,pg,comedy,paul king,7.949999999999999,71.53
+389,the bourne supremacy,2004,pg-13,drama,paul greengrass,7.625,71.53
+390,deep blue sea,1999,r,science fiction,renny harlin,5.825,71.53
+391,life as we know it,2010,pg-13,romance,greg berlanti,5.075,71.53
+392,marley  me,2008,pg,comedy,david frankel,6.475,71.52
+393,star trek generations,1994,pg,thriller,david carson,5.825,71.52
+394,the mask of zorro,1998,pg-13,action,martin campbell,7.025,71.52
+395,the forgotten,2004,pg-13,thriller,joseph ruben,4.775,71.52
+396,signs,2002,pg-13,thriller,m. night shyamalan,6.725,71.50999999999999
+397,the 5th wave,2016,pg-13,science fiction,j blakeson,4.025,71.50999999999999
+398,into the storm,2014,pg-13,thriller,steven quale,4.6,71.50999999999999
+399,nine months,1995,pg-13,romance,chris columbus,4.65,71.50999999999999
+400,how to lose a guy in 10 days,2003,pg-13,romance,donald petrie,5.5,71.50999999999999
+401,the peanuts movie,2015,g,comedy,steve martino,7.324999999999999,71.5
+402,disclosure,1994,r,crime,barry levinson,6.05,71.5
+403,overlord,2018,r,war,julius avery,6.875,71.5
+404,herbie fully loaded,2005,g,romance,angela robinson,4.85,71.5
+405,max payne,2008,pg-13,crime,john moore,3.85,71.5
+406,shall we dance,2004,pg-13,romance,peter chelsom,5.5,71.49
+407,guess who,2005,pg-13,romance,kevin rodney sullivan,5.225,71.49
+408,blackkklansman,2018,r,crime,spike lee,8.225,71.49
+409,the mexican,2001,r,crime,gore verbinski,5.425,71.49
+410,underworld,2003,r,fantasy,len wiseman,5.275,71.49
+411,vantage point,2008,pg-13,drama,pete travis,5.1,71.49
+412,the girl on the train,2016,r,crime,tate taylor,5.525,71.49
+413,maze runner the death cure,2018,pg-13,science fiction,wes ball,5.675,71.49
+414,21,2008,pg-13,drama,robert luketic,5.475,71.49
+415,riddick,2013,r,science fiction,david twohy,5.85,71.48
+416,space jam,1996,pg,science fiction,joe pytka,5.9,71.48
+417,henry v,1989,pg-13,war,kenneth branagh,8.200000000000001,71.48
+418,a quiet place part ii,2020,pg-13,horror,john krasinski,7.725,71.48
+419,sinister 2,2015,r,horror,ciarán foy,3.95,71.48
+420,analyze this,1999,r,comedy,harold ramis,6.55,71.48
+421,what happens in vegas,2008,pg-13,comedy,tom vaughan,4.574999999999999,71.47
+422,daddys home,2015,pg-13,comedy,sean anders,4.95,71.47
+423,total recall,1990,r,action,paul verhoeven,7.25,71.47
+424,cloudy with a chance of meatballs,2009,pg,comedy,"phil lord, christopher miller",7.15,71.47
+425,vanilla sky,2001,r,thriller,cameron crowe,5.6,71.47
+426,x men,2000,pg-13,science fiction,bryan singer,7.225,71.47
+427,a few good men,1992,r,drama,rob reiner,7.45,71.47
+428,the santa clause 2,2002,g,fantasy,michael lembeck,5.5,71.46000000000001
+429,yours mine  ours,2005,pg,romance,raja gosnell,4.025,71.46000000000001
+430,failure to launch,2006,pg-13,romance,tom dey,4.625,71.46000000000001
+431,batman returns,1992,pg-13,fantasy,tim burton,7.25,71.46000000000001
+432,kingsman the secret service,2014,r,comedy,matthew vaughn,7.2,71.46000000000001
+433,the score,2001,r,mystery,frank oz,7.0,71.46000000000001
+434,the bourne identity,2002,pg-13,action,doug liman,7.625,71.46000000000001
+435,in time,2011,pg-13,thriller,andrew niccol,5.65,71.45
+436,paranormal activity the ghost dimension,2015,r,horror,gregory plotkin,3.6,71.45
+437,the wolf of wall street,2013,r,drama,martin scorsese,7.9,71.45
+438,kiss the girls,1997,r,mystery,gary fleder,5.275,71.45
+439,maverick,1994,pg,drama,richard donner,6.725,71.45
+440,a hidden life,2019,pg-13,war,terrence malick,7.625,71.45
+441,gangster squad,2013,r,crime,ruben fleischer,5.025,71.44
+442,dear john,2010,pg-13,war,lasse hallström,5.05,71.44
+443,the croods a new age,2020,pg,comedy,joel crawford,6.9,71.44
+444,sideways,2004,r,romance,alexander payne,8.425,71.44
+445,the ring two,2005,pg-13,thriller,hideo nakata,4.4,71.44
+446,sliver,1993,r,thriller,phillip noyce,4.05,71.44
+447,ai artificial intelligence,2001,pg-13,science fiction,steven spielberg,7.075,71.44
+448,lord of war,2005,r,crime,andrew niccol,6.825,71.43
+449,50 first dates,2004,pg-13,comedy,peter segal,5.75,71.43
+450,event horizon,1997,r,mystery,paul w.s. anderson,5.025,71.43
+451,its complicated,2009,r,romance,nancy meyers,6.125,71.43
+452,black panther,2018,pg-13,science fiction,ryan coogler,8.275,71.43
+453,the generals daughter,1999,r,thriller,simon west,4.9,71.43
+454,spider man 2,2004,pg-13,science fiction,sam raimi,8.1,71.43
+455,planes,2013,pg,comedy,klay hall,4.525,71.43
+456,big mommas house,2000,pg-13,comedy,raja gosnell,4.325,71.43
+457,raya and the last dragon,2021,pg,fantasy,"don hall, carlos lópez estrada, paul briggs",7.95,71.41999999999999
+458,race to witch mountain,2009,pg,science fiction,andy fickman,5.225,71.41999999999999
+459,coal miners daughter,1980,pg,music,michael apted,8.0,71.41999999999999
+460,12 strong,2018,r,war,nicolai fuglsig,5.8,71.41999999999999
+461,epic,2013,pg,fantasy,chris wedge,6.2,71.41
+462,law abiding citizen,2009,r,crime,f. gary gray,5.2,71.41
+463,non stop,2014,pg-13,mystery,jaume collet-serra,6.375,71.41
+464,the phantom of the opera,2004,pg-13,drama,joel schumacher,5.45,71.41
+465,eternal sunshine of the spotless mind,2004,r,romance,michel gondry,8.625,71.41
+466,toy story 2,1999,g,comedy,"john lasseter, ash brannon, lee unkrich",8.575,71.41
+467,the godfather part ii,1974,r,crime,francis ford coppola,9.05,71.41
+468,the family man,2000,pg-13,fantasy,brett ratner,5.775,71.41
+469,down to earth,2001,pg-13,romance,"chris weitz, paul weitz",4.0,71.41
+470,the karate kid,2010,pg,action,harald zwart,6.375,71.41
+471,murder on the orient express,2017,pg-13,crime,kenneth branagh,6.1,71.41
+472,1911,2011,r,war,"tao hai, wei li, guoqiang tang",3.975,71.41
+473,taxi,2004,pg-13,crime,tim story,3.45,71.41
+474,oceans eight,2018,pg-13,crime,gary ross,6.575,71.41
+475,scream 3,2000,r,horror,wes craven,5.35,71.39999999999999
+476,pokémon the first movie,1998,g,fantasy,kunihiko yuyama,4.575,71.39999999999999
+477,broken arrow,1996,r,thriller,john woo,5.875,71.39999999999999
+478,hannah montana the movie,2009,g,romance,peter chelsom,5.1,71.39
+479,boomerang,1992,r,romance,reginald hudlin,5.175,71.39
+480,into the woods,2014,pg,comedy,rob marshall,6.4,71.39
+481,kingsman the golden circle,2017,r,action,matthew vaughn,5.8,71.38
+482,sully,2016,pg-13,drama,clint eastwood,7.625,71.38
+483,mirrors,2008,r,horror,alexandre aja,4.35,71.38
+484,the godfather part iii,1990,r,thriller,francis ford coppola,6.925,71.37
+485,police academy 4 citizens on patrol,1987,pg,crime,jim drake,3.275,71.37
+486,how to train your dragon,2010,pg,fantasy,"dean deblois, chris sanders",8.325,71.37
+487,spawn,1997,pg-13,horror,mark a.z. dippé,3.925,71.37
+488,conspiracy theory,1997,r,thriller,richard donner,5.975,71.37
+489,stigmata,1999,r,horror,rupert wainwright,4.375,71.37
+490,dragonheart,1996,pg-13,fantasy,rob cohen,5.7,71.37
+491,bride wars,2009,pg,romance,gary winick,3.775,71.36
+492,2 guns,2013,r,crime,baltasar kormákur,6.275,71.36
+493,stepmom,1998,pg-13,romance,chris columbus,6.025,71.36
+494,olympus has fallen,2013,r,thriller,antoine fuqua,5.5,71.36
+495,charlottes web,2006,g,fantasy,gary winick,6.8,71.36
+496,the crying game,1992,r,crime,neil jordan,8.125,71.36
+497,the rite,2011,pg-13,horror,mikael håfström,4.525,71.36
+498,monster,2003,r,crime,patty jenkins,7.5,71.36
+499,anaconda,1997,pg-13,horror,luis llosa,4.475,71.36
+500,ghostbusters ii,1989,pg,fantasy,ivan reitman,6.074999999999999,71.36
+501,the woman in black,2012,pg-13,thriller,james watkins,6.325,71.35000000000001
+502,superman,1978,pg,action,richard donner,8.0,71.35000000000001
+503,big daddy,1999,pg-13,comedy,dennis dugan,5.225,71.35000000000001
+504,the flowers of war,2011,r,war,yimou zhang,5.925,71.35000000000001
+505,clear and present danger,1994,pg-13,action,phillip noyce,7.25,71.35000000000001
+506,six days seven nights,1998,pg-13,romance,ivan reitman,5.225,71.34
+507,the angry birds movie 2,2019,pg,fantasy,"thurop van orman, john rice",6.675,71.34
+508,the house with a clock in its walls,2018,pg,fantasy,eli roth,6.125,71.34
+509,shallow hal,2001,pg-13,romance,"bobby farrelly, peter farrelly",5.475,71.34
+510,nims island,2008,pg,fantasy,"jennifer flackett, mark levin",5.675,71.34
+511,paycheck,2003,pg-13,thriller,john woo,4.875,71.34
+512,the foreigner,2017,r,thriller,martin campbell,6.525,71.34
+513,star trek the motion picture,1979,g,mystery,robert wise,5.775,71.33
+514,collateral,2004,r,drama,michael mann,7.6,71.33
+515,meet the parents,2000,pg-13,comedy,jay roach,7.375,71.33
+516,the pursuit of happyness,2006,pg-13,drama,gabriele muccino,7.25,71.33
+517,the italian job,2003,pg-13,crime,f. gary gray,6.975,71.33
+518,the secret life of walter mitty,2013,pg,comedy,ben stiller,6.275,71.32
+519,john q,2002,pg-13,crime,nick cassavetes,4.949999999999999,71.32
+520,the heartbreak kid,2007,r,romance,"bobby farrelly, peter farrelly",4.75,71.32
+521,everest,2015,pg-13,drama,baltasar kormákur,6.9,71.32
+522,you me and dupree,2006,pg-13,romance,"anthony russo, joe russo",4.449999999999999,71.31
+523,national treasure,2004,pg,action,jon turteltaub,5.525,71.31
+524,seabiscuit,2003,pg-13,drama,gary ross,7.325,71.31
+525,superman iii,1983,pg,science fiction,richard lester,4.45,71.31
+526,immortals,2011,r,drama,tarsem singh,5.375,71.31
+527,hercules,2014,pg-13,action,brett ratner,5.575,71.31
+528,gallipoli,1981,pg,war,peter weir,7.525,71.31
+529,burlesque,2010,pg-13,romance,steve antin,5.5,71.31
+530,uglydolls,2019,pg,music,kelly asbury,4.65,71.31
+531,dangerous minds,1995,r,drama,john n. smith,5.4,71.31
+532,resident evil afterlife,2010,r,action,paul w.s. anderson,4.425,71.3
+533,one missed call,2008,pg-13,mystery,eric valette,2.95,71.3
+534,escape to victory,1981,pg-13,war,john huston,6.55,71.3
+535,bullet train,2022,r,thriller,david leitch,6.225,71.3
+536,army of the dead,2021,r,horror,zack snyder,6.1,71.3
+537,just like heaven,2005,pg-13,romance,mark waters,5.95,71.3
+538,mars attacks,1996,pg-13,science fiction,tim burton,5.875,71.3
+539,the princess and the frog,2009,g,fantasy,"ron clements, john musker",7.55,71.3
+540,rocky iv,1985,pg-13,drama,sylvester stallone,5.475,71.28999999999999
+541,the martian,2015,pg-13,science fiction,ridley scott,8.2,71.28999999999999
+542,the book of eli,2010,r,thriller,"albert hughes, allen hughes",5.9,71.28999999999999
+543,mona lisa smile,2003,pg-13,romance,mike newell,5.325,71.28999999999999
+544,inferno,2016,pg-13,mystery,ron howard,4.7,71.28
+545,k 19 the widowmaker,2002,pg-13,mystery,kathryn bigelow,6.25,71.28
+546,tinker tailor soldier spy,2011,r,mystery,tomas alfredson,7.625,71.28
+547,the wandering earth ii,2023,nr,science fiction,frant gwo,6.9750000000000005,71.28
+548,8mm,1999,r,mystery,joel schumacher,4.35,71.28
+549,the hitmans bodyguard,2017,r,crime,patrick hughes,5.7250000000000005,71.28
+550,hereafter,2010,pg-13,fantasy,clint eastwood,5.75,71.28
+551,oceans twelve,2004,pg-13,crime,steven soderbergh,6.1,71.28
+552,staying alive,1983,pg,music,sylvester stallone,3.2,71.27
+553,mojin the lost legend,2015,pg-13,fantasy,wuershan,5.625,71.27
+554,the international,2009,r,crime,tom tykwer,5.925,71.27
+555,executive decision,1996,r,thriller,stuart baird,6.3,71.27
+556,the big red one,1980,pg,war,samuel fuller,7.625,71.26
+557,bedazzled,2000,pg-13,fantasy,harold ramis,5.525,71.26
+558,zootopia,2016,pg,comedy,"byron howard, rich moore, jared bush",8.35,71.26
+559,priest,2011,pg-13,fantasy,scott stewart,4.275,71.26
+560,be cool,2005,pg-13,crime,f. gary gray,4.45,71.26
+561,uss indianapolis men of courage,2016,r,war,mario van peebles,4.0,71.26
+562,whiskey tango foxtrot,2016,r,war,"glenn ficarra, john requa",6.35,71.26
+563,courage under fire,1996,r,war,edward zwick,7.35,71.26
+564,22 jump street,2014,r,crime,"phil lord, christopher miller",7.325,71.25
+565,a time to kill,1996,r,thriller,joel schumacher,6.75,71.25
+566,superman ii,1980,pg,science fiction,"richard lester, richard donner",7.525,71.25
+567,sonic the hedgehog,2020,pg,action,jeff fowler,6.225,71.25
+568,divergent,2014,pg-13,action,neil burger,5.6,71.25
+569,dream house,2011,pg-13,mystery,jim sheridan,4.1,71.24000000000001
+570,the addams family,2019,pg,fantasy,"greg tiernan, conrad vernon",5.4,71.24000000000001
+571,blues brothers 2000,1998,pg-13,music,john landis,4.9,71.24000000000001
+572,bad boys for life,2020,r,crime,"adil el arbi, bilall fallah",6.775,71.24000000000001
+573,petes dragon,2016,pg,fantasy,david lowery,7.25,71.24000000000001
+574,abduction,2011,pg-13,mystery,john singleton,3.5,71.24000000000001
+575,robin hood prince of thieves,1991,pg-13,drama,kevin reynolds,6.0,71.24000000000001
+576,the skeleton key,2005,pg-13,horror,iain softley,5.375,71.24000000000001
+577,star trek v the final frontier,1989,pg,science fiction,william shatner,4.45,71.24000000000001
+578,the devils advocate,1997,r,mystery,taylor hackford,6.825,71.23
+579,the mule,2018,r,drama,clint eastwood,6.675,71.23
+580,burn after reading,2008,r,drama,"ethan coen, joel coen",6.95,71.23
+581,the whole nine yards,2000,r,crime,jonathan lynn,5.525,71.23
+582,the grudge 2,2006,pg-13,horror,takashi shimizu,3.775,71.23
+583,kung fu panda 2,2011,pg,comedy,jennifer yuh nelson,7.3,71.23
+584,sister act 2 back in the habit,1993,pg,music,bill duke,4.45,71.23
+585,the emperors new groove,2000,g,fantasy,mark dindal,7.65,71.23
+586,the long kiss goodnight,1996,r,mystery,renny harlin,6.15,71.22
+587,double jeopardy,1999,r,mystery,bruce beresford,4.975,71.22
+588,percy jackson  the olympians the lightning thief,2010,pg,fantasy,chris columbus,5.4,71.22
+589,ad astra,2019,pg-13,science fiction,james gray,7.225,71.22
+590,super 8,2011,pg-13,thriller,j.j. abrams,7.275,71.22
+591,eyes wide shut,1999,r,thriller,stanley kubrick,7.35,71.22
+592,the saint,1997,pg-13,romance,phillip noyce,5.075,71.21
+593,space cowboys,2000,pg-13,thriller,clint eastwood,7.0,71.21
+594,creed iii,2023,pg-13,action,michael b. jordan,7.5,71.21
+595,maze runner the scorch trials,2015,pg-13,action,wes ball,5.55,71.21
+596,the bounty hunter,2010,pg-13,romance,andy tennant,3.725,71.21
+597,the greatest showman,2017,pg,drama,michael gracey,6.45,71.21
+598,the sentinel,2006,pg-13,crime,clark johnson,5.1,71.21
+599,2001 a space odyssey,1968,g,mystery,stanley kubrick,8.5,71.21
+600,exit wounds,2001,r,crime,andrzej bartkowiak,4.675,71.21
+601,star trek vi the undiscovered country,1991,pg,science fiction,nicholas meyer,7.25,71.21
+602,shang chi and the legend of the ten rings,2021,pg-13,fantasy,destin daniel cretton,7.8,71.21
+603,swat,2003,pg-13,crime,clark johnson,5.4,71.21
+604,payback,1999,r,crime,brian helgeland,6.025,71.21
+605,the lake house,2006,pg,mystery,alejandro agresti,5.625,71.2
+606,ip man 4 the finale,2019,nr,drama,wilson yip,7.25,71.2
+607,gods and generals,2003,pg-13,war,ron maxwell,4.075,71.19
+608,free state of jones,2016,r,war,gary ross,5.95,71.19
+609,the accountant,2016,r,thriller,gavin o'connor,6.199999999999999,71.19
+610,silent hill,2006,r,mystery,christophe gans,4.85,71.19
+611,christopher robin,2018,pg,fantasy,marc forster,6.95,71.19
+612,americas sweethearts,2001,pg-13,romance,joe roth,4.775,71.19
+613,charlies angels,2000,pg-13,action,mcg,5.85,71.17999999999999
+614,naked gun 33⅓ the final insult,1994,pg-13,crime,peter segal,6.275,71.17999999999999
+615,the hustle,2019,pg-13,crime,chris addison,4.125,71.17999999999999
+616,the ninth gate,1999,r,horror,roman polanski,5.475,71.17999999999999
+617,step up revolution,2012,pg-13,drama,scott speer,5.4,71.17999999999999
+618,the buddy holly story,1978,pg,music,steve rash,8.05,71.17999999999999
+619,cold pursuit,2019,r,crime,hans petter moland,6.125,71.17999999999999
+620,bohemian rhapsody,2018,pg-13,music,bryan singer,6.7,71.17999999999999
+621,ghost ship,2002,r,horror,steve beck,3.95,71.17999999999999
+622,blade ii,2002,r,thriller,guillermo del toro,6.05,71.17999999999999
+623,all eyez on me,2017,r,music,benny boom,4.525,71.17
+624,next,2007,pg-13,science fiction,lee tamahori,4.825,71.17
+625,kate  leopold,2001,pg-13,fantasy,james mangold,5.575,71.17
+626,the deep,1977,pg,mystery,peter yates,5.125,71.17
+627,volcano,1997,pg-13,science fiction,mick jackson,5.475,71.17
+628,jurassic park iii,2001,pg-13,science fiction,joe johnston,5.3,71.17
+629,black rain,1989,r,thriller,ridley scott,6.05,71.17
+630,bratz,2007,pg,music,sean mcnamara,2.975,71.16
+631,cars,2006,g,comedy,"john lasseter, joe ranft",7.225,71.16
+632,contagion,2011,pg-13,thriller,steven soderbergh,7.225,71.16
+633,brick mansions,2014,pg-13,crime,camille delamarre,4.5,71.16
+634,the little prince,2015,pg,fantasy,mark osborne,7.85,71.16
+635,psycho,1998,r,mystery,gus van sant,4.625,71.16
+636,big fish,2003,pg-13,fantasy,tim burton,7.3,71.16
+637,cinderella man,2005,pg-13,romance,ron howard,7.6,71.15
+638,american wedding,2003,r,comedy,jesse dylan,5.525,71.15
+639,shaft,2000,r,crime,john singleton,5.925,71.15
+640,the holiday,2006,pg-13,romance,nancy meyers,6.1,71.15
+641,crazy stupid love,2011,pg-13,romance,"glenn ficarra, john requa",7.35,71.15
+642,27 dresses,2008,pg-13,romance,anne fletcher,5.3,71.15
+643,are we there yet,2005,pg,romance,brian levant,3.55,71.15
+644,victorvictoria,1982,pg,music,blake edwards,8.25,71.15
+645,mr beans holiday,2007,g,comedy,steve bendelack,5.875,71.14
+646,the reaping,2007,r,horror,stephen hopkins,3.925,71.14
+647,london has fallen,2016,r,thriller,babak najafi,4.425,71.14
+648,the boxtrolls,2014,pg,fantasy,"graham annable, anthony stacchi",6.85,71.14
+649,hostage,2005,r,crime,florent-emilio siri,5.175,71.14
+650,deep impact,1998,pg-13,action,mimi leder,5.225,71.14
+651,spy kids 2 the island of lost dreams,2002,pg,science fiction,robert rodriguez,6.25,71.14
+652,death on the nile,2022,pg-13,thriller,kenneth branagh,6.025,71.13000000000001
+653,underworld rise of the lycans,2009,r,fantasy,patrick tatopoulos,5.1,71.13000000000001
+654,jaws 3 d,1983,pg,horror,joe alves,3.0,71.13000000000001
+655,muppets most wanted,2014,pg,crime,james bobin,6.7,71.13000000000001
+656,phenomenon,1996,pg,drama,jon turteltaub,5.45,71.13000000000001
+657,resident evil retribution,2012,r,horror,paul w.s. anderson,4.45,71.12
+658,open season,2006,pg,comedy,"roger allers, jill culton, anthony stacchi",5.5,71.12
+659,lethal weapon 3,1992,r,comedy,richard donner,5.85,71.12
+660,the heat,2013,r,crime,paul feig,6.425,71.12
+661,unfaithful,2002,r,thriller,adrian lyne,6.175,71.12
+662,the time travelers wife,2009,pg-13,fantasy,robert schwentke,5.625,71.12
+663,the net,1995,pg-13,mystery,irwin winkler,5.35,71.12
+664,hope floats,1998,pg-13,romance,forest whitaker,4.825,71.11
+665,the new mutants,2020,pg-13,horror,josh boone,4.824999999999999,71.11
+666,my best friends wedding,1997,pg-13,romance,p.j. hogan,6.325,71.11
+667,sgt peppers lonely hearts club band,1978,pg,music,michael schultz,3.1,71.11
+668,the 6th day,2000,pg-13,mystery,roger spottiswoode,5.2,71.11
+669,the island of dr moreau,1996,pg-13,horror,"john frankenheimer, richard stanley",3.875,71.11
+670,toy story 4,2019,g,comedy,josh cooley,8.3,71.11
+671,secret window,2004,pg-13,mystery,david koepp,5.574999999999999,71.11
+672,the book of life,2014,pg,fantasy,jorge r. gutiérrez,7.425000000000001,71.1
+673,the prestige,2006,pg-13,mystery,christopher nolan,7.75,71.1
+674,wedding crashers,2005,r,comedy,david dobkin,6.85,71.1
+675,the ghost writer,2010,pg-13,mystery,roman polanski,7.525,71.1
+676,get rich or die tryin,2005,r,music,jim sheridan,4.625,71.1
+677,sleeping with the enemy,1991,r,thriller,joseph ruben,5.0,71.09
+678,penguins of madagascar,2014,pg,comedy,"eric darnell, simon j. smith",6.45,71.09
+679,rush hour 2,2001,pg-13,comedy,brett ratner,5.825,71.09
+680,the shack,2017,pg-13,fantasy,stuart hazeldine,4.75,71.09
+681,back to the future part ii,1989,pg,science fiction,robert zemeckis,6.9,71.09
+682,the proposal,2009,pg-13,drama,anne fletcher,5.825,71.09
+683,gone girl,2014,r,mystery,david fincher,8.175,71.09
+684,patriot games,1992,r,thriller,phillip noyce,6.775,71.09
+685,takers,2010,pg-13,crime,john luessenhop,4.925,71.08
+686,red riding hood,2011,pg-13,horror,catherine hardwicke,3.825,71.08
+687,edge of darkness,2010,r,mystery,martin campbell,5.95,71.08
+688,basic,2003,r,mystery,john mctiernan,4.6,71.07
+689,sex and the city,2008,r,comedy,michael patrick king,5.65,71.07
+690,ant man,2015,pg-13,science fiction,peyton reed,7.25,71.07
+691,tea with mussolini,1999,pg,war,franco zeffirelli,6.25,71.07
+692,cocktail,1988,r,drama,roger donaldson,3.5250000000000004,71.07
+693,duplicity,2009,pg-13,crime,tony gilroy,6.35,71.07
+694,the mermaid,2016,r,romance,stephen chow,7.275,71.07
+695,savages,2012,r,crime,oliver stone,5.925000000000001,71.07
+696,the graduate,1967,pg,romance,mike nichols,8.15,71.06
+697,the living daylights,1987,pg,thriller,john glen,6.6,71.06
+698,force 10 from navarone,1978,pg,war,guy hamilton,5.875,71.06
+699,step up 3d,2010,pg-13,romance,jon m. chu,5.55,71.06
+700,when a stranger calls,2006,pg-13,horror,simon west,3.575,71.06
+701,the fast and the furious,2001,pg-13,crime,rob cohen,6.275,71.06
+702,halloween resurrection,2002,r,horror,rick rosenthal,2.85,71.06
+703,season of the witch,2011,pg-13,fantasy,dominic sena,3.7,71.06
+704,the fast and the furious tokyo drift,2006,pg-13,drama,justin lin,5.225,71.05
+705,whitney houston i wanna dance with somebody,2022,pg-13,music,kasi lemmons,5.775,71.05
+706,hes just not that into you,2009,pg-13,comedy,ken kwapis,5.475,71.05
+707,goldfinger,1964,pg,thriller,guy hamilton,8.4,71.05
+708,the naked gun 2½ the smell of fear,1991,pg-13,comedy,david zucker,6.5,71.05
+709,valentines day,2010,pg-13,comedy,garry marshall,4.2,71.05
+710,madea goes to jail,2009,pg-13,crime,tyler perry,4.75,71.05
+711,power rangers,2017,pg-13,science fiction,dean israelite,5.425,71.04
+712,the angry birds movie,2016,pg,comedy,"clay kaytis, fergal reilly",5.3,71.04
+713,moonraker,1979,pg,thriller,lewis gilbert,6.225,71.04
+714,the waterboy,1998,pg-13,comedy,frank coraci,4.949999999999999,71.04
+715,mercury rising,1998,r,crime,harold becker,4.55,71.04
+716,the longest yard,2005,pg-13,comedy,peter segal,5.275,71.04
+717,ponyo,2008,g,fantasy,hayao miyazaki,8.25,71.04
+718,music and lyrics,2007,pg-13,romance,marc lawrence,6.275,71.04
+719,underwater,2020,pg-13,horror,william eubank,5.45,71.03
+720,battle of the year,2013,pg-13,music,benson lee,3.825,71.03
+721,ferdinand,2017,pg,comedy,carlos saldanha,6.675,71.03
+722,notting hill,1999,pg-13,comedy,roger michell,7.425,71.03
+723,the american president,1995,pg-13,romance,rob reiner,7.275,71.02000000000001
+724,dont worry darling,2022,r,mystery,olivia wilde,5.425,71.00999999999999
+725,austin powers international man of mystery,1997,pg-13,crime,jay roach,6.5,71.00999999999999
+726,salt,2010,pg-13,thriller,phillip noyce,6.4,71.00999999999999
+727,death race,2008,r,science fiction,paul w.s. anderson,5.275,71.00999999999999
+728,dr dolittle 2,2001,pg,romance,steve carr,4.75,71.00999999999999
+729,unknown,2011,pg-13,mystery,jaume collet-serra,6.175,71.00999999999999
+730,iron man,2008,pg-13,action,jon favreau,8.2,71.0
+731,dora and the lost city of gold,2019,pg,fantasy,james bobin,6.875,71.0
+732,john wick chapter 4,2023,r,thriller,chad stahelski,8.125,71.0
+733,back to the future part iii,1990,pg,comedy,robert zemeckis,7.125,71.0
+734,american hustle,2013,r,drama,david o. russell,8.075,70.99
+735,rio,2011,g,comedy,carlos saldanha,6.775,70.99
+736,i feel pretty,2018,pg-13,romance,"abby kohn, marc silverstein",5.1,70.99
+737,gremlins 2 the new batch,1990,pg-13,horror,"joe dante, chuck jones",6.725,70.98
+738,mr deeds,2002,pg-13,romance,steven brill,4.075,70.98
+739,zombieland double tap,2019,r,horror,ruben fleischer,6.475,70.98
+740,dracula untold,2014,pg-13,action,gary shore,4.800000000000001,70.97
+741,crimson peak,2015,r,horror,guillermo del toro,6.75,70.97
+742,anastasia,1997,g,fantasy,"don bluth, gary goldman",7.275,70.97
+743,sleepers,1996,r,thriller,barry levinson,6.825,70.97
+744,hop,2011,pg,comedy,tim hill,4.45,70.97
+745,out of sight,1998,r,romance,steven soderbergh,7.9,70.97
+746,rosemarys baby,1968,r,horror,roman polanski,8.775,70.97
+747,think like a man too,2014,pg-13,romance,tim story,4.55,70.97
+748,the thomas crown affair,1999,r,romance,john mctiernan,6.925000000000001,70.97
+749,this means war,2012,pg-13,romance,mcg,4.525,70.97
+750,in the heat of the night,1967,pg-13,mystery,norman jewison,8.15,70.96000000000001
+751,original sin,2001,r,mystery,michael cristofer,4.15,70.96000000000001
+752,the equalizer 3,2023,r,thriller,antoine fuqua,6.875,70.96000000000001
+753,batman begins,2005,pg-13,action,christopher nolan,7.85,70.96000000000001
+754,tomb raider,2018,pg-13,fantasy,roar uthaug,5.675,70.96000000000001
+755,captain america the winter soldier,2014,pg-13,science fiction,"anthony russo, joe russo",7.85,70.96000000000001
+756,horrible bosses,2011,r,comedy,seth gordon,6.525,70.95
+757,skiptrace,2016,pg-13,mystery,renny harlin,5.025,70.95
+758,american made,2017,r,crime,doug liman,7.25,70.95
+759,the kings man,2021,r,thriller,matthew vaughn,5.425,70.95
+760,the omen,2006,r,mystery,john moore,4.5,70.95
+761,muppet treasure island,1996,g,music,brian henson,6.75,70.94
+762,mission impossible,1996,pg-13,thriller,brian de palma,6.65,70.94
+763,30 days of night,2007,r,horror,david slade,5.825,70.94
+764,the bourne legacy,2012,pg-13,action,tony gilroy,6.125,70.94
+765,abraham lincoln vampire hunter,2012,r,fantasy,timur bekmambetov,4.800000000000001,70.93
+766,10 cloverfield lane,2016,pg-13,horror,dan trachtenberg,7.725,70.93
+767,pain  gain,2013,r,crime,michael bay,5.525,70.93
+768,jack reacher never go back,2016,pg-13,thriller,edward zwick,5.15,70.93
+769,water for elephants,2011,pg-13,romance,francis lawrence,6.25,70.92
+770,the counselor,2013,r,crime,ridley scott,4.7,70.92
+771,meet joe black,1998,pg-13,fantasy,martin brest,5.85,70.92
+772,mirror mirror,2012,pg,comedy,tarsem singh,5.275,70.91
+773,michael,1996,pg,fantasy,nora ephron,4.7,70.91
+774,warm bodies,2013,pg-13,romance,jonathan levine,6.85,70.91
+775,trolls world tour,2020,pg,music,"walt dohrn, david p. smith",6.425,70.89999999999999
+776,timecop,1994,r,crime,peter hyams,5.225,70.89999999999999
+777,ronin,1998,r,crime,john frankenheimer,6.975,70.89999999999999
+778,bridget joness diary,2001,r,drama,sharon maguire,7.025,70.89999999999999
+779,the truman show,1998,pg,drama,peter weir,8.675,70.89999999999999
+780,the boogeyman,2023,pg-13,horror,rob savage,5.975,70.89999999999999
+781,sister act,1992,pg,music,emile ardolino,6.425,70.89
+782,hot shots part deux,1993,pg-13,war,jim abrahams,6.35,70.89
+783,ted 2,2015,r,comedy,seth macfarlane,5.475,70.89
+784,the hunger games,2012,pg-13,fantasy,gary ross,7.4,70.89
+785,step up 2 the streets,2008,pg-13,drama,jon m. chu,5.175,70.89
+786,the soloist,2009,pg-13,music,joe wright,6.3,70.89
+787,21 jump street,2012,r,crime,"phil lord, christopher miller",7.375,70.89
+788,click,2006,pg-13,drama,frank coraci,5.15,70.89
+789,evolution,2001,pg-13,science fiction,ivan reitman,5.15,70.89
+790,baby driver,2017,r,action,edgar wright,8.2,70.89
+791,sherlock gnomes,2018,pg,fantasy,john stevenson,4.35,70.88
+792,rock dog,2016,pg,music,ash brannon,5.4,70.88
+793,freddy vs jason,2003,r,horror,ronny yu,4.9,70.88
+794,never been kissed,1999,pg-13,romance,raja gosnell,5.925,70.88
+795,the client,1994,pg-13,mystery,joel schumacher,6.975,70.88
+796,fast  furious,2009,pg-13,action,justin lin,5.175,70.88
+797,nine,2009,pg-13,music,rob marshall,5.025,70.88
+798,flatliners,1990,r,horror,joel schumacher,5.9,70.88
+799,the messengers,2007,pg-13,mystery,"danny pang, oxide chun pang",3.875,70.87
+800,never say never again,1983,pg,thriller,irvin kershner,6.525,70.87
+801,case 39,2009,r,mystery,christian alvart,4.3,70.87
+802,heat,1995,r,drama,michael mann,8.025,70.87
+803,taps,1981,pg,war,harold becker,6.325,70.86
+804,oblivion,2013,pg-13,action,joseph kosinski,6.075,70.86
+805,eagle eye,2008,pg-13,thriller,d.j. caruso,5.025,70.86
+806,halloween ii,2009,r,horror,rob zombie,4.05,70.86
+807,sudden impact,1983,r,thriller,clint eastwood,5.85,70.85000000000001
+808,sleepless in seattle,1993,pg,drama,nora ephron,7.05,70.85000000000001
+809,the lovely bones,2009,pg-13,fantasy,peter jackson,5.25,70.85000000000001
+810,mary poppins returns,2018,pg,comedy,rob marshall,6.925,70.85000000000001
+811,the fog,2005,pg-13,mystery,rupert wainwright,2.825,70.84
+812,the relic,1997,r,mystery,peter hyams,6.6,70.84
+813,alien resurrection,1997,r,horror,jean-pierre jeunet,6.05,70.84
+814,kung fu panda,2008,pg,action,"mark osborne, john stevenson",7.75,70.84
+815,coming to america,1988,r,romance,john landis,6.5,70.83
+816,hotel transylvania 2,2015,pg,fantasy,genndy tartakovsky,5.875,70.83
+817,love  other drugs,2010,r,romance,edward zwick,6.025,70.83
+818,charlie and the chocolate factory,2005,pg,fantasy,tim burton,7.300000000000001,70.83
+819,bad santa 2,2016,r,mystery,mark waters,4.275,70.83
+820,the league of extraordinary gentlemen,2003,pg-13,science fiction,stephen norrington,4.1,70.83
+821,rush hour,1998,pg-13,crime,brett ratner,6.575,70.83
+822,after the sunset,2004,pg-13,crime,brett ratner,4.5,70.83
+823,megamind,2010,pg,action,tom mcgrath,6.975,70.83
+824,a bridge too far,1977,pg,war,richard attenborough,6.7,70.82000000000001
+825,the texas chainsaw massacre the beginning,2006,r,horror,jonathan liebesman,4.1,70.82000000000001
+826,darkness,2002,pg-13,horror,jaume balagueró,3.25,70.82000000000001
+827,the ladykillers,2004,r,crime,"ethan coen, joel coen",5.825,70.82000000000001
+828,bad teacher,2011,r,comedy,jake kasdan,5.125,70.82000000000001
+829,young sherlock holmes,1985,pg-13,mystery,barry levinson,6.775,70.82000000000001
+830,casualties of war,1989,r,war,brian de palma,7.525,70.82000000000001
+831,pitch perfect 2,2015,pg-13,music,elizabeth banks,6.55,70.82000000000001
+832,zodiac,2007,r,mystery,david fincher,8.025,70.82000000000001
+833,annabelle comes home,2019,r,horror,gary dauberman,6.0,70.82000000000001
+834,the talented mr ripley,1999,r,crime,anthony minghella,7.675,70.81
+835,hitman agent 47,2015,r,crime,aleksander bach,3.8,70.81
+836,the jewel of the nile,1985,pg,romance,lewis teague,5.6,70.81
+837,spy game,2001,r,crime,tony scott,6.675,70.81
+838,mongol the rise of genghis khan,2007,r,war,sergei bodrov,7.5,70.8
+839,hotel transylvania 3 summer vacation,2018,pg,fantasy,genndy tartakovsky,6.2,70.8
+840,carrie,2013,r,horror,kimberly peirce,5.55,70.8
+841,13 going on 30,2004,pg-13,fantasy,gary winick,6.3,70.8
+842,the last song,2010,pg,romance,julie anne robinson,4.65,70.78999999999999
+843,planet 51,2009,pg,science fiction,"jorge blanco, javier abad, marcos martínez",4.525,70.78999999999999
+844,the forest,2016,r,horror,jason zada,3.6,70.78999999999999
+845,big mommas house 2,2006,pg-13,crime,john whitesell,3.625,70.78999999999999
+846,halloween kills,2021,r,thriller,david gordon green,5.0,70.78999999999999
+847,the thing,2011,r,mystery,matthijs van heijningen jr.,5.175000000000001,70.78999999999999
+848,the american,2010,r,crime,anton corbijn,6.2,70.78999999999999
+849,romeo must die,2000,r,crime,andrzej bartkowiak,5.2,70.78
+850,percy jackson sea of monsters,2013,pg,fantasy,thor freudenthal,4.975,70.78
+851,forces of nature,1999,pg-13,romance,bronwen hughes,5.025,70.78
+852,teenage mutant ninja turtles ii the secret of the ooze,1991,pg,science fiction,michael pressman,5.075,70.78
+853,the commuter,2018,pg-13,thriller,jaume collet-serra,5.95,70.78
+854,predators,2010,r,science fiction,nimród antal,6.075,70.77
+855,ip man 3,2015,pg-13,drama,wilson yip,6.85,70.77
+856,under siege,1992,r,thriller,andrew davis,6.7250000000000005,70.77
+857,windtalkers,2002,r,war,john woo,5.175,70.76
+858,straight outta compton,2015,r,drama,f. gary gray,7.925,70.76
+859,loving vincent,2017,pg-13,mystery,"dk welchman, hugh welchman",7.6,70.76
+860,what lies beneath,2000,pg-13,drama,robert zemeckis,5.7,70.76
+861,the popes exorcist,2023,r,horror,julius avery,5.675,70.75
+862,the deep end of the ocean,1999,pg-13,mystery,ulu grosbard,5.375,70.75
+863,respect,2021,pg-13,music,liesl tommy,6.574999999999999,70.75
+864,20 feet from stardom,2013,nr,music,morgan neville,8.200000000000001,70.75
+865,star trek first contact,1996,pg-13,science fiction,jonathan frakes,7.825,70.75
+866,grumpier old men,1995,pg-13,romance,howard deutch,4.975,70.75
+867,lucy,2014,r,action,luc besson,6.425,70.75
+868,julie  julia,2009,pg-13,romance,nora ephron,7.0,70.74000000000001
+869,get him to the greek,2010,r,music,nicholas stoller,6.5,70.74000000000001
+870,where the crawdads sing,2022,pg-13,romance,olivia newman,5.65,70.74000000000001
+871,thir13en ghosts,2001,r,horror,steve beck,4.175,70.74000000000001
+872,honey,2003,pg-13,music,bille woodruff,4.3,70.73
+873,glass,2019,pg-13,drama,m. night shyamalan,5.325,70.73
+874,dude wheres my car,2000,pg-13,romance,danny leiner,3.9,70.73
+875,congo,1995,pg-13,science fiction,frank marshall,3.825,70.73
+876,curse of the golden flower,2006,r,fantasy,yimou zhang,6.825,70.73
+877,breakdown,1997,r,mystery,jonathan mostow,7.375,70.72
+878,on the town,1949,nr,music,"stanley donen, gene kelly",7.7,70.72
+879,letters to juliet,2010,pg,romance,gary winick,5.7,70.72
+880,righteous kill,2008,r,crime,jon avnet,4.325,70.72
+881,my big fat greek wedding 2,2016,pg-13,romance,kirk jones,4.625,70.71
+882,the spy who loved me,1977,pg,thriller,lewis gilbert,6.875,70.71
+883,kinky boots,2005,pg-13,music,julian jarrold,6.325,70.71
+884,white noise,2005,pg-13,horror,geoffrey sax,3.7,70.71
+885,the witches of eastwick,1987,r,horror,george miller,6.575,70.7
+886,licence to kill,1989,pg-13,thriller,john glen,6.7,70.7
+887,the wolverine,2013,pg-13,science fiction,james mangold,6.575,70.7
+888,cloverfield,2008,pg-13,science fiction,matt reeves,7.0,70.69
+889,sing,2016,pg,music,"garth jennings, christophe lourdelet",6.8,70.69
+890,dr strangelove or how i learned to stop worrying and love the bomb,1964,pg,war,stanley kubrick,8.975,70.69
+891,sin city,2005,r,thriller,"frank miller, quentin tarantino, robert rodriguez",7.625,70.69
+892,doctor sleep,2019,r,horror,mike flanagan,7.025,70.67999999999999
+893,bicentennial man,1999,pg,science fiction,chris columbus,5.525,70.67999999999999
+894,real steel,2011,pg-13,drama,shawn levy,6.425,70.67999999999999
+895,the pink panther,2006,pg,crime,shawn levy,4.35,70.67999999999999
+896,mechanic resurrection,2016,r,thriller,dennis gansel,4.65,70.67999999999999
+897,300 rise of an empire,2014,r,war,noam murro,5.4,70.67
+898,trolls,2016,pg,fantasy,"mike mitchell, walt dohrn",6.525,70.67
+899,from hell,2001,r,mystery,"albert hughes, allen hughes",6.1,70.67
+900,the jungle book,2016,pg,fantasy,jon favreau,7.825,70.67
+901,prometheus,2012,r,science fiction,ridley scott,6.825,70.66
+902,a monster calls,2016,pg-13,horror,j.a. bayona,7.725,70.66
+903,trainwreck,2015,r,romance,judd apatow,6.9750000000000005,70.66
+904,center stage,2000,pg-13,music,nicholas hytner,5.725,70.66
+905,the exorcism of emily rose,2005,pg-13,thriller,scott derrickson,4.975,70.66
+906,wild things,1998,r,mystery,john mcnaughton,6.15,70.66
+907,creed ii,2018,pg-13,drama,steven caple jr.,7.25,70.66
+908,in the line of fire,1993,r,mystery,wolfgang petersen,7.8,70.65
+909,puss in boots,2011,pg,comedy,chris miller,7.074999999999999,70.65
+910,pathaan,2023,nr,thriller,siddharth anand,6.3,70.64
+911,war of the worlds,2005,pg-13,science fiction,steven spielberg,6.975,70.64
+912,the forever purge,2021,r,horror,everardo gout,5.625,70.64
+913,the final countdown,1980,pg,war,don taylor,5.9,70.63000000000001
+914,hitmans wifes bodyguard,2021,r,crime,patrick hughes,4.625,70.62
+915,the adventures of sharkboy and lavagirl,2005,pg,science fiction,robert rodriguez,3.7,70.62
+916,the bridge on the river kwai,1957,pg,war,david lean,8.549999999999999,70.62
+917,dont be afraid of the dark,2010,r,horror,troy nixey,5.725,70.62
+918,twelve monkeys,1995,r,science fiction,terry gilliam,7.95,70.62
+919,tomorrow never dies,1997,pg-13,thriller,roger spottiswoode,5.95,70.62
+920,paddington 2,2017,pg,comedy,paul king,8.5,70.62
+921,eraser,1996,r,mystery,chuck russell,5.55,70.61
+922,constantine,2005,r,horror,francis lawrence,5.925,70.61
+923,cold creek manor,2003,r,mystery,mike figgis,3.825,70.61
+924,the equalizer 2,2018,r,crime,antoine fuqua,5.925,70.6
+925,superhero movie,2008,pg-13,science fiction,craig mazin,3.725,70.6
+926,noah,2014,pg-13,drama,darren aronofsky,6.45,70.59
+927,sunshine,1999,r,war,istván szabó,7.15,70.59
+928,journey 2 the mysterious island,2012,pg,science fiction,brad peyton,5.125,70.59
+929,waynes world,1992,pg-13,comedy,penelope spheeris,6.825,70.59
+930,the a team,2010,pg-13,crime,joe carnahan,5.65,70.59
+931,striptease,1996,r,crime,andrew bergman,3.8,70.59
+932,the king and i,1956,g,music,walter lang,7.75,70.58
+933,pride and glory,2008,r,mystery,gavin o'connor,5.25,70.58
+934,fast five,2011,pg-13,crime,justin lin,7.225,70.58
+935,kung fu panda 3,2016,pg,comedy,"alessandro carloni, jennifer yuh nelson",7.324999999999999,70.58
+936,bruce almighty,2003,pg-13,comedy,tom shadyac,5.725,70.57
+937,anacondas the hunt for the blood orchid,2004,pg-13,horror,dwight h. little,4.2,70.57
+938,star wars episode iii   revenge of the sith,2005,pg-13,action,george lucas,7.449999999999999,70.57
+939,deliver us from evil,2014,r,horror,scott derrickson,4.85,70.57
+940,once upon a time in mexico,2003,r,mystery,robert rodriguez,6.199999999999999,70.56
+941,game night,2018,r,crime,"john francis daley, jonathan goldstein",7.225,70.56
+942,elf,2003,pg,comedy,jon favreau,7.2,70.56
+943,rocky iii,1982,pg,drama,sylvester stallone,6.475,70.56
+944,mission impossible   rogue nation,2015,pg-13,action,christopher mcquarrie,7.875,70.56
+945,bean,1997,pg-13,comedy,mel smith,5.625,70.55
+946,devils due,2014,r,horror,"matt bettinelli-olpin, tyler gillett",3.575,70.55
+947,sicario,2015,r,crime,denis villeneuve,8.125,70.55
+948,i love you man,2009,r,romance,john hamburg,7.199999999999999,70.54
+949,ghostbusters,1984,pg,comedy,ivan reitman,7.975,70.54
+950,kindergarten cop,1990,pg-13,comedy,ivan reitman,5.95,70.54
+951,downton abbey a new era,2022,pg,mystery,simon curtis,7.375,70.54
+952,take the lead,2006,pg-13,music,liz friedlander,5.85,70.53
+953,mamma mia,2008,pg-13,romance,phyllida lloyd,6.025,70.53
+954,the town,2010,r,thriller,ben affleck,7.825,70.53
+955,arachnophobia,1990,pg-13,horror,frank marshall,7.225,70.53
+956,to rome with love,2012,r,romance,woody allen,5.55,70.53
+957,sicario day of the soldado,2018,r,crime,stefano sollima,6.575,70.53
+958,bolt,2008,pg,comedy,"byron howard, chris williams",7.25,70.52000000000001
+959,rob roy,1995,r,war,michael caton-jones,6.6,70.52000000000001
+960,a dogs purpose,2017,pg,drama,lasse hallström,5.65,70.52000000000001
+961,the unholy,2021,pg-13,mystery,evan spiliotopoulos,4.525,70.52000000000001
+962,woodstock,1970,r,music,michael wadleigh,8.775,70.52000000000001
+963,the one,2001,pg-13,science fiction,james wong,3.95,70.52000000000001
+964,den of thieves,2018,r,crime,christian gudegast,5.7,70.52000000000001
+965,thor,2011,pg-13,action,kenneth branagh,6.8,70.50999999999999
+966,john wick chapter 2,2017,r,crime,chad stahelski,7.775,70.50999999999999
+967,eastern promises,2007,r,mystery,david cronenberg,8.05,70.50999999999999
+968,the ugly truth,2009,r,comedy,robert luketic,4.275,70.50999999999999
+969,no strings attached,2011,r,romance,ivan reitman,5.55,70.5
+970,pulse,2006,pg-13,mystery,jim sonzero,3.45,70.5
+971,hope springs,2012,pg-13,romance,david frankel,6.65,70.5
+972,knocked up,2007,r,romance,judd apatow,7.675,70.49
+973,ant man and the wasp,2018,pg-13,action,peyton reed,7.4,70.49
+974,saw v,2008,r,thriller,david hackl,3.825,70.49
+975,the woman in black 2 angel of death,2014,pg-13,horror,tom harper,4.2,70.48
+976,sherlock holmes a game of shadows,2011,pg-13,action,guy ritchie,6.325,70.48
+977,the time machine,2002,pg-13,science fiction,simon wells,4.825,70.48
+978,howls moving castle,2004,pg,fantasy,hayao miyazaki,8.4,70.48
+979,jimmy neutron boy genius,2001,g,science fiction,john a. davis,6.5,70.47
+980,o brother where art thou,2000,pg-13,crime,"joel coen, ethan coen",7.425,70.47
+981,the expendables,2010,r,thriller,sylvester stallone,5.325,70.47
+982,17 again,2009,pg-13,fantasy,burr steers,5.8,70.47
+983,pulp fiction,1994,r,crime,quentin tarantino,9.025,70.46
+984,tenet,2020,pg-13,science fiction,christopher nolan,7.1,70.46
+985,stop loss,2008,r,war,kimberly peirce,6.25,70.46
+986,forgetting sarah marshall,2008,r,romance,nicholas stoller,7.175,70.46
+987,jacobs ladder,1990,r,mystery,adrian lyne,7.050000000000001,70.46
+988,the next three days,2010,pg-13,crime,paul haggis,6.15,70.46
+989,free willy,1993,pg,drama,simon wincer,6.8,70.45
+990,poltergeist ii the other side,1986,pg-13,horror,brian gibson,4.65,70.45
+991,dawn of the dead,2004,r,horror,zack snyder,6.975,70.45
+992,the mortal instruments city of bones,2013,pg-13,mystery,harald zwart,4.2,70.45
+993,hansel  gretel witch hunters,2013,r,horror,tommy wirkola,4.05,70.44
+994,shark tale,2004,pg,action,"bibo bergeron, vicky jenson, rob letterman",5.075,70.44
+995,jeepers creepers 2,2003,r,horror,victor salva,4.5,70.44
+996,arthur christmas,2011,pg,drama,"sarah smith, barry cook",7.5,70.44
+997,serendipity,2001,pg-13,romance,peter chelsom,6.2,70.43
+998,searching for sugar man,2012,pg-13,music,malik bendjelloul,8.375,70.43
+999,police academy 3 back in training,1986,pg,crime,jerry paris,4.525,70.43
+1000,wreck it ralph,2012,pg,comedy,rich moore,7.725,70.43
+1001,the mask,1994,pg-13,fantasy,chuck russell,6.9,70.42
+1002,hail caesar,2016,pg-13,mystery,"ethan coen, joel coen",7.0,70.42
+1003,sanctum,2011,r,thriller,alister grierson,4.775,70.42
+1004,ace ventura pet detective,1994,pg-13,mystery,tom shadyac,5.475,70.42
+1005,scream 2,1997,r,horror,wes craven,6.8,70.42
+1006,bad moms,2016,r,comedy,"jon lucas, scott moore",6.15,70.42
+1007,watchmen,2009,r,science fiction,zack snyder,6.75,70.42
+1008,bride of chucky,1998,r,horror,ronny yu,5.25,70.41
+1009,mr  mrs smith,2005,pg-13,drama,doug liman,6.175,70.41
+1010,diamonds are forever,1971,pg,thriller,guy hamilton,6.300000000000001,70.39999999999999
+1011,spiral from the book of saw,2021,r,horror,darren lynn bousman,4.75,70.39999999999999
+1012,bad boys,1995,r,thriller,michael bay,5.5,70.39999999999999
+1013,fun with dick and jane,2005,pg-13,crime,dean parisot,5.025,70.39999999999999
+1014,return of the jedi,1983,pg,action,richard marquand,7.550000000000001,70.39999999999999
+1015,district 9,2009,r,science fiction,neill blomkamp,8.1,70.39
+1016,piranha 3d,2010,r,horror,alexandre aja,5.925,70.38
+1017,school of rock,2003,pg-13,music,richard linklater,7.924999999999999,70.38
+1018,widows,2018,r,crime,steve mcqueen,7.7,70.38
+1019,crocodile dundee ii,1988,pg,comedy,john cornell,4.125,70.37
+1020,primal fear,1996,r,mystery,gregory hoblit,6.95,70.37
+1021,closer,2004,r,romance,mike nichols,6.8,70.36
+1022,the devils double,2011,r,war,lee tamahori,6.075,70.36
+1023,the 40 year old virgin,2005,r,comedy,judd apatow,7.324999999999999,70.36
+1024,kill bill vol 1,2003,r,crime,quentin tarantino,7.9,70.36
+1025,last christmas,2019,pg-13,romance,paul feig,5.825,70.36
+1026,princess mononoke,1997,pg-13,fantasy,hayao miyazaki,8.375,70.36
+1027,source code,2011,pg-13,science fiction,duncan jones,7.85,70.35
+1028,first blood,1982,r,thriller,ted kotcheff,7.475,70.35
+1029,nanny mcphee,2005,pg,fantasy,kirk jones,6.65,70.35
+1030,snowpiercer,2013,r,science fiction,bong joon ho,7.95,70.35
+1031,the imaginarium of doctor parnassus,2009,pg-13,mystery,terry gilliam,6.525,70.35
+1032,the butler,2013,pg-13,drama,lee daniels,7.025,70.35
+1033,knight and day,2010,pg-13,comedy,james mangold,5.55,70.34
+1034,unfriended,2014,r,mystery,levan gabriadze,5.8,70.34
+1035,the sixth sense,1999,pg-13,mystery,m. night shyamalan,7.8,70.34
+1036,corpse bride,2005,pg,fantasy,"tim burton, mike johnson",7.925000000000001,70.34
+1037,a perfect world,1993,pg-13,crime,clint eastwood,7.475,70.34
+1038,star trek into darkness,2013,pg-13,action,j.j. abrams,7.65,70.33
+1039,the last legion,2007,pg-13,war,doug lefler,4.05,70.33
+1040,xxx,2002,pg-13,action,rob cohen,5.325,70.33
+1041,knock at the cabin,2023,r,mystery,m. night shyamalan,6.375,70.32000000000001
+1042,gone with the wind,1939,g,drama,"victor fleming, george cukor, sam wood",8.7,70.32000000000001
+1043,disturbia,2007,pg-13,mystery,d.j. caruso,6.65,70.32000000000001
+1044,the wind that shakes the barley,2006,nr,war,ken loach,8.025,70.32000000000001
+1045,sorority row,2009,r,mystery,stewart hendler,3.9,70.32000000000001
+1046,operation crossbow,1965,pg-13,war,michael anderson,6.95,70.30999999999999
+1047,big,1988,pg,romance,penny marshall,7.9,70.30999999999999
+1048,rocky balboa,2006,pg,drama,sylvester stallone,7.025,70.30999999999999
+1049,a walk among the tombstones,2014,r,mystery,scott frank,6.325,70.30999999999999
+1050,annihilation,2018,r,horror,alex garland,7.475,70.30999999999999
+1051,identity,2003,r,mystery,james mangold,6.8,70.30999999999999
+1052,good morning vietnam,1987,r,war,barry levinson,7.575,70.3
+1053,honey i shrunk the kids,1989,pg,science fiction,joe johnston,6.65,70.28999999999999
+1054,casino royale,2006,pg-13,thriller,martin campbell,8.25,70.28999999999999
+1055,star wars the clone wars,2008,pg,science fiction,dave filoni,4.325,70.28999999999999
+1056,live and let die,1973,pg,thriller,guy hamilton,6.35,70.28999999999999
+1057,single white female,1992,r,horror,barbet schroeder,6.075,70.28999999999999
+1058,1408,2007,pg-13,horror,mikael håfström,6.95,70.28999999999999
+1059,the boy,2016,pg-13,mystery,william brent bell,4.825,70.28
+1060,scary stories to tell in the dark,2019,pg-13,horror,andré øvredal,6.65,70.28
+1061,scream vi,2023,r,thriller,"matt bettinelli-olpin, tyler gillett",6.8,70.28
+1062,revenge of the pink panther,1978,pg,mystery,blake edwards,6.975,70.28
+1063,the haunting in connecticut,2009,pg-13,horror,peter cornwell,4.25,70.28
+1064,harry potter and the prisoner of azkaban,2004,pg,fantasy,alfonso cuarón,8.275,70.28
+1065,the train,1964,nr,war,john frankenheimer,8.175,70.27
+1066,kiss of the dragon,2001,r,crime,chris nahon,6.15,70.27
+1067,presumed innocent,1990,r,thriller,alan j. pakula,7.375,70.27
+1068,mission impossible   fallout,2018,pg-13,action,christopher mcquarrie,8.375,70.27
+1069,edge of tomorrow,2014,pg-13,science fiction,doug liman,7.925,70.27
+1070,sneakers,1992,pg-13,crime,phil alden robinson,7.125,70.26
+1071,scream,1996,r,crime,wes craven,7.25,70.26
+1072,the delta force,1986,r,war,menahem golan,4.175,70.26
+1073,get shorty,1995,r,thriller,barry sonnenfeld,7.625,70.26
+1074,moana,2016,pg,comedy,"ron clements, john musker, don hall",8.2,70.25
+1075,the crow,1994,r,fantasy,alex proyas,7.699999999999999,70.24000000000001
+1076,vacancy,2007,r,horror,nimród antal,5.85,70.24000000000001
+1077,rescue dawn,2006,pg-13,war,werner herzog,7.725,70.24000000000001
+1078,kill bill vol 2,2004,r,crime,quentin tarantino,8.15,70.24000000000001
+1079,the blues brothers,1980,r,crime,john landis,7.175,70.24000000000001
+1080,the curse of la llorona,2019,r,horror,michael chaves,4.425,70.24000000000001
+1081,house at the end of the street,2012,pg-13,horror,mark tonderai,3.85,70.23
+1082,fantastic beasts and where to find them,2016,pg-13,fantasy,david yates,7.125,70.22
+1083,the family stone,2005,pg-13,romance,thomas bezucha,5.85,70.22
+1084,fright night,2011,r,horror,craig gillespie,6.550000000000001,70.22
+1085,insidious the red door,2023,pg-13,thriller,patrick wilson,5.15,70.22
+1086,the wiz,1978,g,music,sidney lumet,5.375,70.21
+1087,walk hard the dewey cox story,2007,r,music,jake kasdan,6.775,70.21
+1088,the bodyguard,1992,r,drama,mick jackson,5.2,70.19999999999999
+1089,country strong,2010,pg-13,music,shana feste,4.775,70.19999999999999
+1090,kick ass,2010,r,crime,matthew vaughn,7.274999999999999,70.19999999999999
+1091,taking woodstock,2009,r,music,ang lee,5.8,70.19999999999999
+1092,step up,2006,pg-13,music,anne fletcher,5.075,70.19999999999999
+1093,jason bourne,2016,pg-13,action,paul greengrass,6.075,70.19
+1094,the intouchables,2011,r,comedy,"olivier nakache, éric toledano",7.525,70.19
+1095,overboard,2018,pg-13,romance,rob greenberg,4.8,70.17999999999999
+1096,evangelion 3010 thrice upon a time,2021,nr,science fiction,"mahiro maeda, katsuichi nakayama, kazuya tsurumaki",8.65,70.17999999999999
+1097,xxx state of the union,2005,pg-13,crime,lee tamahori,3.725,70.17999999999999
+1098,atlantis the lost empire,2001,pg,science fiction,"gary trousdale, kirk wise",5.975,70.17999999999999
+1099,the pledge,2001,r,mystery,sean penn,7.025,70.17999999999999
+1100,stomp the yard,2007,pg-13,music,sylvain white,4.875,70.17
+1101,the hunger games catching fire,2013,pg-13,action,francis lawrence,7.875,70.17
+1102,treasure planet,2002,pg,science fiction,"ron clements, john musker",6.925,70.17
+1103,childs play 2,1990,r,horror,john lafia,5.175,70.17
+1104,winters tale,2014,pg-13,mystery,akiva goldsman,4.175,70.16
+1105,a chorus line,1985,pg-13,music,richard attenborough,5.475,70.16
+1106,joy ride,2001,r,mystery,john dahl,7.0,70.15
+1107,guardians of the galaxy,2014,pg-13,science fiction,james gunn,8.175,70.15
+1108,annabelle creation,2017,r,horror,david f. sandberg,6.575,70.14
+1109,my bloody valentine,2009,r,horror,patrick lussier,5.55,70.14
+1110,amsterdam,2022,r,mystery,david o. russell,5.05,70.14
+1111,zulu,1964,nr,war,cy endfield,8.125,70.14
+1112,about a boy,2002,pg-13,romance,"chris weitz, paul weitz",7.65,70.14
+1113,police academy,1984,r,crime,hugh wilson,5.775,70.14
+1114,chappie,2015,r,crime,neill blomkamp,5.225,70.13000000000001
+1115,beyond the sea,2004,pg-13,music,kevin spacey,5.475,70.13000000000001
+1116,old,2021,pg-13,mystery,m. night shyamalan,5.65,70.12
+1117,you only live twice,1967,pg,thriller,lewis gilbert,6.725,70.12
+1118,zombieland,2009,r,horror,ruben fleischer,7.75,70.12
+1119,candyman,2021,r,horror,nia dacosta,6.875,70.12
+1120,mother,2017,r,horror,darren aronofsky,7.0,70.12
+1121,sound of freedom,2023,pg-13,drama,alejandro monteverde,6.4,70.12
+1122,heartbreak ridge,1986,r,war,clint eastwood,6.45,70.12
+1123,transformers,2007,pg-13,science fiction,michael bay,6.425,70.11
+1124,downton abbey,2019,pg,drama,michael engler,7.325,70.11
+1125,raise your voice,2004,pg,music,sean mcnamara,4.3,70.11
+1126,sausage party,2016,r,fantasy,"conrad vernon, greg tiernan",6.65,70.11
+1127,spider man,2002,pg-13,action,sam raimi,7.75,70.11
+1128,high school musical 3 senior year,2008,g,comedy,kenny ortega,5.925,70.11
+1129,the mummy returns,2001,pg-13,fantasy,stephen sommers,5.55,70.11
+1130,the gentlemen,2019,r,crime,guy ritchie,7.025,70.1
+1131,eye in the sky,2015,r,war,gavin hood,7.775,70.1
+1132,54,1998,r,music,mark christopher,4.125,70.1
+1133,marry me,2022,pg-13,music,kat coiro,6.0,70.1
+1134,my big fat independent movie,2005,r,music,philip zlotorynski,2.95,70.09
+1135,steel magnolias,1989,pg,romance,herbert ross,6.85,70.09
+1136,toy story,1995,g,comedy,john lasseter,8.975,70.09
+1137,what happened to monday,2017,r,mystery,tommy wirkola,6.2,70.08
+1138,the lost world jurassic park,1997,pg-13,action,steven spielberg,6.075,70.07
+1139,mission impossible iii,2006,pg-13,action,j.j. abrams,6.825,70.07
+1140,the first purge,2018,r,horror,gerard mcmurray,5.525,70.07
+1141,the name of the rose,1986,r,mystery,jean-jacques annaud,7.025,70.07
+1142,twilight,2008,pg-13,fantasy,catherine hardwicke,5.5,70.06
+1143,ralph breaks the internet,2018,pg,comedy,"phil johnston, rich moore",7.525,70.06
+1144,beverly hills cop,1984,r,crime,martin brest,7.35,70.06
+1145,field of dreams,1989,pg,fantasy,phil alden robinson,7.275,70.05
+1146,paranormal activity 3,2011,r,mystery,"henry joost, ariel schulman",6.075,70.05
+1147,pitch perfect,2012,pg-13,music,jason moore,7.274999999999999,70.05
+1148,super troopers 2,2018,r,mystery,jay chandrasekhar,4.525,70.05
+1149,ricki and the flash,2015,pg-13,music,jonathan demme,5.925,70.04
+1150,frozen,2013,pg,fantasy,"chris buck, jennifer lee",7.75,70.04
+1151,hustlers,2019,r,crime,lorene scafaria,7.375,70.03
+1152,insidious chapter 2,2013,pg-13,horror,james wan,5.275,70.03
+1153,stuart little,1999,pg,comedy,rob minkoff,6.225,70.03
+1154,freddys dead the final nightmare,1991,r,horror,rachel talalay,4.025,70.03
+1155,the incredible hulk,2008,pg-13,action,louis leterrier,6.425,70.03
+1156,harry potter and the goblet of fire,2005,pg-13,fantasy,mike newell,8.1,70.03
+1157,3 men and a baby,1987,pg,comedy,leonard nimoy,6.275,70.03
+1158,alex cross,2012,pg-13,mystery,rob cohen,3.625,70.02000000000001
+1159,a history of violence,2005,r,crime,david cronenberg,7.9,70.00999999999999
+1160,pride  prejudice,2005,pg,romance,joe wright,8.2,70.00999999999999
+1161,a quiet place,2018,pg-13,science fiction,john krasinski,8.175,70.00999999999999
+1162,the wedding singer,1998,pg-13,romance,frank coraci,6.7,70.0
+1163,fantasy island,2020,pg-13,horror,jeff wadlow,3.425,70.0
+1164,nerve,2016,pg-13,mystery,"henry joost, ariel schulman",6.475,70.0
+1165,the wall,2017,r,war,doug liman,6.2,70.0
+1166,the others,2001,pg-13,thriller,alejandro amenábar,7.75,70.0
+1167,star trek iv the voyage home,1986,pg,science fiction,leonard nimoy,7.424999999999999,70.0
+1168,star wars episode ii   attack of the clones,2002,pg,action,george lucas,6.275,69.99
+1169,planet of the apes,2001,pg-13,action,tim burton,5.2,69.98
+1170,aline,2020,pg-13,music,valérie lemercier,5.975,69.98
+1171,star trek beyond,2016,pg-13,action,justin lin,7.3,69.98
+1172,ice age the meltdown,2006,pg,comedy,carlos saldanha,6.25,69.98
+1173,the secret world of arrietty,2010,g,fantasy,hiromasa yonebayashi,8.175,69.97
+1174,music of the heart,1999,pg,music,wes craven,6.300000000000001,69.97
+1175,escape room tournament of champions,2021,pg-13,horror,adam robitel,5.55,69.97
+1176,just go with it,2011,pg-13,romance,dennis dugan,4.575,69.97
+1177,sea of love,1989,r,romance,harold becker,6.875,69.97
+1178,hot fuzz,2007,r,crime,edgar wright,8.15,69.97
+1179,unlawful entry,1992,r,mystery,jonathan kaplan,6.575,69.96
+1180,turner  hooch,1989,pg,crime,roger spottiswoode,5.275,69.96
+1181,saw vi,2009,r,horror,kevin greutert,4.8,69.95
+1182,wargames,1983,pg,thriller,john badham,7.824999999999999,69.95
+1183,pirates of the caribbean the curse of the black pearl,2003,pg-13,action,gore verbinski,7.525,69.95
+1184,cats dont dance,1997,g,music,mark dindal,6.85,69.95
+1185,get on up,2014,pg-13,music,tate taylor,7.2,69.95
+1186,four christmases,2008,pg-13,romance,seth gordon,4.525,69.95
+1187,paranormal activity 4,2012,r,horror,"henry joost, ariel schulman",4.075,69.94
+1188,wonder park,2019,pg,fantasy,dylan brown,5.1,69.94
+1189,se7en,1995,r,mystery,david fincher,7.95,69.94
+1190,lethal weapon,1987,r,thriller,richard donner,7.425,69.94
+1191,the burbs,1989,pg,horror,joe dante,5.925,69.94
+1192,connie and carla,2004,pg-13,music,michael lembeck,5.25,69.93
+1193,escape room,2019,pg-13,horror,adam robitel,5.7,69.92
+1194,shes all that,1999,pg-13,romance,robert iscove,5.35,69.92
+1195,a simple favor,2018,r,crime,paul feig,7.125,69.92
+1196,doctor strange,2016,pg-13,fantasy,scott derrickson,7.75,69.91000000000001
+1197,my big fat greek wedding,2002,pg,comedy,joel zwick,6.725,69.91000000000001
+1198,macbeth,2015,r,war,justin kurzel,7.05,69.91000000000001
+1199,beverly hills cop iii,1994,r,crime,john landis,3.5,69.91000000000001
+1200,breaker morant,1980,pg,war,bruce beresford,8.025,69.91000000000001
+1201,halloween,2018,r,thriller,david gordon green,6.925,69.91000000000001
+1202,the hills have eyes,2006,r,horror,alexandre aja,5.775,69.91000000000001
+1203,the crazies,2010,r,mystery,breck eisner,6.4,69.89999999999999
+1204,sucker punch,2011,pg-13,fantasy,zack snyder,4.45,69.89999999999999
+1205,the girl who played with fire,2009,r,mystery,daniel alfredson,6.9,69.89999999999999
+1206,high fidelity,2000,r,music,stephen frears,7.875,69.89
+1207,taken,2008,pg-13,action,pierre morel,6.55,69.88
+1208,cool runnings,1993,pg,drama,jon turteltaub,6.9,69.88
+1209,open water,2003,r,horror,chris kentis,6.175,69.88
+1210,ghost in the shell,2017,pg-13,drama,rupert sanders,5.475,69.88
+1211,the watch,2012,r,science fiction,akiva schaffer,4.125,69.87
+1212,big mommas like father like son,2011,pg-13,crime,john whitesell,3.175,69.86
+1213,rio 2,2014,g,comedy,carlos saldanha,5.675,69.86
+1214,tenacious d in the pick of destiny,2006,r,music,liam lynch,6.1,69.86
+1215,star trek iii the search for spock,1984,pg,science fiction,leonard nimoy,6.675,69.85
+1216,black nativity,2013,pg,music,kasi lemmons,4.949999999999999,69.85
+1217,the fighting temptations,2003,pg-13,music,jonathan lynn,5.225,69.85
+1218,insidious chapter 3,2015,pg-13,thriller,leigh whannell,5.8,69.84
+1219,chronicle,2012,pg-13,thriller,josh trank,7.3,69.84
+1220,dragonfly,2002,pg-13,mystery,tom shadyac,3.95,69.84
+1221,cocaine bear,2023,r,crime,elizabeth banks,5.975,69.83
+1222,think like a man,2012,pg-13,romance,tim story,5.95,69.83
+1223,kingdom of heaven,2005,r,action,ridley scott,6.125,69.83
+1224,saawariya,2007,pg,music,sanjay leela bhansali,4.8,69.83
+1225,match point,2005,r,romance,woody allen,7.475,69.82000000000001
+1226,metallica through the never,2013,r,music,nimród antal,7.05,69.82000000000001
+1227,the call,2013,r,crime,brad anderson,5.775,69.81
+1228,die hard,1988,r,thriller,john mctiernan,8.15,69.8
+1229,autumn in new york,2000,pg-13,romance,joan chen,4.025,69.8
+1230,pretty woman,1990,r,comedy,garry marshall,6.525,69.78999999999999
+1231,paper towns,2015,pg-13,romance,jake schreier,5.95,69.78999999999999
+1232,avp alien vs predator,2004,pg-13,horror,paul w.s. anderson,4.15,69.78999999999999
+1233,that thing you do,1996,pg,music,tom hanks,7.575,69.78
+1234,the shining,1980,r,horror,stanley kubrick,7.875,69.78
+1235,hoodwinked,2005,pg,crime,"cory edwards, todd edwards, tony leech",5.45,69.77
+1236,the bank job,2008,r,crime,roger donaldson,7.2,69.77
+1237,copycat,1995,r,mystery,jon amiel,6.525,69.76
+1238,gone in sixty seconds,2000,pg-13,thriller,dominic sena,4.75,69.76
+1239,kung fu hustle,2004,r,crime,stephen chow,8.025,69.76
+1240,batman forever,1995,pg-13,action,joel schumacher,5.0,69.75
+1241,one direction this is us,2013,pg,music,morgan spurlock,5.9750000000000005,69.75
+1242,the purge election year,2016,r,thriller,james demonaco,5.85,69.74000000000001
+1243,in the valley of elah,2007,r,mystery,paul haggis,6.95,69.74000000000001
+1244,the invasion,2007,pg-13,mystery,oliver hirschbiegel,4.6,69.73
+1245,baywatch,2017,r,crime,seth gordon,4.275,69.73
+1246,new york new york,1977,pg,music,martin scorsese,6.325,69.72
+1247,deadpool,2016,r,action,tim miller,7.65,69.72
+1248,trance,2013,r,mystery,danny boyle,6.6,69.71000000000001
+1249,perfect stranger,2007,r,mystery,james foley,3.875,69.71000000000001
+1250,the strangers,2008,r,horror,bryan bertino,5.45,69.71000000000001
+1251,little shop of horrors,1986,pg-13,horror,frank oz,7.8,69.71000000000001
+1252,crawl,2019,r,horror,alexandre aja,6.7,69.71000000000001
+1253,teachers pet,2004,pg,music,timothy björklund,6.65,69.71000000000001
+1254,edward scissorhands,1990,pg-13,romance,tim burton,8.0,69.69999999999999
+1255,bambi,1942,g,drama,"james algar, samuel armstrong, david hand",8.125,69.69999999999999
+1256,day watch,2006,r,horror,timur bekmambetov,6.15,69.69999999999999
+1257,final destination,2000,r,horror,james wong,5.2,69.69999999999999
+1258,drive,2011,r,crime,nicolas winding refn,8.125,69.69
+1259,pet sematary,1989,r,horror,mary lambert,5.675,69.69
+1260,the sting,1973,pg,drama,george roy hill,8.475000000000001,69.69
+1261,paranormal activity the marked ones,2014,r,horror,christopher landon,4.65,69.69
+1262,heroes,1977,pg,war,jeremy kagan,4.6,69.69
+1263,high society,1956,nr,music,charles walters,7.15,69.69
+1264,scarface,1983,r,crime,brian de palma,7.725,69.67999999999999
+1265,american graffiti,1973,pg,drama,george lucas,8.4,69.67999999999999
+1266,m3gan,2022,pg-13,horror,gerard johnstone,7.475,69.67999999999999
+1267,the maze runner,2014,pg-13,mystery,wes ball,6.575,69.67
+1268,doom,2005,r,horror,andrzej bartkowiak,3.875,69.67
+1269,blended,2014,pg-13,romance,frank coraci,4.5,69.66
+1270,crocodile dundee,1986,pg-13,comedy,peter faiman,7.025,69.65
+1271,the flintstones,1994,pg,comedy,brian levant,4.1,69.65
+1272,arthur and the invisibles,2006,pg,fantasy,luc besson,4.625,69.65
+1273,book club,2018,pg-13,romance,bill holderman,5.75,69.65
+1274,gremlins,1984,pg,horror,joe dante,7.5,69.65
+1275,cold war,2018,r,music,pawel pawlikowski,8.3,69.64
+1276,hostel part ii,2007,r,horror,eli roth,5.075,69.64
+1277,saw ii,2005,r,horror,darren lynn bousman,5.25,69.64
+1278,the best years of our lives,1946,nr,war,william wyler,8.75,69.64
+1279,the tuxedo,2002,pg-13,science fiction,kevin donovan,4.050000000000001,69.64
+1280,grease,1978,pg,romance,randal kleiser,7.05,69.63000000000001
+1281,the purge anarchy,2014,r,horror,james demonaco,5.975,69.63000000000001
+1282,the naked gun from the files of police squad,1988,pg-13,crime,david zucker,7.774999999999999,69.62
+1283,jeepers creepers,2001,r,mystery,victor salva,5.55,69.62
+1284,dances with wolves,1990,pg-13,drama,kevin costner,7.925,69.62
+1285,predator,1987,r,science fiction,john mctiernan,7.0,69.61
+1286,when harry met sally,1989,r,romance,rob reiner,7.9,69.6
+1287,pokémon detective pikachu,2019,pg,action,rob letterman,6.375,69.6
+1288,quarantine,2008,r,horror,john erick dowdle,5.65,69.6
+1289,killers of the flower moon,2023,r,drama,martin scorsese,8.3,69.59
+1290,lion,2016,pg-13,drama,garth davis,7.85,69.59
+1291,pennies from heaven,1981,r,music,herbert ross,6.800000000000001,69.58
+1292,nick and norahs infinite playlist,2008,pg-13,music,peter sollett,6.75,69.58
+1293,amélie,2001,r,romance,jean-pierre jeunet,8.025,69.58
+1294,robocop,2014,pg-13,science fiction,josé padilha,5.55,69.58
+1295,footloose,1984,pg,romance,herbert ross,5.75,69.58
+1296,truth or dare,2018,pg-13,horror,jeff wadlow,4.025,69.58
+1297,lost in space,1998,pg-13,science fiction,stephen hopkins,4.375,69.58
+1298,the hangover,2009,r,comedy,todd phillips,7.55,69.57
+1299,fools gold,2008,pg-13,romance,andy tennant,3.85,69.56
+1300,de lovely,2004,pg-13,music,irwin winkler,5.725,69.56
+1301,the last exorcism,2010,pg-13,mystery,daniel stamm,6.2,69.55
+1302,rampage,2018,pg-13,action,brad peyton,5.55,69.55
+1303,sparkle,2012,pg-13,music,salim akil,5.8,69.54
+1304,the pink panther 2,2009,pg,mystery,harald zwart,4.05,69.54
+1305,newsies,1992,pg,music,kenny ortega,5.55,69.53
+1306,rocky ii,1979,pg,romance,sylvester stallone,6.925,69.53
+1307,home,2015,pg,fantasy,tim johnson,6.025,69.53
+1308,raising cain,1992,r,horror,brian de palma,5.675,69.52000000000001
+1309,every which way but loose,1978,pg,romance,james fargo,5.175,69.52000000000001
+1310,popstar never stop never stopping,2016,r,music,"akiva schaffer, jorma taccone",7.0,69.51
+1311,brightburn,2019,r,mystery,david yarovesky,5.575,69.51
+1312,one hundred and one dalmatians,1961,g,comedy,"clyde geronimi, hamilton luske, wolfgang reitherman",8.15,69.51
+1313,the last dragon,1985,pg-13,music,michael schultz,6.275,69.5
+1314,sarahs key,2010,pg-13,war,gilles paquet-brenner,6.975,69.5
+1315,childs play,2019,r,horror,lars klevberg,5.725,69.49
+1316,mad max,1979,r,science fiction,george miller,7.45,69.49
+1317,the invitation,2022,pg-13,horror,jessica m. thompson,4.75,69.48
+1318,gone baby gone,2007,r,mystery,ben affleck,7.875,69.48
+1319,the gift,2015,r,mystery,joel edgerton,7.625,69.47
+1320,the 12th man,2017,nr,war,harald zwart,7.5,69.47
+1321,the gods must be crazy,1980,pg,comedy,jamie uys,7.625,69.46
+1322,the world is not enough,1999,pg-13,action,michael apted,5.875,69.46
+1323,the day after tomorrow,2004,pg-13,action,roland emmerich,5.55,69.46
+1324,alvin and the chipmunks,2007,pg,fantasy,tim hill,4.45,69.46
+1325,star trek ii the wrath of khan,1982,pg,science fiction,nicholas meyer,7.625,69.45
+1326,passengers,2016,pg-13,science fiction,morten tyldum,5.275,69.45
+1327,breakin,1984,pg,music,joel silberg,5.275,69.45
+1328,the girl who kicked the hornets nest,2009,r,mystery,daniel alfredson,6.425,69.44
+1329,groundhog day,1993,pg,romance,harold ramis,8.05,69.44
+1330,flame  citron,2008,nr,war,ole christian madsen,7.5,69.43
+1331,i still believe,2020,pg,music,"andrew erwin, jon erwin",5.8,69.43
+1332,the chronicles of riddick,2004,pg-13,science fiction,david twohy,4.925,69.43
+1333,enter the dragon,1973,r,action,robert clouse,8.025,69.43
+1334,snatch,2000,r,crime,guy ritchie,7.225,69.41000000000001
+1335,now you see me 2,2016,pg-13,crime,jon m. chu,5.3,69.41000000000001
+1336,hulk,2003,pg-13,science fiction,ang lee,5.725,69.41000000000001
+1337,48 hrs,1982,r,crime,walter hill,7.475,69.39999999999999
+1338,shakespeare in love,1998,r,comedy,john madden,7.975,69.39
+1339,happy death day,2017,pg-13,mystery,christopher landon,6.525,69.39
+1340,detective dee and the mystery of the phantom flame,2010,pg-13,mystery,hark tsui,7.15,69.39
+1341,romancing the stone,1984,pg,romance,robert zemeckis,7.15,69.39
+1342,the terminator,1984,r,science fiction,james cameron,8.55,69.39
+1343,five feet apart,2019,pg-13,romance,justin baldoni,6.475,69.38
+1344,cinderella,1950,g,romance,"clyde geronimi, wilfred jackson, hamilton luske",8.15,69.36
+1345,the great mouse detective,1986,g,mystery,"ron clements, burny mattinson, dave michener",7.3,69.36
+1346,47 meters down,2017,pg-13,horror,johannes roberts,5.475,69.36
+1347,waltz with bashir,2008,r,war,ari folman,8.625,69.36
+1348,meet the fockers,2004,pg-13,comedy,jay roach,5.1,69.35
+1349,hostel,2005,r,horror,eli roth,5.825,69.35
+1350,spider man homecoming,2017,pg-13,science fiction,jon watts,7.8,69.35
+1351,shazam fury of the gods,2023,pg-13,fantasy,david f. sandberg,5.5,69.35
+1352,blair witch,2016,r,horror,adam wingard,4.675,69.34
+1353,the host,2006,r,science fiction,bong joon ho,7.975,69.34
+1354,dolores claiborne,1995,r,mystery,taylor hackford,7.35,69.34
+1355,ouija origin of evil,2016,pg-13,horror,mike flanagan,6.775,69.34
+1356,the passion of the christ,2004,r,drama,mel gibson,6.1,69.33
+1357,a nightmare on elm street 4 the dream master,1988,r,horror,renny harlin,5.65,69.32000000000001
+1358,the caine mutiny,1954,nr,war,edward dmytryk,7.65,69.32000000000001
+1359,katy perry part of me,2012,pg,music,"dan cutforth, jane lipsitz",6.55,69.32000000000001
+1360,the legend of 1900,1998,r,music,giuseppe tornatore,6.925000000000001,69.28999999999999
+1361,kagemusha,1980,pg,war,akira kurosawa,8.25,69.28999999999999
+1362,the great muppet caper,1981,g,mystery,jim henson,7.175,69.28999999999999
+1363,whats love got to do with it,1993,r,music,brian gibson,7.924999999999999,69.28999999999999
+1364,a hard days night,1964,g,music,richard lester,8.55,69.28999999999999
+1365,the purge,2013,r,horror,james demonaco,5.05,69.28
+1366,the hunger games mockingjay   part 1,2014,pg-13,thriller,francis lawrence,6.675,69.27
+1367,ready or not,2019,r,horror,"matt bettinelli-olpin, tyler gillett",7.300000000000001,69.27
+1368,the expendables 3,2014,pg-13,thriller,patrick hughes,4.75,69.27
+1369,ghost rider spirit of vengeance,2011,pg-13,fantasy,"mark neveldine, brian taylor",3.625,69.27
+1370,interstellar,2014,pg-13,drama,christopher nolan,7.95,69.26
+1371,barbarian,2022,r,mystery,zach cregger,7.7,69.26
+1372,the hunger games mockingjay   part 2,2015,pg-13,science fiction,francis lawrence,6.75,69.25
+1373,the day the earth stood still,2008,pg-13,thriller,scott derrickson,4.3,69.25
+1374,the rocky horror picture show,1975,r,science fiction,jim sharman,7.35,69.25
+1375,sweet charity,1969,g,music,bob fosse,6.8,69.25
+1376,the muppet christmas carol,1992,g,music,brian henson,7.325,69.24
+1377,king arthur,2004,pg-13,war,antoine fuqua,5.05,69.23
+1378,scooby doo 2 monsters unleashed,2004,pg,fantasy,raja gosnell,4.25,69.23
+1379,jumanji the next level,2019,pg-13,fantasy,jake kasdan,6.65,69.23
+1380,wind river,2017,r,mystery,taylor sheridan,7.775,69.23
+1381,pink floyd the wall,1982,r,music,alan parker,7.0,69.23
+1382,begin again,2013,r,music,john carney,7.275,69.23
+1383,mr holmes,2015,pg,mystery,bill condon,7.2,69.22
+1384,tremors,1990,pg-13,horror,ron underwood,7.35,69.22
+1385,the chronicles of narnia the lion the witch and the wardrobe,2005,pg,fantasy,andrew adamson,7.25,69.21000000000001
+1386,spectre,2015,pg-13,thriller,sam mendes,6.4,69.21000000000001
+1387,as above so below,2014,r,horror,john erick dowdle,4.95,69.19999999999999
+1388,a haunted house,2013,r,horror,michael tiddes,3.475,69.19999999999999
+1389,the jackal,1997,r,thriller,michael caton-jones,4.7,69.19
+1390,the gospel,2005,pg,music,rob hardy,4.65,69.17999999999999
+1391,midsommar,2019,r,horror,ari aster,7.45,69.17
+1392,the wailing,2016,nr,mystery,na hong-jin,8.2,69.17
+1393,the muppet movie,1979,g,music,james frawley,7.775,69.17
+1394,skyscraper,2018,pg-13,action,rawson marshall thurber,5.5,69.16
+1395,fletch,1985,pg,crime,michael ritchie,7.075,69.15
+1396,ne zha,2019,nr,fantasy,yu yang,7.375,69.15
+1397,godzilla,2014,pg-13,action,gareth edwards,6.625,69.15
+1398,8 women,2002,r,mystery,françois ozon,7.050000000000001,69.15
+1399,american gigolo,1980,r,mystery,paul schrader,6.35,69.13
+1400,justin biebers believe,2013,pg,music,jon m. chu,4.475,69.12
+1401,u2 3d,2007,g,music,"catherine owens, mark pellington",8.325,69.11
+1402,the fabulous baker boys,1989,r,music,steve kloves,7.925,69.11
+1403,a prairie home companion,2006,pg-13,music,robert altman,7.15,69.1
+1404,the visitor,2007,pg-13,music,tom mccarthy,7.875,69.08999999999999
+1405,morbius,2022,pg-13,science fiction,daniel espinosa,4.025,69.08999999999999
+1406,jumper,2008,pg-13,action,doug liman,4.325,69.08999999999999
+1407,insidious,2010,pg-13,horror,james wan,6.375,69.08
+1408,the rose,1979,r,music,mark rydell,6.9,69.07
+1409,the gallows,2015,r,horror,"travis cluff, chris lofing",3.4000000000000004,69.07
+1410,missing,2023,pg-13,mystery,"nicholas d. johnson, will merrick",7.5,69.07
+1411,hamlet 2,2008,r,music,andrew fleming,5.95,69.07
+1412,inside llewyn davis,2013,r,music,"ethan coen, joel coen",8.275,69.07
+1413,mr six,2015,pg-13,crime,guan hu,6.925000000000001,69.07
+1414,xxx return of xander cage,2017,pg-13,crime,d.j. caruso,5.025,69.07
+1415,danny collins,2015,r,music,dan fogelman,6.825,69.06
+1416,three days of the condor,1975,r,mystery,sydney pollack,7.425,69.06
+1417,the commitments,1991,r,music,alan parker,7.8,69.06
+1418,the sword and the sorcerer,1982,r,horror,albert pyun,5.375,69.06
+1419,the devil inside,2012,r,horror,william brent bell,2.825,69.05
+1420,train to busan,2016,nr,horror,yeon sang-ho,8.049999999999999,69.04
+1421,oculus,2013,r,horror,mike flanagan,6.65,69.03
+1422,the orphanage,2007,r,horror,j.a. bayona,7.675,69.02000000000001
+1423,viva las vegas,1964,nr,music,george sidney,7.025,69.02000000000001
+1424,a nightmare on elm street 3 dream warriors,1987,r,horror,chuck russell,6.275,69.02000000000001
+1425,foul play,1978,pg,mystery,colin higgins,6.25,69.02000000000001
+1426,love  mercy,2014,pg-13,music,bill pohlad,7.85,69.01
+1427,a nightmare on elm street,1984,r,horror,wes craven,7.925,69.01
+1428,domestic disturbance,2001,pg-13,mystery,harold becker,4.15,68.99
+1429,dragon ball super broly,2018,pg,science fiction,tatsuya nagamine,7.475,68.99
+1430,scoop,2006,pg-13,mystery,woody allen,5.525,68.99
+1431,white chicks,2004,pg-13,crime,keenen ivory wayans,4.6,68.99
+1432,detroit rock city,1999,r,music,adam rifkin,5.45,68.97999999999999
+1433,madagascar 3 europes most wanted,2012,pg,comedy,"eric darnell, tom mcgrath, conrad vernon",6.8,68.97999999999999
+1434,dressed to kill,1980,r,mystery,brian de palma,7.425000000000001,68.97
+1435,velvet goldmine,1998,r,music,todd haynes,6.65,68.97
+1436,trainspotting,1996,r,crime,danny boyle,8.35,68.96
+1437,shaun of the dead,2004,r,horror,edgar wright,8.05,68.96
+1438,alita battle angel,2019,pg-13,action,robert rodriguez,6.475,68.95
+1439,the return of the pink panther,1975,g,mystery,blake edwards,7.125,68.94
+1440,finding your feet,2017,pg-13,music,richard loncraine,6.55,68.93
+1441,harry potter and the order of the phoenix,2007,pg-13,fantasy,david yates,7.525,68.93
+1442,tommy,1975,pg,music,ken russell,6.775,68.92
+1443,saw iv,2007,r,thriller,darren lynn bousman,4.375,68.92
+1444,san andreas,2015,pg-13,thriller,brad peyton,5.35,68.91000000000001
+1445,onward,2020,pg,fantasy,dan scanlon,7.5,68.89999999999999
+1446,ready player one,2018,pg-13,science fiction,steven spielberg,7.15,68.89
+1447,jailhouse rock,1957,nr,music,richard thorpe,6.525,68.89
+1448,fantasia,1940,g,fantasy,"james algar, samuel armstrong, ford beebe jr.",8.55,68.88
+1449,searching,2018,pg-13,mystery,aneesh chaganty,7.875,68.88
+1450,jesus christ superstar,1973,g,music,norman jewison,6.475,68.88
+1451,high anxiety,1977,pg,mystery,mel brooks,6.5,68.87
+1452,i now pronounce you chuck  larry,2007,pg-13,comedy,dennis dugan,4.3,68.85
+1453,wrath of man,2021,r,crime,guy ritchie,6.8,68.84
+1454,the jazz singer,1927,nr,music,alan crosland,6.7,68.84
+1455,the batman,2022,pg-13,thriller,matt reeves,7.8,68.81
+1456,cars 3,2017,g,comedy,brian fee,6.6000000000000005,68.81
+1457,black widow,2021,pg-13,science fiction,cate shortland,7.125,68.78999999999999
+1458,night at the museum,2006,pg,fantasy,shawn levy,5.525,68.78999999999999
+1459,the stepford wives,2004,pg-13,science fiction,frank oz,4.45,68.77
+1460,harry potter and the chamber of secrets,2002,pg,fantasy,chris columbus,7.399999999999999,68.77
+1461,shrek,2001,pg,fantasy,"andrew adamson, vicky jenson",8.200000000000001,68.77
+1462,the last witch hunter,2015,pg-13,horror,breck eisner,4.275,68.75
+1463,the tourist,2010,pg-13,thriller,florian henckel von donnersmarck,4.475,68.73
+1464,lara croft tomb raider   the cradle of life,2003,pg-13,thriller,jan de bont,4.475,68.72
+1465,lethal weapon 4,1998,r,action,richard donner,5.525,68.71000000000001
+1466,blue hawaii,1961,pg,music,norman taurog,5.0,68.67
+1467,a wrinkle in time,2018,pg,science fiction,ava duvernay,4.75,68.66
+1468,the hangover part ii,2011,r,comedy,todd phillips,5.2,68.65
+1469,my fair lady,1964,g,music,george cukor,8.525,68.63
+1470,waiting for guffman,1996,r,music,christopher guest,7.65,68.62
+1471,shine a light,2008,pg-13,music,martin scorsese,7.5,68.58
+1472,this is spinal tap,1984,r,music,rob reiner,8.525,68.56
+1473,pacific rim,2013,pg-13,action,guillermo del toro,6.875,68.54
+1474,transcendence,2014,pg-13,science fiction,wally pfister,4.575,68.54
+1475,die another day,2002,pg-13,action,lee tamahori,5.8,68.53
+1476,102 dalmatians,2000,g,comedy,kevin lima,4.2,68.53
+1477,tupac resurrection,2003,r,music,lauren lazin,7.525,68.49
+1478,tron legacy,2010,pg,science fiction,joseph kosinski,5.825,68.47999999999999
+1479,aliens vs predator requiem,2007,r,science fiction,"colin strause, greg strause",3.475,68.47
+1480,no time to die,2021,pg-13,thriller,cary joji fukunaga,7.45,68.43
+1481,jumanji welcome to the jungle,2017,pg-13,fantasy,jake kasdan,6.825,68.43
+1482,sonic the hedgehog 2,2022,pg,action,jeff fowler,6.4,68.42
+1483,swordfish,2001,r,crime,dominic sena,4.625,68.41000000000001
+1484,white house down,2013,pg-13,thriller,roland emmerich,5.8,68.22
+1485,fast  furious 6,2013,pg-13,thriller,justin lin,6.75,68.19
+1486,guardians of the galaxy vol 2,2017,pg-13,science fiction,james gunn,7.6,68.19
+1487,thor the dark world,2013,pg-13,action,alan taylor,6.325,68.16
+1488,monsters vs aliens,2009,pg,science fiction,"rob letterman, conrad vernon",6.375,68.14
+1489,the twilight saga eclipse,2010,pg-13,fantasy,david slade,5.425,68.13
+1490,kong skull island,2017,pg-13,fantasy,jordan vogt-roberts,6.75,68.13
+1491,insurgent,2015,pg-13,thriller,robert schwentke,4.925000000000001,68.13
+1492,dantes peak,1997,pg-13,drama,roger donaldson,4.875,68.06
+1493,ouija,2014,pg-13,horror,stiles white,3.5,68.05
+1494,the green hornet,2011,pg-13,action,michel gondry,4.95,68.0
+1495,troy,2004,r,war,wolfgang petersen,6.35,67.97
+1496,spider man far from home,2019,pg-13,action,jon watts,7.7,67.96
+1497,top gun maverick,2022,pg-13,drama,joseph kosinski,8.45,67.95
+1498,x men days of future past,2014,pg-13,science fiction,bryan singer,7.975,67.94
+1499,black panther wakanda forever,2022,pg-13,action,ryan coogler,7.225,67.93
+1500,the chronicles of narnia the voyage of the dawn treader,2010,pg,fantasy,michael apted,5.725,67.88
+1501,finding dory,2016,pg,comedy,"andrew stanton, angus maclane",7.825,67.88
