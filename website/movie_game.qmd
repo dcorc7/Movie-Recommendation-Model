@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Load movies from the JSON file
-    fetch("./movie_guesser_dfs/1917.json")
+    fetch("./movie_guesser_dfs/princess_and_frog.json")
         .then(response => {
             if (response.ok) {
                 return response.json();
